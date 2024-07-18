@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  font-size: 22px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+
+h1.gk-h1 {
+  font-size: 62px;
+  font-family: impact;
+  color: white;
+}
+
+
+h2.gk-h2{
+  font-size: 42px;
+  font-family: impact;
+  font-weight: 400;
+
+}
+h3.gk-h3{
+  font-size: 32px;
+  font-family: impact;
+}
+h4.gk-h4{
+  font-size: 16px;
+  font-family: impact;
+}
+button.gk-button {
+  font-size: 22px;
+  padding: 10.5px 29px;
+  font-weight: 400;
+  border-style: none;
+  border-radius: 3px;
+  color: white;
+  background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
+  box-shadow: 11px 12px 3px #161616;
+  margin-top: 20px;
+}
+.manrope-gk-p {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 34px;
+  font-size: 24px;
+  color: white;
+}
