@@ -1,9 +1,15 @@
 import React from "react";
-
-const Header = () => {
+export interface Props {
+  setOpen:any
+}
+const Header: React.FC<Props> = ({setOpen}) => {
+  const handleClick = () => {
+    // Functional update to ensure setOpen is only called once
+    setOpen((prevOpen:any) => !prevOpen); // Toggle the previous state
+  };
   return (
     <>
-      <header>
+      <header className=" relative z-10">
         <div className="container">
           <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center md:pt-5  md:pb-5  pt-3  pb-3  ">
             <div>
@@ -13,7 +19,7 @@ const Header = () => {
             </div>
 
             <div>
-              <button
+              <button 
                 className="Contact_btn md:p-[10px_25px] p-[9px_10px] font-medium md:font-semibold rounded-[10px] relative  bg-transparent cursor-pointer md:text-[22px]  text-[20px] "
                 style={{
                   position: "relative",
@@ -22,6 +28,7 @@ const Header = () => {
                   // zIndex: 1,
                   // border: 'none',
                 }}
+                onClick={()=>handleClick()}
               >
                 Contact Us
                 <span

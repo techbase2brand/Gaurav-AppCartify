@@ -16,16 +16,21 @@ h1.gk-h1 {
   font-family: impact;
   color: white;
 }
+button{
+  color: white;
+}
+
 
 
 h2.gk-h2{
   font-size: 42px;
   font-family: impact;
   font-weight: 400;
+  color: white;
 
 }
 h3.gk-h3{
-  font-size: 32px;
+  font-size: 26px;
   font-family: impact;
 }
 h4.gk-h4{
@@ -46,9 +51,66 @@ button.gk-button {
 .manrope-gk-p {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
-  line-height: 34px;
+  line-height: 45px;
   font-size: 24px;
   color: white;
+}
+@media only screen and (max-width: 1024px) {
+  .manrope-gk-p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 34px;
+    font-size: 18px;
+    color: white;
+}
+button.gk-button {
+  font-size: 18px;
+  padding: 10.5px 29px;
+  font-weight: 400;
+  border-style: none;
+  border-radius: 3px;
+  color: white;
+  background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
+  box-shadow: 11px 12px 3px #161616;
+  margin-top: 20px;
+}
+
+
+}
+@media only screen and (max-width: 640px) {
+  h1.gk-h1 {
+    font-size: 32px;
+    font-family: impact;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  .manrope-gk-p {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 34px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  button.gk-button {
+    font-size: 16px;
+    padding: 10.5px 29px;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
+    box-shadow: 11px 12px 3px #161616;
+    margin-top: 20px;
+    text-align: center;
+  }
+
 }

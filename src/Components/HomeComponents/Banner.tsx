@@ -8,11 +8,11 @@ import gifvideo from "../../../public/Images/ggivvideo.gif";
 const Banner = () => {
   return (
     <>
-      <section className="hhh flex items-center xl:h-[900px]  md:pt-[50px] md:pb-[50px]  ">
+      <section className="hhh flex items-center xl:h-[900px]  md:pt-[90px] md:pb-[50px] pt-[9.5rem] pb-14  mt-[-93px]   ">
         <div className="container">
-          <div className=" lg:flex  lg:justify-between items-center flex gap-5 ">
+          <div className=" xl:flex  xl:justify-between  lg:flex  lg:justify-between items-center   ">
             <div className="xl:w-[50%]  lg:w-[50%] w-[100%]">
-              <h1 className="gk-h1 uppercase">
+              <h1 className="gk-h1 uppercase  ">
                 Sell 3X Times More With{" "}
                 <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>
               </h1>
@@ -20,13 +20,15 @@ const Banner = () => {
                 Convert your Shopify store into an app in just seven days and
                 boost your sales
               </p>
-              <button className="gk-button"> Book Your Meeting Today</button>
+              <div className="btn ">
+              <button className="gk-button lg:block hidden"> Book Your Meeting Today</button>
+              </div>
             </div>
-            <div className="frame-class xl:w-[40%] lg:w-[40%] w-[100%]">
-              <div className="adbsframe relative lg:h-[400px] xl:h-[545px] h-[400px]">
+            <div className="frame-class xl:w-[40%] lg:w-[40%] w-[100%] pt-[2.5rem]">
+              <div className="adbsframe relative lg:h-[400px] xl:h-[545px] h-[400px] w-[90%] mx-auto md:w-[100%]">
                 {/* <Image src={frame} alt="frame" className="frame relative" /> */}
                 <Image
-                  className="gifframe  absolute xl:w-[519px] xl:h-[513px] xl:object-cover xl:left-[-32px] xl:top-[-21px] xl:rounded-[40px_0px_45px] lg:left-[-33px] lg:h-[386px] lg:top-[-30px]"
+                  className="gifframe  absolute xl:w-[519px] xl:h-[523px] xl:object-cover xl:left-[-32px] xl:top-[-21px] xl:rounded-[40px_0px_45px] lg:left-[-33px] lg:h-[370px] lg:top-[-30px] lg:w-[100%]  h-[335px] w-[92%] left-[-15px] top-[-18px] md:w-[100%]  md:-left-[0px] md:-top-[0px] md:h-[408px]"
                   src={gifvideo}
                   alt=""
                 />
