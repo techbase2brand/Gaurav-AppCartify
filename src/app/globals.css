@@ -33,9 +33,10 @@ h3.gk-h3{
   font-size: 26px;
   font-family: impact;
 }
-h4.gk-h4{
-  font-size: 16px;
-  font-family: impact;
+h4.gk-h4 {
+  font-size: 25px;
+  font-weight: 600;
+  /* color: white; */
 }
 button.gk-button {
   font-size: 22px;
@@ -57,6 +58,16 @@ button.gk-button {
   font-size: 24px;
   color: white;
 }
+
+.manrope-gk-p-list {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 34px;
+  font-size: 20px;
+  color: white;
+}
 @media only screen and (max-width: 1024px) {
   .manrope-gk-p {
     font-family: "Manrope", sans-serif;
@@ -66,6 +77,15 @@ button.gk-button {
     line-height: 34px;
     font-size: 18px;
     color: white;
+}
+.manrope-gk-p-list {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 34px;
+  font-size: 16px;
+  color: white;
 }
 button.gk-button {
   font-size: 18px;
