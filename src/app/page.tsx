@@ -5,6 +5,8 @@ import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import { FormModal } from "@/Components/HomeComponents/FormModal";
+import Developer from "@/Components/HomeComponents/ShopifyDevSection";
+import MobileApps from "@/Components/HomeComponents/MobileApps";
 function Page() {
   const [open, setOpen] = React.useState(false);
   console.log("open", open);
@@ -15,6 +17,8 @@ function Page() {
       <Banner />
       <FormModal open={open} setOpen={setOpen} />
       <TabComponentUi />
+      <Developer/>
+      <MobileApps/>
       <Footer />
     </>
   );

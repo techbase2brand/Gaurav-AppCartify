@@ -132,7 +132,7 @@ export default function TabComponentUi() {
                 </Box>
 
                 <CustomTabPanel value={value} index={0}>
-                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  lg:pt-9 ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -183,7 +183,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -234,7 +234,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -285,7 +285,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -336,7 +336,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={4}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image

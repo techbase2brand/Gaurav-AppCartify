@@ -61,8 +61,15 @@ export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Button onClick={() => setOpen(false)}>x</Button>
-
+        <div className="btn-cross flex justify-end relative pt-4">
+          <Button onClick={() => setOpen(false)} 
+            style={{color:'red', position:'absolute' ,
+              top: '-29px',
+              fontSize: '24px',
+              right: '-22px',
+              padding: '10px' }}
+            >x</Button>
+          </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
               <h3 className="gk-h3 text-center  ">
@@ -124,14 +131,18 @@ export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
                 <MenuItem value="healthcare">Healthcare</MenuItem>
                 {/* Add more industry options here */}
               </Select>
-             
+
               <Button
                 onClick={() => setOpen(false)}
                 type="submit"
                 className="submit-button p-[15px] w-[35%] text-white"
+                style={{
+                  background: `linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%)`,
+                }}
               >
                 Submit
               </Button>
+          
             </div>
           </form>
         </Box>
