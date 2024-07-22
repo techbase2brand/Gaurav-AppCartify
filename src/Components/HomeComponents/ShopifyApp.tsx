@@ -1,0 +1,60 @@
+import React from "react";
+
+const ShopifyApp = () => {
+  return (
+    <>
+      <section className="bg-[#0E1014] lg:pt-6 lg:pb-10 pb-8  pt-8">
+        <div className="Shopifyapp">
+          <div className="container">
+            <div className="manue-app">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center ">
+                How Does Shopify App Development Work?
+              </h2>
+
+              <div className="text-itom">
+                <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-4 pt-5">
+                  1 .Understanding Client Needs
+                </h4>
+                <p className="manrope-gk-p-list pb-4">
+                  In the researching phase, we engage in thorough consultations,
+                  analyze market dynamics, and define scope to align with your
+                  business goals.
+                </p>
+                <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-4 pt-5">
+                  2. Implementing and Building they App
+                </h4>
+                <p className="manrope-gk-p-list pb-4">
+                  In the researching phase, we engage in thorough consultations,
+                  analyze market dynamics, and define scope to align with your
+                  business goals.
+                </p>
+                <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-4 pt-5">
+                  3. Testing to Ensure Quality and Functionality
+                </h4>
+                <p className="manrope-gk-p-list pb-4">
+                  In the researching phase, we engage in thorough consultations,
+                  analyze market dynamics, and define scope to align with your
+                  business goals.
+                </p>
+                <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-4 pt-5">
+                  4. Launching and Deploying
+                </h4>
+                <p className="manrope-gk-p-list pb-4">
+                  Upon completion, we deploy your Shopify app, provide
+                  comprehensive documentation, training, and ongoing support to
+                  ensure its success and longevity.
+                </p>
+              </div>
+              <button className="gk-button ">
+                {" "}
+                Book Your Meeting Today
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ShopifyApp;

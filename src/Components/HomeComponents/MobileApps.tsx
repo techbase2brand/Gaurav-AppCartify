@@ -1,37 +1,63 @@
-import React from 'react'
-import Image from 'next/image'
-import MobileApp from "../../../public/Images/Mobile Apps.png"
+import React from "react";
+import Image from "next/image";
+import MobileApp from "../../../public/Images/Mobile Apps.png";
+import pointer from "../../../public/Images/point.svg";
+import "./MobileApp.css"
 
 const MobileApps = () => {
   return (
-  <>
-  
-<section>
+    <>
+      <section className=" Mobile-bann-set lg:pt-20 lg:pb-20 pt-5 pb-5">
+        <div className="container">
+          <h2 className="gk-h2  text-center  lg:hidden block pt-6">
+            Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span>  Enhances Sales Potential
+          </h2>
 
-<div className="container">
+          <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4  items-center">
+            <div>
+              <div className="image-bar">
+                <Image className="" src={MobileApp} alt="" />
+              </div>
+            </div>
+            <div>
+              <div className="mobile-app-txt-gk">
+                <h2 className="gk-h2   lg:block hidden  pb-5">
+                  Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span> Enhances Sales Potential
+                </h2>
+                <div className="pointer-main flex flex-col xl:gap-7 lg:gap-[0.75rem] gap-[10px]">
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem] gap-[10px] ">
+                    <Image className="relative  top-3" src={pointer} alt="" />
 
-<div className="grid lg:grid-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4 ">
+                    <p className="manrope-gk-p-list">
+                      Shopify mobile app users experience up to 30% higher
+                      conversion rates compared to desktop users.
+                    </p>
+                  </div>
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
+                    <Image className="relative  top-3" src={pointer} alt="" />
 
+                    <p className="manrope-gk-p-list">
+                      Shopify mobile app users experience up to 30% higher
+                      conversion rates compared to desktop users.
+                    </p>
+                  </div>
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
+                    <Image className="relative  top-3" src={pointer} alt="" />
 
-    <div>
-       <div className="image-bar">
-     <Image className='' src={MobileApp} alt=''/>
+                    <p className="manrope-gk-p-list">
+                      Shopify mobile app users experience up to 30% higher
+                      conversion rates compared to desktop users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button className="gk-button lg:block hidden mt-9"> Book Your Meeting Today</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-       </div>
-    </div>
-    <div>
-        safdsdf
-    </div>
-</div>
-
-</div>
-
-
-</section>
-  
-  
-  </>
-  )
-}
-
-export default MobileApps
+export default MobileApps;

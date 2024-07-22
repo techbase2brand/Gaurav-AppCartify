@@ -7,6 +7,11 @@ import Footer from "../Components/Footer/Footer";
 import { FormModal } from "@/Components/HomeComponents/FormModal";
 import Developer from "@/Components/HomeComponents/ShopifyDevSection";
 import MobileApps from "@/Components/HomeComponents/MobileApps";
+import ShopifyApp from "@/Components/HomeComponents/ShopifyApp";
+import WhyChousus from "@/Components/HomeComponents/WhyChousus";
+import ShopifyStore from "@/Components/HomeComponents/ShopifyStore";
+import ScanandExperienc from "@/Components/HomeComponents/ScanandExperienc";
+
 function Page() {
   const [open, setOpen] = React.useState(false);
   console.log("open", open);
@@ -19,6 +24,10 @@ function Page() {
       <TabComponentUi />
       <Developer/>
       <MobileApps/>
+      <ShopifyApp/>
+      <WhyChousus/>
+      <ShopifyStore/>
+      {/* <ScanandExperienc/> */}
       <Footer />
     </>
   );
