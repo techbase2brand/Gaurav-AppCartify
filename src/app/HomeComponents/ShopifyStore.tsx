@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import store from "../../../public/Images/Shopify store.png";
 import "./shopifyStore.css";
 import laptop from "../../../public/Images/laptopimage.png";
+import { AppStateContext } from "../Context/AppStateContext";
 
 const ShopifyStore = () => {
+  const { setState } = useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  };
+
   return (
     <>
       <section className="Mobile-bann-set ">
         <div className="container">
-        <h2 className="gk-h2  text-center  lg:hidden block pt-6 pb-12">
-          Turn Your <span style={{ color: "#96BF48" }}>Shopify store</span> into
-          a Sales Friendly App
-        </h2>
+          <h2 className="gk-h2  text-center  lg:hidden block pt-6 pb-12">
+            Turn Your <span style={{ color: "#96BF48" }}>Shopify store</span> into
+            a Sales Friendly App
+          </h2>
         </div>
         <div className="row lg:flex  lg:flex-row xl:gap-16 gap-[1rem] lg:pt-20 lg:pb-20  items-center md:flex md:flex-col lg:gap-1">
           <div className=" ">
@@ -31,12 +38,12 @@ const ShopifyStore = () => {
               seamlessly across all platforms.
             </p>
             <div className="widd md:flex md:justify-center lg:justify-start flex justify-center">
-            <button className="gk-button ">Book Your Meeting Today</button>
+              <button className="gk-button " onClick={() => handleClick()}>Book Your Meeting Today</button>
             </div>
           </div>
-         
+
         </div>
-       
+
       </section>
     </>
   );

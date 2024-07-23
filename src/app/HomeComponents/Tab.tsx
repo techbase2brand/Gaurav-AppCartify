@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import "./TabComponentsUi.css";
 import Image from "next/image";
 import AllprodectImage from "../../../public/Images/allproduct.jpg";
+import { AppStateContext } from "../Context/AppStateContext";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -38,6 +39,12 @@ function a11yProps(index: number) {
 
 export default function TabComponentUi() {
   const [value, setValue] = React.useState<number>(0);
+  const { setState } = React.useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  };
+
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -150,7 +157,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -174,7 +181,7 @@ export default function TabComponentUi() {
                         Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -201,7 +208,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -225,7 +232,7 @@ export default function TabComponentUi() {
                         Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -252,7 +259,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -276,7 +283,7 @@ export default function TabComponentUi() {
                         Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -303,7 +310,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -327,7 +334,7 @@ export default function TabComponentUi() {
                         Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -354,7 +361,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
@@ -378,7 +385,7 @@ export default function TabComponentUi() {
                         Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
