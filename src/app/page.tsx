@@ -11,6 +11,10 @@ import ShopifyApp from "@/Components/HomeComponents/ShopifyApp";
 import WhyChousus from "@/Components/HomeComponents/WhyChousus";
 import ShopifyStore from "@/Components/HomeComponents/ShopifyStore";
 import ScanandExperienc from "@/Components/HomeComponents/ScanandExperienc";
+import Accordian from "@/Components/HomeComponents/Accordian";
+import QuestionForm from "@/Components/HomeComponents/QuestionForm";
+import Testmonial from "@/Components/HomeComponents/Testmonial";
+
 
 function Page() {
   const [open, setOpen] = React.useState(false);
@@ -27,8 +31,12 @@ function Page() {
       <ShopifyApp/>
       <WhyChousus/>
       <ShopifyStore/>
-      {/* <ScanandExperienc/> */}
+      <ScanandExperienc/>
+      <Accordian/>
+      <QuestionForm/>
+      <Testmonial/>
       <Footer />
+
     </>
   );
 }

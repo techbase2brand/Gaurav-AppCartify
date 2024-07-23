@@ -36,7 +36,14 @@ h3.gk-h3{
 h4.gk-h4 {
   font-size: 25px;
   font-weight: 600;
-  /* color: white; */
+ 
+}
+
+label{
+  font-size: 18px;
+}
+select{
+  font-size: 18px;
 }
 button.gk-button {
   font-size: 22px;
@@ -69,6 +76,12 @@ button.gk-button {
   color: white;
 }
 @media only screen and (max-width: 1024px) {
+  label{
+    font-size: 16px;
+  }
+  select{
+    font-size: 16px;
+  }
   .manrope-gk-p {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -97,6 +110,11 @@ button.gk-button {
   background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
   box-shadow: 11px 12px 3px #161616;
   margin-top: 20px;
+}
+h4.gk-h4 {
+  font-size: 21px;
+  font-weight: 400;
+ 
 }
 
 
