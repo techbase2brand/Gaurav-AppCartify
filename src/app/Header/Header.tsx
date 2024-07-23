@@ -1,12 +1,14 @@
-import React from "react";
-export interface Props {
-  setOpen:any
-}
-const Header: React.FC<Props> = ({setOpen}) => {
+"use client"
+import React, { useContext } from "react";
+import { AppStateContext } from "../Context/AppStateContext";
+
+const Header = () => {
+  const { setState } = useContext(AppStateContext);
   const handleClick = () => {
-    // Functional update to ensure setOpen is only called once
-    setOpen((prevOpen:any) => !prevOpen); // Toggle the previous state
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
   };
+
   return (
     <>
       <header className=" relative z-10">
@@ -19,7 +21,7 @@ const Header: React.FC<Props> = ({setOpen}) => {
             </div>
 
             <div>
-              <button 
+              <button
                 className="Contact_btn md:p-[10px_25px] p-[9px_10px] font-medium md:font-semibold rounded-[10px] relative  bg-transparent cursor-pointer md:text-[22px]  text-[20px] "
                 style={{
                   position: "relative",
@@ -28,7 +30,7 @@ const Header: React.FC<Props> = ({setOpen}) => {
                   // zIndex: 1,
                   // border: 'none',
                 }}
-                onClick={()=>handleClick()}
+                onClick={() => handleClick()}
               >
                 Contact Us
                 <span

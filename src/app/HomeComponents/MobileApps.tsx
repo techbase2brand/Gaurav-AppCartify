@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import MobileApp from "../../../public/Images/Mobile Apps.png";
 import pointer from "../../../public/Images/point.svg";
 import "./MobileApp.css"
+import { AppStateContext } from "../Context/AppStateContext";
 
 const MobileApps = () => {
+  const { setState } = useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  };
+
   return (
     <>
       <section className=" Mobile-bann-set lg:pt-20 lg:pb-20 pt-5 pb-5">
@@ -51,7 +58,7 @@ const MobileApps = () => {
                   </div>
                 </div>
               </div>
-              <button className="gk-button lg:block hidden mt-9"> Book Your Meeting Today</button>
+              <button className="gk-button lg:block hidden mt-9" onClick={() => handleClick()}> Book Your Meeting Today</button>
             </div>
           </div>
         </div>

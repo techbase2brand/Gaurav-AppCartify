@@ -1,26 +1,21 @@
 "use client";
-import Banner from "@/Components/HomeComponents/Banner";
-import TabComponentUi from "@/Components/HomeComponents/TabComponentUi";
+import Banner from "@/app/HomeComponents/Banner";
+import TabComponentUi from "@/app/HomeComponents/TabComponentUi";
 import React from "react";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import { FormModal } from "@/Components/HomeComponents/FormModal";
-import Developer from "@/Components/HomeComponents/ShopifyDevSection";
-import MobileApps from "@/Components/HomeComponents/MobileApps";
-import ShopifyApp from "@/Components/HomeComponents/ShopifyApp";
-import WhyChousus from "@/Components/HomeComponents/WhyChousus";
-import ShopifyStore from "@/Components/HomeComponents/ShopifyStore";
-import ScanandExperienc from "@/Components/HomeComponents/ScanandExperienc";
+import Footer from "./Footer/Footer";
+import { FormModal } from "@/app/HomeComponents/FormModal";
+import Developer from "@/app/HomeComponents/ShopifyDevSection";
+import MobileApps from "@/app/HomeComponents/MobileApps";
+import ShopifyApp from "@/app/HomeComponents/ShopifyApp";
+import WhyChousus from "@/app/HomeComponents/WhyChousus";
+import ShopifyStore from "@/app/HomeComponents/ShopifyStore";
 
 function Page() {
-  const [open, setOpen] = React.useState(false);
-  console.log("open", open);
 
   return (
     <>
-      <Header setOpen={setOpen} />
       <Banner />
-      <FormModal open={open} setOpen={setOpen} />
+      <FormModal/>
       <TabComponentUi />
       <Developer/>
       <MobileApps/>
