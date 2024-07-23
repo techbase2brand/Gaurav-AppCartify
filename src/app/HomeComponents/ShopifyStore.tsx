@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import store from "../../../public/Images/Shopify store.png";
-import "./shopifyStore.css";
+import "./ShopifyStore.css";
 import laptop from "../../../public/Images/laptopimage.png";
 import { AppStateContext } from "../Context/AppStateContext";
 
