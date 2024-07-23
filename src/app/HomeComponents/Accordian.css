@@ -7,7 +7,7 @@
     box-shadow: inherit;
 } */
 
-
+/* 
 .css-eqpfi5-MuiAccordionSummary-content {
  
     margin: 30px 0 20px !important;
@@ -23,14 +23,35 @@ div#panel1-header {
 
 .css-i4bv87-MuiSvgIcon-root{
     color: white;
-}
+} */
 
 
 @media only screen and (max-width: 640px) {
 .css-eqpfi5-MuiAccordionSummary-content {
     margin: 15px 0 20px !important;
+    
 }
-.css-15v22id-MuiAccordionDetails-root {
-    padding: 0px 0px 20px 0 !important;
+.Accoinian .css-l0jafl {
+
+    margin: 15px 0 !important;
+  
 }
+
+}
+.Accoinian .css-1aj41gs {
+    background-color: #fff0;
+}
+
+
+
+.Accoinian .css-l0jafl {
+
+    margin: 21px 0 !important;
+  
+}
+.Accoinian .css-vubbuv{
+    color: white;
+}
+.Accoinian .css-1aj41gs::before{
+    background-color: rgb(80 80 80) !important;
 }
