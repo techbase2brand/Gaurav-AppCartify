@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppStateContext } from "../Context/AppStateContext";
 
 const ShopifyApp = () => {
+  const { setState } = useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  };
+
   return (
     <>
       <section className="bg-[#0E1014] lg:pt-6 lg:pb-10 pb-8  pt-8">
@@ -45,7 +52,7 @@ const ShopifyApp = () => {
                   ensure its success and longevity.
                 </p>
               </div>
-              <button className="gk-button ">
+              <button className="gk-button " onClick={() => handleClick()}>
                 {" "}
                 Book Your Meeting Today
               </button>

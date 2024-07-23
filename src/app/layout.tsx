@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "./globals.css";
 // import Header from "@/Components/Header/Header";
-import Footer from "@/Components/Footer/Footer";
-
+import Footer from "@/app/Footer/Footer";
+import Index from "./index";
+import { AppStateProvider } from "./Context/AppStateContext";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-          <head>
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -28,10 +29,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* <Header/> */}
-        {children}
-        {/* <Footer/> */}
-        </body>
+        <AppStateProvider>
+          <Index>{children}</Index>
+        </AppStateProvider>
+      </body>
     </html>
   );
 }

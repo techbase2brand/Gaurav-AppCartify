@@ -8,7 +8,9 @@ import TextField from "@mui/material/TextField";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import "./FormModal.css";
-
+import { AppStateContext } from "../Context/AppStateContext";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
@@ -23,20 +25,20 @@ const style = {
 
 export interface Props {
   open: any;
-  setOpen: any;
+  setState: any;
 }
-export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
-  // const [open, setOpen] = React.useState(false);
-  // const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
 
-  const [formData, setFormData] = React.useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    website: "",
-    industry: "",
-  });
+const initialFormData = {
+  name: "",
+  email: "",
+  phoneNo: "",
+  website: "",
+  sector: "",
+};
+
+export const FormModal = () => {
+  const { state, setState } = React.useContext(AppStateContext);
+  const [formData, setFormData] = React.useState(initialFormData);
 
   const handleChange = (e: any) => {
     setFormData({
@@ -45,68 +47,90 @@ export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // Submit the form data to your server
-    console.log(formData);
+    if (!formData.name || !formData.email || !formData.phoneNo || !formData.website || !formData.sector) {
+      toast.error("Please fill all fields before submitting", {
+        position: "top-center",
+      });
+      return;
+    }
+    try {
+      const response = await fetch("https://invoice-backend.base2brand.com/api/add-appcartify", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      if (response.ok) {
+        setState(false);
+        setFormData(initialFormData);
+        toast.success("Booking Confirm", {
+          position: "top-center",
+        });
+      } else {
+        console.error("Form submission failed:", result);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
     <div className="over">
-      {/* <Button onClick={handleOpen}>Open modal</Button> */}
       <Modal
-        open={open}
-        onClose={() => setOpen(false)}
+        open={state}
+        onClose={() => setState(false)}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-        <div className="btn-cross flex justify-end relative pt-4">
-          <Button onClick={() => setOpen(false)} 
-            style={{color:'red', position:'absolute' ,
-              top: '-29px',
-              fontSize: '24px',
-              right: '-22px',
-              padding: '10px' }}
+          <div className="btn-cross flex justify-end relative pt-4">
+            <Button onClick={() => setState(false)}
+              style={{
+                color: 'red', position: 'absolute',
+                top: '-29px',
+                fontSize: '24px',
+                right: '-22px',
+                padding: '10px'
+              }}
             >x</Button>
           </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
-              <h3 className="gk-h3 text-center  ">
+              <h3 className="gk-h3 text-center">
                 Got a <span style={{ color: "#96BF48" }}>question?</span> Ask
                 our expert
               </h3>
             </div>
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            {/* Duooiiiis mollis, est non commodo luctus, nisi erat porttitor
-            ligula. */}
-          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}></Typography>
           <form onSubmit={handleSubmit}>
             <div className="form-div flex flex-col gap-4">
               <div>
                 <TextField
-                  label="Your Name*"
+                  label="Your Name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  required
                 />
               </div>
               <div>
                 <TextField
-                  label="Email ID*"
+                  label="Email ID"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  required
                 />
               </div>
               <div>
                 <TextField
                   label="Phone Number"
-                  name="phoneNumber"
-                  value={formData.phoneNumber}
+                  name="phoneNo"
+                  value={formData.phoneNo}
                   onChange={handleChange}
                 />
               </div>
@@ -118,22 +142,18 @@ export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
                   onChange={handleChange}
                 />
               </div>
-
               <Select
-                label="Select Your Industry"
-                name="industry"
-                defaultValue="technology" // Set the default value to "technology"
+                label="Select"
+                name="sector"
+                value={formData.sector}
                 onChange={handleChange}
               >
-                {/* <MenuItem value="">Select an Industry</MenuItem> */}
                 <MenuItem value="technology">Technology</MenuItem>
                 <MenuItem value="finance">Finance</MenuItem>
                 <MenuItem value="healthcare">Healthcare</MenuItem>
-                {/* Add more industry options here */}
+                {/* Add more sector options here */}
               </Select>
-
               <Button
-                onClick={() => setOpen(false)}
                 type="submit"
                 className="submit-button p-[15px] w-[35%] text-white"
                 style={{
@@ -142,7 +162,6 @@ export const FormModal: React.FC<Props> = ({ open, setOpen }) => {
               >
                 Submit
               </Button>
-          
             </div>
           </form>
         </Box>

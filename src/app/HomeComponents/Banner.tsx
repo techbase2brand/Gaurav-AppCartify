@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 // import bannerImage from "../../../public/Images/banner.svg"
 import "./Banner.css";
 import frame from "../../../public/Images/frame.svg";
 import gifvideo from "../../../public/Images/ggivvideo.gif";
+import { AppStateContext } from "../Context/AppStateContext";
 
 const Banner = () => {
+  const { setState } = useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  };
+
   return (
     <>
       <section className="hhh flex items-center xl:h-[900px]  md:pt-[90px] md:pb-[50px] pt-[9.5rem] pb-14  mt-[-93px]   ">
@@ -21,7 +28,7 @@ const Banner = () => {
                 boost your sales
               </p>
               <div className="btn ">
-              <button className="gk-button lg:block hidden"> Book Your Meeting Today</button>
+                <button className="gk-button lg:block hidden" onClick={() => handleClick()}> Book Your Meeting Today</button>
               </div>
             </div>
             <div className="frame-class xl:w-[40%] lg:w-[40%] w-[100%] pt-[2.5rem]">

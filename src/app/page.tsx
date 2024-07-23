@@ -1,30 +1,26 @@
 "use client";
-import Banner from "@/Components/HomeComponents/Banner";
-import TabComponentUi from "@/Components/HomeComponents/TabComponentUi";
+import Banner from "@/app/HomeComponents/Banner";
+import TabComponentUi from "@/app/HomeComponents/TabComponentUi";
 import React from "react";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import { FormModal } from "@/Components/HomeComponents/FormModal";
-import Developer from "@/Components/HomeComponents/ShopifyDevSection";
-import MobileApps from "@/Components/HomeComponents/MobileApps";
-import ShopifyApp from "@/Components/HomeComponents/ShopifyApp";
-import WhyChousus from "@/Components/HomeComponents/WhyChousus";
-import ShopifyStore from "@/Components/HomeComponents/ShopifyStore";
-import ScanandExperienc from "@/Components/HomeComponents/ScanandExperienc";
-import Accordian from "@/Components/HomeComponents/Accordian";
-import QuestionForm from "@/Components/HomeComponents/QuestionForm";
-import Testmonial from "@/Components/HomeComponents/Testmonial";
+import { FormModal } from "./HomeComponents/FormModal";
+import Developer from "./HomeComponents/ShopifyDevSection";
+import MobileApps from "./HomeComponents/MobileApps";
+import ShopifyApp from "./HomeComponents/ShopifyApp";
+import WhyChousus from "./HomeComponents/WhyChousus";
+import ShopifyStore from "./HomeComponents/ShopifyStore";
+import ScanandExperienc from "./HomeComponents/ScanandExperienc";
+import Accordian from "./HomeComponents/Accordian";
+import QuestionForm from "./HomeComponents/QuestionForm";
+import CustomSlider from "./HomeComponents/Testmonial";
+
 
 
 function Page() {
-  const [open, setOpen] = React.useState(false);
-  console.log("open", open);
 
   return (
     <>
-      <Header setOpen={setOpen} />
       <Banner />
-      <FormModal open={open} setOpen={setOpen} />
+      <FormModal/>
       <TabComponentUi />
       <Developer/>
       <MobileApps/>
@@ -34,8 +30,7 @@ function Page() {
       <ScanandExperienc/>
       <Accordian/>
       <QuestionForm/>
-      <Testmonial/>
-      <Footer />
+      <CustomSlider/>
 
     </>
   );
