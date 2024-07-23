@@ -20,7 +20,7 @@ function Developer() {
       <section className="Deceloper-section lg:pt-10 lg:pb-10  pt-10 pb-10">
         <div className="gk-section-context">
           <div className="container">
-            <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center ">
+            <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center  uppercase">
               Our Proven Excellence in
               <span style={{ color: "#96BF48" }}> Shopify App Development</span>
             </h2>

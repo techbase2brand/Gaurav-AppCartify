@@ -14,8 +14,8 @@ const ShopifyApp = () => {
         <div className="Shopifyapp">
           <div className="container">
             <div className="manue-app">
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center ">
-                How Does Shopify App Development Work?
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase ">
+                How Does <span style={{color:"#96BF48"}}>Shopify App</span>  Development Work?
               </h2>
 
               <div className="text-itom">

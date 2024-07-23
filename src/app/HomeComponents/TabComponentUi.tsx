@@ -6,6 +6,15 @@ import Box from "@mui/material/Box";
 import "./TabComponentsUi.css";
 import Image from "next/image";
 import AllprodectImage from "../../../public/Images/allproduct.jpg";
+import Ecommerce from "../../../public/Images/Ecommerce.png"
+import EcommerceSec from "../../../public/Images/Ecommerce2.png"
+import Restaurant from "../../../public/Images/Restaurant.png"
+import RestaurantSec from "../../../public/Images/Restaurant2.png"
+import Beauty from "../../../public/Images/Beauty.png"
+import BeautySec from "../../../public/Images/Beauty2.png"
+import Spots from "../../../public/Images/Spots.png"
+import SpotsSec from "../../../public/Images/Spots2.png"
+
 import { AppStateContext } from "../Context/AppStateContext";
 
 interface TabPanelProps {
@@ -56,7 +65,7 @@ export default function TabComponentUi() {
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center ">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center  uppercase">
                 {" "}
                 Our <span style={{ color: "#96BF48" }}>
                   Shopify Mobile App
@@ -74,16 +83,28 @@ export default function TabComponentUi() {
                     variant="scrollable"
                     scrollButtons="auto"
                   >
+                    {/* <Tab
+                      style={{
+                        color: "white",
+                        fontSize: "16px",
+                        position: "relative",
+                        zIndex: "33",
+                        border: "1px solid",
+                        borderRadius: "6px",
+                      }}
+                      label="All"
+                      {...a11yProps(0)}
+                    /> */}
                     <Tab
                       style={{
                         color: "white",
                         fontSize: "16px",
                         position: "relative",
                         zIndex: "33",
-                        border: "2px solid",
+                        border: "1px solid",
                         borderRadius: "6px",
                       }}
-                      label="All"
+                      label="Ecommerce"
                       {...a11yProps(0)}
                     />
                     <Tab
@@ -92,24 +113,12 @@ export default function TabComponentUi() {
                         fontSize: "16px",
                         position: "relative",
                         zIndex: "33",
-                        border: "2px solid",
+                        border: "1px solid",
                         borderRadius: "6px",
                       }}
                       label="Restaurant"
                       {...a11yProps(1)}
                     />
-                    <Tab
-                      style={{
-                        color: "white",
-                        fontSize: "16px",
-                        position: "relative",
-                        zIndex: "33",
-                        border: "2px solid",
-                        borderRadius: "6px",
-                      }}
-                      label="eCommerce"
-                      {...a11yProps(2)}
-                    />
 
                     <Tab
                       style={{
@@ -117,11 +126,11 @@ export default function TabComponentUi() {
                         fontSize: "16px",
                         position: "relative",
                         zIndex: "33",
-                        border: "2px solid",
+                        border: "1px solid",
                         borderRadius: "6px",
                       }}
                       label="Beauty"
-                      {...a11yProps(3)}
+                      {...a11yProps(2)}
                     />
                     <Tab
                       style={{
@@ -129,16 +138,16 @@ export default function TabComponentUi() {
                         fontSize: "16px",
                         position: "relative",
                         zIndex: "33",
-                        border: "2px solid",
+                        border: "1px solid",
                         borderRadius: "6px",
                       }}
-                      label="Electronics"
-                      {...a11yProps(4)}
+                      label="Spots"
+                      {...a11yProps(3)}
                     />
                   </Tabs>
                 </Box>
 
-                <CustomTabPanel value={value} index={0}>
+                {/* <CustomTabPanel value={value} index={0}>
                   <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  lg:pt-9 ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
@@ -164,7 +173,7 @@ export default function TabComponentUi() {
                       </div>
                     </div>
                   </div>
-                  {/*  */}
+            
                   <div className="allproduct lg:flex lg:flex-row-reverse lg:gap-9 lg:items-center md:pt-9 md:pb-9 ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
@@ -178,7 +187,58 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                          Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                        sssManage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                        </p>
+                        <div className="btn ">
+                          <button className="gk-button lg:block hidden">
+                            Book Your Meeting Today
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CustomTabPanel> */}
+                <CustomTabPanel value={value} index={0}>
+                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
+                    <div className="all-list lg:w-[60%] ">
+                      <div className="image_product">
+                        <Image
+                          src={Ecommerce}
+                          alt=""
+                          className="rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                    <div className="allproduct lg:w-[40%]">
+                      <div className="appproductpara">
+                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
+                          Streamline orders, reservations, and menu updates for
+                          a seamless dining experience and efficient kitchen
+                          management.
+                        </p>
+                        <div className="btn ">
+                          <button className="gk-button lg:block hidden">
+                            Book Your Meeting Today
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*  */}
+                  <div className="allproduct lg:flex lg:flex-row-reverse lg:gap-9 lg:items-center md:pt-9 md:pb-9 ">
+                    <div className="all-list lg:w-[60%] ">
+                      <div className="image_product">
+                        <Image
+                          src={EcommerceSec}
+                          alt=""
+                          className="rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                    <div className="allproduct lg:w-[40%]">
+                      <div className="appproductpara">
+                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
+                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
                         </p>
                         <div className="btn ">
                           <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
@@ -194,7 +254,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
+                          src={Restaurant}
                           alt=""
                           className="rounded-[20px]"
                         />
@@ -220,7 +280,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
+                          src={RestaurantSec}
                           alt=""
                           className="rounded-[20px]"
                         />
@@ -245,7 +305,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
+                          src={Beauty}
                           alt=""
                           className="rounded-[20px]"
                         />
@@ -271,7 +331,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
+                          src={BeautySec}
                           alt=""
                           className="rounded-[20px]"
                         />
@@ -296,7 +356,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
+                          src={Spots}
                           alt=""
                           className="rounded-[20px]"
                         />
@@ -322,58 +382,7 @@ export default function TabComponentUi() {
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
-                          src={AllprodectImage}
-                          alt=""
-                          className="rounded-[20px]"
-                        />
-                      </div>
-                    </div>
-                    <div className="allproduct lg:w-[40%]">
-                      <div className="appproductpara">
-                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                          Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
-                        </p>
-                        <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={4}>
-                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
-                    <div className="all-list lg:w-[60%] ">
-                      <div className="image_product">
-                        <Image
-                          src={AllprodectImage}
-                          alt=""
-                          className="rounded-[20px]"
-                        />
-                      </div>
-                    </div>
-                    <div className="allproduct lg:w-[40%]">
-                      <div className="appproductpara">
-                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
-                          Streamline orders, reservations, and menu updates for
-                          a seamless dining experience and efficient kitchen
-                          management.
-                        </p>
-                        <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*  */}
-                  <div className="allproduct lg:flex lg:flex-row-reverse lg:gap-9 lg:items-center md:pt-9 md:pb-9 ">
-                    <div className="all-list lg:w-[60%] ">
-                      <div className="image_product">
-                        <Image
-                          src={AllprodectImage}
+                          src={SpotsSec}
                           alt=""
                           className="rounded-[20px]"
                         />

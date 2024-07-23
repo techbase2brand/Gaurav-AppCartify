@@ -2,13 +2,18 @@
 import Banner from "@/app/HomeComponents/Banner";
 import TabComponentUi from "@/app/HomeComponents/TabComponentUi";
 import React from "react";
-import Footer from "./Footer/Footer";
-import { FormModal } from "@/app/HomeComponents/FormModal";
-import Developer from "@/app/HomeComponents/ShopifyDevSection";
-import MobileApps from "@/app/HomeComponents/MobileApps";
-import ShopifyApp from "@/app/HomeComponents/ShopifyApp";
-import WhyChousus from "@/app/HomeComponents/WhyChousus";
-import ShopifyStore from "@/app/HomeComponents/ShopifyStore";
+import { FormModal } from "./HomeComponents/FormModal";
+import Developer from "./HomeComponents/ShopifyDevSection";
+import MobileApps from "./HomeComponents/MobileApps";
+import ShopifyApp from "./HomeComponents/ShopifyApp";
+import WhyChousus from "./HomeComponents/WhyChousus";
+import ShopifyStore from "./HomeComponents/ShopifyStore";
+import ScanandExperienc from "./HomeComponents/ScanandExperienc";
+import Accordian from "./HomeComponents/Accordian";
+import QuestionForm from "./HomeComponents/QuestionForm";
+import CustomSlider from "./HomeComponents/Testmonial";
+
+
 
 function Page() {
 
@@ -22,8 +27,11 @@ function Page() {
       <ShopifyApp/>
       <WhyChousus/>
       <ShopifyStore/>
-      {/* <ScanandExperienc/> */}
-      <Footer />
+      <ScanandExperienc/>
+      <Accordian/>
+      <QuestionForm/>
+      <CustomSlider/>
+
     </>
   );
 }
