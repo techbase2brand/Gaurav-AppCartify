@@ -52,8 +52,8 @@
 }
 @media only screen and (max-width: 640px) {
     .css-k008qs {
-        display: inherit;
+        display: flex !important;
         justify-content: inherit !important;
-        gap: inherit !important;
+        gap: 10px !important;
     }
 }
