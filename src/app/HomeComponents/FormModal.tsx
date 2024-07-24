@@ -101,7 +101,7 @@ export const FormModal = () => {
           </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
-              <h3 className="gk-h3 text-center">
+              <h3 className="gk-h3 text-center capitalize">
                 Got a <span style={{ color: "#96BF48" }}>question?</span> Ask
                 our expert
               </h3>
@@ -143,15 +143,17 @@ export const FormModal = () => {
                 />
               </div>
               <Select
+              
                 label="Select"
                 name="sector"
                 value={formData.sector}
                 onChange={handleChange}
               >
+                
                 <MenuItem value="technology">Technology</MenuItem>
                 <MenuItem value="finance">Finance</MenuItem>
                 <MenuItem value="healthcare">Healthcare</MenuItem>
-                {/* Add more sector options here */}
+              
               </Select>
               <Button
                 type="submit"

@@ -217,7 +217,7 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden">
+                          <button className="gk-button lg:block hidden"  onClick={() => handleClick()}>
                             Book Your Meeting Today
                           </button>
                         </div>
