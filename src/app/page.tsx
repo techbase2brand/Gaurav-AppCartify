@@ -12,6 +12,7 @@ import ScanandExperienc from "./HomeComponents/ScanandExperienc";
 import Accordian from "./HomeComponents/Accordian";
 import QuestionForm from "./HomeComponents/QuestionForm";
 import CustomSlider from "./HomeComponents/Testmonial";
+import Testing from "./HomeComponents/Testing";
 
 
 
@@ -31,6 +32,7 @@ function Page() {
       <Accordian/>
       <QuestionForm/>
       <CustomSlider/>
+      {/* <Testing/> */}
 
     </>
   );

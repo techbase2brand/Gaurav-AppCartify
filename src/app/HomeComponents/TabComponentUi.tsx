@@ -14,6 +14,8 @@ import Beauty from "../../../public/Images/Beauty.png"
 import BeautySec from "../../../public/Images/Beauty2.png"
 import Spots from "../../../public/Images/Spots.png"
 import SpotsSec from "../../../public/Images/Spots2.png"
+import Automotives from "../../../public/Images/Automotives.png"
+import Automotives221 from "../../../public/Images/Automotives 221.png"
 
 import { AppStateContext } from "../Context/AppStateContext";
 
@@ -144,6 +146,18 @@ export default function TabComponentUi() {
                       label="Spots"
                       {...a11yProps(3)}
                     />
+                     <Tab
+                      style={{
+                        color: "white",
+                        fontSize: "16px",
+                        position: "relative",
+                        zIndex: "33",
+                        border: "1px solid",
+                        borderRadius: "6px",
+                      }}
+                      label="Automotives"
+                      {...a11yProps(4)}
+                    />
                   </Tabs>
                 </Box>
 
@@ -212,9 +226,8 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
-                          Streamline orders, reservations, and menu updates for
-                          a seamless dining experience and efficient kitchen
-                          management.
+                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+
                         </p>
                         <div className="btn ">
                           <button className="gk-button lg:block hidden"  onClick={() => handleClick()}>
@@ -383,6 +396,57 @@ export default function TabComponentUi() {
                       <div className="image_product">
                         <Image
                           src={SpotsSec}
+                          alt=""
+                          className="rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                    <div className="allproduct lg:w-[40%]">
+                      <div className="appproductpara">
+                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
+                          Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                        </p>
+                        <div className="btn ">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
+                            Book Your Meeting Today
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={4}>
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center lg:pt-9  ">
+                    <div className="all-list lg:w-[60%] ">
+                      <div className="image_product">
+                        <Image
+                          src={Automotives221}
+                          alt=""
+                          className="rounded-[20px]"
+                        />
+                      </div>
+                    </div>
+                    <div className="allproduct lg:w-[40%]">
+                      <div className="appproductpara">
+                        <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
+                          Streamline orders, reservations, and menu updates for
+                          a seamless dining experience and efficient kitchen
+                          management.
+                        </p>
+                        <div className="btn ">
+                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
+                            Book Your Meeting Today
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*  */}
+                  <div className="allproduct lg:flex lg:flex-row-reverse lg:gap-9 lg:items-center md:pt-9 md:pb-9 ">
+                    <div className="all-list lg:w-[60%] ">
+                      <div className="image_product">
+                        <Image
+                          src={Automotives}
                           alt=""
                           className="rounded-[20px]"
                         />
