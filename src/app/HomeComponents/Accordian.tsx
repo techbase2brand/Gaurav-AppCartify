@@ -31,6 +31,7 @@ export default function Accordian() {
                 key={index}
                 expanded={expanded === `panel${index}`}
                 onChange={handleChange(`panel${index}`)}
+                className="bg-transparent"
               >
                 <AccordionSummary
                   expandIcon={

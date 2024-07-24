@@ -1,29 +1,4 @@
-.css-1086bdv-MuiPaper-root-MuiAccordion-root{
-    background-color: transparent !important;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.337);
-}
 
-/* .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiAccordion-root.MuiAccordion-rounded {
-    box-shadow: inherit;
-} */
-
-/* 
-.css-eqpfi5-MuiAccordionSummary-content {
- 
-    margin: 30px 0 20px !important;
-   
-}
-div#panel1-header {
-    padding: inherit;
-}
-.css-15v22id-MuiAccordionDetails-root {
-    padding: 20px 0px 20px 0 !important;
-}
-
-
-.css-i4bv87-MuiSvgIcon-root{
-    color: white;
-} */
 
 
 @media only screen and (max-width: 640px) {
@@ -38,17 +13,7 @@ div#panel1-header {
 }
 
 }
-/* .Accoinian .css-1aj41gs {
-    background-color: #fff0;
-} */
 
-
-
-/* .Accoinian .css-l0jafl {
-
-    margin: 21px 0 !important;
-  
-} */
 .Accoinian svg {
     color: white;
 }

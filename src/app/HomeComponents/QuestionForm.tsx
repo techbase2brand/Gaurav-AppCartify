@@ -72,7 +72,7 @@ const QuestionForm = () => {
 
   return (
     <>
-      <section className="bg-[#151820] lg:pt-[60px] lg:pb-[60px] pt-14 pb-14 border-[#8d8d8d7a] border-b-2">
+      <section className="bg-[#151820] lg:pt-[60px] lg:pb-[60px] pt-14 pb-14 border-[#8d8d8d7a] border-b-2 ">
         <div className="container">
           <div className="queastionform border-2 border-white rounded-xl">
             <h2 className="gk-h2  text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6 ">
