@@ -1,6 +1,8 @@
 "use client"
 import React, { useContext } from "react";
 import { AppStateContext } from "../Context/AppStateContext";
+import Image from "next/image";
+import logoAppcartify from "../../../public/Images/logoAppcartify.svg"
 
 const Header = () => {
   const { setState } = useContext(AppStateContext);
@@ -13,10 +15,11 @@ const Header = () => {
     <>
       <header className=" relative z-10">
         <div className="container">
-          <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center md:pt-5  md:pb-5  pt-3  pb-3  ">
+          <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center   pt-3  pb-3  ">
             <div>
               <div className="logo_icon">
-                <h1 className="text-[26px] font-bold text-white">Appcartify</h1>
+                {/* <h1 className="text-[26px] font-bold text-white">Appcartify</h1> */}
+                <Image src={logoAppcartify} alt="" className="lg:w-auto w-[60%]"/>
               </div>
             </div>
 

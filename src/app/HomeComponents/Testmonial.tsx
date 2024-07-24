@@ -88,8 +88,8 @@ const CustomSlider = () => {
                   <div className="slide-back h-[365px]">
                     <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
                       <div className="flex justify-between">
-                        <p className="name">{slide.name}</p>
-                        <p className="date">{slide.date}</p>
+                        <p className="name text-[#82BC29] font-bold">{slide.name}</p>
+                        <p className="date text-[#16161686] font-semibold">{slide.date}</p>
                       </div>
 
                       <p className="rating text-[#FF7F00]">{slide.rating}</p>

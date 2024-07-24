@@ -1,38 +1,16 @@
-/* .mmm .css-heg063-MuiTabs-flexContainer {
-    display: flex;
-    justify-content: center !important;
-    gap: 35px !important;
-}
-@media only screen and (max-width: 640px) {
-    .mmm  .css-heg063-MuiTabs-flexContainer {
-        display: flex;
-        justify-content: inherit !important;
-        gap: inherit !important;
-    }
-}
-@media only screen and (max-width: 768px) {
-   .mmm .css-heg063-MuiTabs-flexContainer {
-        display: flex !important;
-        justify-content:space-around !important;
-        gap: 10px !important;
-    }
-}
-.css-1aquho2-MuiTabs-indicator {
-    position: absolute;
-    height: 48px;
-    bottom: 0;
-    width: 100%;
 
-    border-radius: 9px;
-    background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%) !important;
-} */
+.mmm > div > div > div > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 .css-k008qs {
 
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.css-ttwr4n {
+/* .css-ttwr4n {
     position: absolute;
     bottom: 0;
     -webkit-transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -41,19 +19,27 @@
     height: 100%;
     background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%) !important;
     border-radius: 8px;
+} */
+
+.mmm .MuiTabs-indicator {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background: linear-gradient(4deg, #4d8f2d 46%, #82bc29) !important;
+    border-radius: 8px;
 }
 @media only screen and (max-width: 768px) {
-    .css-k008qs {
-
-        display: flex !important;
-        justify-content:space-around !important;
-        gap: 10px !important;
+    .mmm > div > div > div > div > div {
+        display: flex;
+  justify-content: center !important;
+        gap: 10px;
     }
 }
 @media only screen and (max-width: 640px) {
-    .css-k008qs {
-        display: flex !important;
-        justify-content: inherit !important;
-        gap: 10px !important;
+    .mmm > div > div > div > div > div {
+        display: flex;
+  justify-content: inherit !important;
+        gap: 10px;
     }
 }

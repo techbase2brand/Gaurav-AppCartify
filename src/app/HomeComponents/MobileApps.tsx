@@ -44,16 +44,16 @@ const MobileApps = () => {
                     <Image className="relative  top-3" src={pointer} alt="" />
 
                     <p className="manrope-gk-p-list">
-                      Shopify mobile app users experience up to 30% higher
-                      conversion rates compared to desktop users.
+                    Mobile app users engage with promotions and offers 5 times more frequently than web users.
+
                     </p>
                   </div>
                   <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
                     <Image className="relative  top-3" src={pointer} alt="" />
 
                     <p className="manrope-gk-p-list">
-                      Shopify mobile app users experience up to 30% higher
-                      conversion rates compared to desktop users.
+                    Orders placed through Shopify mobile apps are on average 20% higher in value than web orders.
+
                     </p>
                   </div>
                 </div>
