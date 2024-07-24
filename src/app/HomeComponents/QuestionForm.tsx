@@ -83,7 +83,7 @@ const QuestionForm = () => {
               <div className="display-form flex flex-col gap-5 lg:pb-12 lg:pr-14 lg:pl-14 pl-4 pr-4 pb-[24px]">
                 <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="name" className="text-white ">
-                    Your Name
+                    Your Name *
                   </label>
                   <input
                     type="text"
@@ -94,12 +94,12 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-[#ff2323] lg:text-[22px] text-[16px]">Name is required</span>
+                    <span className="text-[red] lg:text-[22px] text-[16px]">Name is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="email" className="text-white">
-                    Email ID
+                    Email ID *
                   </label>
                   <input
                     type="email"
@@ -115,7 +115,7 @@ const QuestionForm = () => {
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="phoneNo" className="text-white">
-                    Phone Number:
+                    Phone Number *
                   </label>
                   <input
                     type="tel"
@@ -126,12 +126,12 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-[#ff2323]   lg:text-[22px] text-[16px] ">PhoneNo is required</span>
+                    <span className="text-[red]  lg:text-[22px] text-[16px] ">PhoneNo is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col gap-[5px]">
                   <label htmlFor="website" className="text-white">
-                    Enter Your Website:
+                    Enter Your Website *
                   </label>
                   <input
                     type="text"
@@ -142,7 +142,7 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                      {errors.name && (
-                    <span className="text-[#ff2323]  lg:text-[22px] text-[16px]">Website is required</span>
+                    <span className="text-[red]  lg:text-[22px] text-[16px]">Website is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
@@ -173,6 +173,7 @@ const QuestionForm = () => {
                     </option>
                     
                   </select>
+                  {errors.sector && <span className="text-[red] text-[16px]">Industry is required</span>}
                   
                 </div>
                 

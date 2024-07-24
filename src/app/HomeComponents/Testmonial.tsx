@@ -61,7 +61,7 @@ const CustomSlider: React.FC = () => {
   ];
 
   return (
-    <section className=''>
+    <section className=' testmonialbtn'>
       <div className="testimonial-value bg-[#151820] ">
         <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
           WHAT OUR <span style={{ color: '#96BF48' }}>CLIENTS SAY</span>

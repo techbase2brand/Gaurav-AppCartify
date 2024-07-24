@@ -27,6 +27,7 @@ h2.gk-h2{
   font-family: impact;
   font-weight: 400;
   color: white;
+  line-height: 52px;
 
 }
 h3.gk-h3{
@@ -76,6 +77,13 @@ button.gk-button {
   color: white;
 }
 @media only screen and (max-width: 1024px) {
+  h1.gk-h1 {
+    font-size: 42px;
+    font-family: impact;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
   label{
     font-size: 16px;
   }
@@ -121,11 +129,13 @@ h4.gk-h4 {
 }
 @media only screen and (max-width: 640px) {
   h1.gk-h1 {
-    font-size: 32px;
+    font-size: 42px;
     font-family: impact;
     color: white;
     text-align: center;
-  }
+    font-weight: 400;
+    line-height: 52px;
+}
   
   
   .manrope-gk-p {
