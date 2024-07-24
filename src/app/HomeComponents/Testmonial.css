@@ -35,15 +35,15 @@
   cursor: pointer;
 }
 
-.prev {
+/* .prev {
   left: 10px;
 }
 
 .next {
   right: 10px;
-}
+} */
 .slide-back{
-  /* background-image: url("../../../public/Images/Ratingback.svg"); */
+
   background-image: url("../../../public/Images/zick.svg");
 
     background-repeat: no-repeat;

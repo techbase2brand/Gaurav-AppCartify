@@ -12,6 +12,7 @@ import { AppStateContext } from "../Context/AppStateContext";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CloseIcon from '@mui/icons-material/Close';
+import { ClassNames } from "@emotion/react";
 
 <CloseIcon/>
 const style = {

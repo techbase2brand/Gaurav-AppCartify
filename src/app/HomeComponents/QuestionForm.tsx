@@ -81,7 +81,7 @@ const QuestionForm = () => {
             </h2>
             <form onSubmit={handleSubmit}>
               <div className="display-form flex flex-col gap-5 lg:pb-12 lg:pr-14 lg:pl-14 pl-4 pr-4 pb-[24px]">
-                <div className="flex  flex-col lg:gap-4 gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="name" className="text-white ">
                     Your Name
                   </label>
@@ -94,10 +94,10 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-red-500">Name is required</span>
+                    <span className="text-[#ff2323] lg:text-[22px] text-[16px]">Name is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col lg:gap-4 gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="email" className="text-white">
                     Email ID
                   </label>
@@ -110,10 +110,10 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-red-500">Email is required</span>
+                    <span className="text-[#ff2323]  lg:text-[22px] text-[16px]">Email is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col lg:gap-4 gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="phoneNo" className="text-white">
                     Phone Number:
                   </label>
@@ -126,10 +126,10 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-red-500">PhoneNo is required</span>
+                    <span className="text-[#ff2323]   lg:text-[22px] text-[16px] ">PhoneNo is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col lg:gap-4 gap-[5px]">
+                <div className="flex  flex-col gap-[5px]">
                   <label htmlFor="website" className="text-white">
                     Enter Your Website:
                   </label>
@@ -142,10 +142,10 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                      {errors.name && (
-                    <span className="text-red-500">Website is required</span>
+                    <span className="text-[#ff2323]  lg:text-[22px] text-[16px]">Website is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col lg:gap-4 gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]">
                   <label htmlFor="sector" className="text-white"></label>
                   <select
                     id="sector"
