@@ -11,6 +11,9 @@ import "./FormModal.css";
 import { AppStateContext } from "../Context/AppStateContext";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CloseIcon from '@mui/icons-material/Close';
+
+<CloseIcon/>
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
@@ -39,20 +42,36 @@ const initialFormData = {
 export const FormModal = () => {
   const { state, setState } = React.useContext(AppStateContext);
   const [formData, setFormData] = React.useState(initialFormData);
-
+  const [errors, setErrors] = React.useState({
+    name: false,
+    email: false,
+    phoneNo: false,
+    website: false,
+    sector: false,
+  });
   const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+    setErrors({
+      ...errors,
+      [e.target.name]: false,
+    });
   };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.phoneNo || !formData.website || !formData.sector) {
-      toast.error("Please fill all fields before submitting", {
-        position: "top-center",
-      });
+    const newErrors = {
+      name: !formData.name,
+      email: !formData.email,
+      phoneNo: !formData.phoneNo,
+      website: !formData.website,
+      sector: !formData.sector,
+    };
+  
+    setErrors(newErrors);
+    if (Object.values(newErrors).some((error) => error)) {
       return;
     }
     try {
@@ -89,7 +108,7 @@ export const FormModal = () => {
       >
         <Box sx={style}>
           <div className="btn-cross flex justify-end relative pt-4">
-            <Button onClick={() => setState(false)}
+            {/* <Button onClick={() => setState(false)}
               style={{
                 color: 'red', position: 'absolute',
                 top: '-29px',
@@ -97,7 +116,8 @@ export const FormModal = () => {
                 right: '-22px',
                 padding: '10px'
               }}
-            >x</Button>
+            >x</Button> */}
+          <CloseIcon className="tlool absolute top-[-18px] right-[-15px]" onClick={() => setState(false)}/>
           </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
@@ -116,6 +136,8 @@ export const FormModal = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
+                  error={errors.name}
+                  helperText={errors.name && "Name is required"}
                 />
               </div>
               <div>
@@ -124,6 +146,8 @@ export const FormModal = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  error={errors.email}
+                  helperText={errors.email && "Email is required"}
                 />
               </div>
               <div>
@@ -132,6 +156,8 @@ export const FormModal = () => {
                   name="phoneNo"
                   value={formData.phoneNo}
                   onChange={handleChange}
+                  error={errors.phoneNo}
+                  helperText={errors.phoneNo && "PhoneNo is required"}
                 />
               </div>
               <div>
@@ -140,6 +166,8 @@ export const FormModal = () => {
                   name="website"
                   value={formData.website}
                   onChange={handleChange}
+                  error={errors.website}
+                  helperText={errors.website && "Website is required"}
                 />
               </div>
               <Select
@@ -148,8 +176,11 @@ export const FormModal = () => {
                 name="sector"
                 value={formData.sector}
                 onChange={handleChange}
+                error={errors.sector}
+                style={{ borderColor: errors.sector ? 'red' : 'inherit',  }}
               >
                 
+         
                 <MenuItem value="technology">Technology</MenuItem>
                 <MenuItem value="finance">Finance</MenuItem>
                 <MenuItem value="healthcare">Healthcare</MenuItem>
