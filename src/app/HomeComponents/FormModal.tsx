@@ -9,12 +9,12 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import "./FormModal.css";
 import { AppStateContext } from "../Context/AppStateContext";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import CloseIcon from '@mui/icons-material/Close';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import CloseIcon from "@mui/icons-material/Close";
 import { ClassNames } from "@emotion/react";
 
-<CloseIcon/>
+<CloseIcon />;
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
@@ -70,19 +70,22 @@ export const FormModal = () => {
       website: !formData.website,
       sector: !formData.sector,
     };
-  
+
     setErrors(newErrors);
     if (Object.values(newErrors).some((error) => error)) {
       return;
     }
     try {
-      const response = await fetch("https://invoice-backend.base2brand.com/api/add-appcartify", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://invoice-backend.base2brand.com/api/add-appcartify",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const result = await response.json();
       if (response.ok) {
@@ -118,7 +121,10 @@ export const FormModal = () => {
                 padding: '10px'
               }}
             >x</Button> */}
-          <CloseIcon className="tlool absolute top-[-18px] right-[-15px]" onClick={() => setState(false)}/>
+            <CloseIcon
+              className="tlool absolute top-[-18px] right-[-15px]"
+              onClick={() => setState(false)}
+            />
           </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
@@ -133,7 +139,7 @@ export const FormModal = () => {
             <div className="form-div flex flex-col gap-4">
               <div>
                 <TextField
-                  label="Your Name"
+                  label="Your Name *"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
@@ -143,7 +149,7 @@ export const FormModal = () => {
               </div>
               <div>
                 <TextField
-                  label="Email ID"
+                  label="Email ID *"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -153,7 +159,7 @@ export const FormModal = () => {
               </div>
               <div>
                 <TextField
-                  label="Phone Number"
+                  label="Phone Number *"
                   name="phoneNo"
                   value={formData.phoneNo}
                   onChange={handleChange}
@@ -163,7 +169,7 @@ export const FormModal = () => {
               </div>
               <div>
                 <TextField
-                  label="Enter Your Website"
+                  label="Enter Your Website *"
                   name="website"
                   value={formData.website}
                   onChange={handleChange}
@@ -172,21 +178,21 @@ export const FormModal = () => {
                 />
               </div>
               <Select
-              
                 label="Select"
                 name="sector"
                 value={formData.sector}
                 onChange={handleChange}
                 error={errors.sector}
-                style={{ borderColor: errors.sector ? 'red' : 'inherit',  }}
+                style={{ borderColor: errors.sector ? "red" : "inherit" }}
               >
-                
-         
                 <MenuItem value="technology">Technology</MenuItem>
                 <MenuItem value="finance">Finance</MenuItem>
                 <MenuItem value="healthcare">Healthcare</MenuItem>
-              
+                
               </Select>
+              {errors.sector && (
+                <span className="text-[red] relative top-[-14px] text-[13px] ml-3">Industry is required</span>
+              )}
               <Button
                 type="submit"
                 className="submit-button p-[15px] w-[35%] text-white"

@@ -20,3 +20,8 @@
 .Accoinian .css-1aj41gs::before{
     background-color: rgb(80 80 80) !important;
 }
+.Accoinian .MuiButtonBase-root {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 15px;
+}

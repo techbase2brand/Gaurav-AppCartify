@@ -38,7 +38,7 @@ export default function Accordian() {
                     expanded === `panel${index}` ? (
                       <RemoveCircleIcon />
                     ) : (
-                      <AddCircleIcon />
+                      <AddCircleIcon className=" "/>
                     )
                   }
                   aria-controls={`panel${index}-content`}

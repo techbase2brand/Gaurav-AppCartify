@@ -53,8 +53,8 @@ const tabData = [
     label: "Ecommerce",
     images: [Ecommerce, EcommerceSec],
     descriptions: [
-      "first",
-      "first 1112"
+      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app",
+      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management."
     ]
   },
   {
@@ -119,7 +119,7 @@ export default function TabComponentUi() {
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9">
                 Our <span style={{ color: "#96BF48" }}>Shopify Mobile App</span> Building Service is For Everyone
               </h2>
             </div>

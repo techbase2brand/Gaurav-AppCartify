@@ -27,7 +27,7 @@ const WhyChousus = () => {
                     />
                   </div>
                   <h3 className="text-white text-center  mx-auto  pt-4">
-                    Tailored <br /> Solutions
+                    Tailored Solutions
                   </h3>
                   <p className="manrope-gk-p-list text-center  pt-4">
                     Tailored solutions for your business needs, ensuring a
@@ -46,7 +46,7 @@ const WhyChousus = () => {
                     />
                   </div>
                   <h3 className="text-white text-center  mx-auto  pt-4">
-                    Drive <br /> Engagement
+                    Drive  Engagement
                   </h3>
                   <p className="manrope-gk-p-list text-center  pt-4">
                     Understanding your customers to craft intuitive mobile app
@@ -64,8 +64,7 @@ const WhyChousus = () => {
                     />
                   </div>
                   <h3 className="text-white text-center   mx-auto  pt-4">
-                    Shopify Mobile App
-                    <br /> Integrations
+                    Shopify Mobile App Integrations
                   </h3>
                   <p className="manrope-gk-p-list text-center  pt-4">
                     Proven expertise in Shopify mobile app integrations,
