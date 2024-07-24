@@ -70,7 +70,7 @@ const CustomSlider: React.FC = () => {
           <div className="main-carousel">
             {slides.map((slide, index) => (
               <div key={index} className="carousel-cell slide-item">
-                <div className="slide-back h-[365px]">
+                <div className="slide-back lg:h-[365px] h-[380px]">
                   <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
                     <div className="flex justify-between">
                       <p className="name text-[#82BC29] font-bold">{slide.name}</p>
