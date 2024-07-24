@@ -1,10 +1,31 @@
-import React, { useState, useEffect, useRef } from "react";
-import "./Testmonial.css";
+"use client";
+import React, { useEffect, useRef } from 'react';
+import Flickity from 'flickity';
+import 'flickity/dist/flickity.min.css';
+import './Testmonial.css';
 
-const CustomSlider = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [slidesToShow, setSlidesToShow] = useState(1);
-  const slideInterval = useRef<NodeJS.Timeout | null>(null);
+const CustomSlider: React.FC = () => {
+  const flickityRef = useRef<Flickity | null>(null);
+
+  useEffect(() => {
+    const elem = document.querySelector('.main-carousel');
+    if (elem) {
+      flickityRef.current = new Flickity(elem, {
+        cellAlign: 'left',
+        pageDots: false,
+        contain: true,
+        autoPlay: 3000,
+        wrapAround: true,
+        groupCells: 1,
+      });
+    }
+
+    return () => {
+      if (flickityRef.current) {
+        flickityRef.current.destroy();
+      }
+    };
+  }, []);
 
   const slides = [
     {
@@ -39,86 +60,48 @@ const CustomSlider = () => {
     },
   ];
 
-  const totalSlides = slides.length;
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setSlidesToShow(1); // Show 1 slide on mobile
-      } else {
-        setSlidesToShow(3); // Show 3 slides on desktop
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  };
-
-  useEffect(() => {
-    slideInterval.current = setInterval(nextSlide, 3000); // Change slide every 3 seconds
-
-    return () => {
-      if (slideInterval.current) {
-        clearInterval(slideInterval.current); // Clean up interval on component unmount
-      }
-    };
-  }, []);
-
   return (
-    <section>
-      <div className="testimonial-value bg-[#151820]">
-        <h2 className="gk-h2  text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6 ">WHAT OUR <span style={{color:'#96BF48'}}> CLIENT SAY</span></h2>
-        <div className="slider-container">
-          <div className="slider pb-16">
-            <div
-              className="slider-inner"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`,
-                transition: 'transform 1s ease-in-out',
-              }}
-            >
-              {slides.map((slide, index) => (
-                <div key={index} className="slide-item">
-                  <div className="slide-back h-[365px]">
-                    <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
-                      <div className="flex justify-between">
-                        <p className="name text-[#82BC29] font-bold">{slide.name}</p>
-                        <p className="date text-[#16161686] font-semibold">{slide.date}</p>
-                      </div>
-
-                      <p className="rating text-[#FF7F00]">{slide.rating}</p>
-
-                      <p className="text">{slide.text}</p>
+    <section className=''>
+      <div className="testimonial-value bg-[#151820] ">
+        <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
+          WHAT OUR <span style={{ color: '#96BF48' }}>CLIENTS SAY</span>
+        </h2>
+        <div className="slider-container lg:pt-9 lg:pb-10 pb-10">
+          <div className="main-carousel">
+            {slides.map((slide, index) => (
+              <div key={index} className="carousel-cell slide-item">
+                <div className="slide-back h-[365px]">
+                  <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
+                    <div className="flex justify-between">
+                      <p className="name text-[#82BC29] font-bold">{slide.name}</p>
+                      <p className="date text-[#16161686] font-semibold">{slide.date}</p>
                     </div>
+                    <p className="rating text-[#FF7F00]">{slide.rating}</p>
+                    <p className="text">{slide.text}</p>
                   </div>
                 </div>
-              ))}
-              {slides.map((slide, index) => (
-                <div key={index + totalSlides} className="slide-item">
-                  <div className="slide-back h-[365px] ">
-                    <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
-                      <div className="flex justify-between">
-                        <p className="name">{slide.name}</p>
-                        <p className="date">{slide.date}</p>
-                      </div>
-
-                      <p className="rating text-[#FF7F00]">{slide.rating}</p>
-
-                      <p className="text">{slide.text}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .carousel-cell {
+          width: calc(33.33% - 10px); // Default: Show 3 slides at a time
+          height: auto;
+          margin-right: 10px;
+        }
+        @media (max-width: 1024px) { // Tablets
+          .carousel-cell {
+            width: calc(50% - 10px); // Show 2 slides at a time
+          }
+        }
+        @media (max-width: 640px) { // Mobile
+          .carousel-cell {
+            width: 100%; // Show 1 slide at a time
+          }
+        }
+      `}</style>
     </section>
   );
 };
