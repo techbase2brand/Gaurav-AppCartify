@@ -51,23 +51,44 @@ export const FormModal = () => {
     sector: false,
   });
   const handleChange = (e: any) => {
+    const { name, value } = e.target;
+
+    // Validation for phoneNo to accept only numbers
+    if (name === "phoneNo" && !/^\d*$/.test(value)) {
+      return;
+    }
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
-    setErrors({
-      ...errors,
-      [e.target.name]: false,
-    });
+
+    // Validate website contains at least one dot
+    if (name === "website" && value && !value.includes(".")) {
+      setErrors({
+        ...errors,
+        [name]: true,
+      });
+    } else if (name === "email" && value && !value.includes("@")) {
+      setErrors({
+        ...errors,
+        [name]: true,
+      });
+    } else {
+      setErrors({
+        ...errors,
+        [name]: false,
+      });
+    }
   };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const newErrors = {
       name: !formData.name,
-      email: !formData.email,
+      email: !formData.email || !formData.email.includes("@"),
       phoneNo: !formData.phoneNo,
-      website: !formData.website,
+      website: !formData.website || !formData.website.includes("."),
       sector: !formData.sector,
     };
 
@@ -185,9 +206,12 @@ export const FormModal = () => {
                 error={errors.sector}
                 style={{ borderColor: errors.sector ? "red" : "inherit" }}
               >
-                <MenuItem value="technology">Technology</MenuItem>
-                <MenuItem value="finance">Finance</MenuItem>
-                <MenuItem value="healthcare">Healthcare</MenuItem>
+                <MenuItem value="ecommerce">Ecommerce</MenuItem>
+                <MenuItem value="food&Restaurant">Food & Restaurant</MenuItem>
+                <MenuItem value="beauty">Beauty</MenuItem>
+                <MenuItem value="sports">Sports</MenuItem>
+                <MenuItem value="automotives">Automotives</MenuItem>
+                <MenuItem value="electronics">Electronics</MenuItem>
                 
               </Select>
               {errors.sector && (
