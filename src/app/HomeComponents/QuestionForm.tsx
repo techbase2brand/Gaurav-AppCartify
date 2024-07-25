@@ -109,7 +109,7 @@ const QuestionForm = () => {
                     onChange={handleChange}
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
-                  {errors.name && (
+                  {errors.email && (
                     <span className="text-[#ff2323]  lg:text-[22px] text-[16px]">Email is required</span>
                   )}
                 </div>
@@ -125,7 +125,7 @@ const QuestionForm = () => {
                     onChange={handleChange}
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
-                  {errors.name && (
+                  {errors.phoneNo && (
                     <span className="text-[red]  lg:text-[22px] text-[16px] ">PhoneNo is required</span>
                   )}
                 </div>
@@ -141,7 +141,7 @@ const QuestionForm = () => {
                     onChange={handleChange}
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
-                     {errors.name && (
+                     {errors.website && (
                     <span className="text-[red]  lg:text-[22px] text-[16px]">Website is required</span>
                   )}
                 </div>
@@ -152,7 +152,7 @@ const QuestionForm = () => {
                     name="sector"
                     value={formData.sector}
                     onChange={handleChange}
-                    className="bg-transparent border-b-2 border-white focus:outline-none text-white  pb-4"
+                    className="bg-transparent border-b-2 border-white focus:outline-none text-white  pt-[20px]"
                     
                   >
                     
