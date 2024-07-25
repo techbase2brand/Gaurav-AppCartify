@@ -20,23 +20,38 @@ const QuestionForm = () => {
     sector: false,
   });
   const handleChange = (e: any) => {
+    const { name, value } = e.target;
+
+    // Validation for phoneNo to accept only numbers
+    if (name === "phoneNo" && !/^\d*$/.test(value)) {
+      return;
+    }
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
-    setErrors({
-      ...errors,
-      [e.target.name]: false,
-    });
-  };
 
+    // Validate website contains at least one dot
+    if (name === "website" && value && !value.includes(".")) {
+      setErrors({
+        ...errors,
+        [name]: true,
+      });
+    } else {
+      setErrors({
+        ...errors,
+        [name]: false,
+      });
+    }
+  };
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const newErrors = {
       name: !formData.name,
       email: !formData.email,
       phoneNo: !formData.phoneNo,
-      website: !formData.website,
+      website: !formData.website || !formData.website.includes("."),
       sector: !formData.sector,
     };
 
@@ -141,7 +156,7 @@ const QuestionForm = () => {
                     onChange={handleChange}
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
-                     {errors.website && (
+                  {errors.website && (
                     <span className="text-[red]  lg:text-[22px] text-[16px]">Website is required</span>
                   )}
                 </div>
@@ -153,30 +168,48 @@ const QuestionForm = () => {
                     value={formData.sector}
                     onChange={handleChange}
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white  pt-[20px]"
-                    
+
                   >
-                    
+
                     <option value="" className="bg-[#151820] text-white">
                       Select an Industry
                     </option>
-                    <option value="tech" className="bg-[#151820] text-white">
-                      Technology
+                    <option value="ecommerce" className="bg-[#151820] text-white">
+                      Ecommerce
                     </option>
-                    <option value="finance" className="bg-[#151820] text-white">
-                      Finance
+                    <option value="food&Restaurant" className="bg-[#151820] text-white">
+                      Food & Restaurant
                     </option>
                     <option
-                      value="healthcare"
+                      value="beauty"
                       className="bg-[#151820] text-white"
                     >
-                      Healthcare
+                      Beauty
                     </option>
-                    
+                    <option
+                      value="sports"
+                      className="bg-[#151820] text-white"
+                    >
+                      Sports
+                    </option>
+                    <option
+                      value="automotives"
+                      className="bg-[#151820] text-white"
+                    >
+                      Automotives
+                    </option>
+                    <option
+                      value="electronics"
+                      className="bg-[#151820] text-white"
+                    >
+                      Electronics
+                    </option>
+
                   </select>
                   {errors.sector && <span className="text-[red] text-[16px]">Industry is required</span>}
-                  
+
                 </div>
-                
+
                 <div className="w-[30%]">
                   <button className="gk-button ">Submit</button>
                 </div>

@@ -76,7 +76,7 @@ const tabData = [
     ],
   },
   {
-    label: "Spots",
+    label: "Sports",
     images: [Spots, SpotsSec],
     title: "Inventory and Sales Tools",
     descriptions: [
