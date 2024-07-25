@@ -5,17 +5,16 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import "./TabComponentsUi.css";
 import Image from "next/image";
-import Ecommerce from "../../../public/Images/Ecommerce.png"
-import EcommerceSec from "../../../public/Images/Ecommerce2.png"
-import Restaurant from "../../../public/Images/Restaurant.png"
-import RestaurantSec from "../../../public/Images/Restaurant2.png"
-import Beauty from "../../../public/Images/Beauty.png"
-import BeautySec from "../../../public/Images/Beauty2.png"
-import Spots from "../../../public/Images/Spots.png"
-import SpotsSec from "../../../public/Images/Spots2.png"
-import Automotives from "../../../public/Images/Automotives.png"
-import Automotives221 from "../../../public/Images/Automotives 221.png"
-
+import Ecommerce from "../../../public/Images/Ecommerce.png";
+import EcommerceSec from "../../../public/Images/Ecommerce2.png";
+import Restaurant from "../../../public/Images/Restaurant.png";
+import RestaurantSec from "../../../public/Images/Restaurant2.png";
+import Beauty from "../../../public/Images/Beauty.png";
+import BeautySec from "../../../public/Images/Beauty2.png";
+import Spots from "../../../public/Images/Spots.png";
+import SpotsSec from "../../../public/Images/Spots2.png";
+import Automotives from "../../../public/Images/Automotives.png";
+import Automotives221 from "../../../public/Images/Automotives 221.png";
 
 import { AppStateContext } from "../Context/AppStateContext";
 
@@ -52,49 +51,65 @@ const tabData = [
   {
     label: "Ecommerce",
     images: [Ecommerce, EcommerceSec],
-    descriptions: [
-      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app",
-      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management."
-    ]
-  },
-  {
-    label: "Restaurant",
-    images: [Restaurant, RestaurantSec],
+    title: "Order and Reservation Management",
     descriptions: [
       "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
-      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app"
-    ]
+      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
+    ],
+  },
+  {
+    label: "Food & Restaurant",
+    images: [Restaurant, RestaurantSec],
+    title: "Menu and Delivery Solutions",
+    descriptions: [
+      "Display menu offerings, accept custom orders, manage deliveries, promote specials, and share baking tips for sweet success.",
+      "Display menu offerings, accept custom orders, manage deliveries, promote specials, and share baking tips for sweet success.",
+    ],
   },
   {
     label: "Beauty",
     images: [Beauty, BeautySec],
+    title: "Product and Style Management",
     descriptions: [
       "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
-      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app"
-    ]
+      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
+    ],
   },
   {
     label: "Spots",
     images: [Spots, SpotsSec],
+    title: "Inventory and Sales Tools",
     descriptions: [
-      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
-      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app"
-    ]
+      "Manage inventory, showcase products, process orders, handle returns, update sizing guides, provide expert tips, and analyze sales trends with our comprehensive sports store management tools.",
+      "Manage inventory, showcase products, process orders, handle returns, update sizing guides, provide expert tips, and analyze sales trends with our comprehensive sports store management tools.",
+    ],
   },
   {
     label: "Automotives",
     images: [Automotives, Automotives221],
+    title: "Inventory and Service Solutions",
     descriptions: [
-      "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
-      "Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app"
-    ]
+      "Manage inventory, showcase vehicles, process service appointments, handle repairs, update vehicle specifications and provide maintenance tips, with our Shopify expertise.",
+      "Manage inventory, showcase vehicles, process service appointments, handle repairs, update vehicle specifications and provide maintenance tips, with our Shopify expertise.",
+    ],
   },
-  
+  {
+    label: "Electronics",
+    images: [Automotives, Automotives221],
+    title: "Inventory and Sales Solutions",
+    descriptions: [
+      "Manage inventory, showcase products, process orders, handle returns, update specifications, provide tech tips, and analyze sales trends with our electronics store management tools.",
+      "Manage inventory, showcase products, process orders, handle returns, update specifications, provide tech tips, and analyze sales trends with our electronics store management tools.",
+    ],
+  },
 ];
 
 export default function TabComponentUi() {
   const [value, setValue] = React.useState<number>(0);
   const [imageIndex, setImageIndex] = React.useState<number>(0);
+  const [direction, setDirection] = React.useState<"forward" | "backward">(
+    "forward"
+  );
   const { setState } = React.useContext(AppStateContext);
 
   React.useEffect(() => {
@@ -104,6 +119,30 @@ export default function TabComponentUi() {
 
     return () => clearInterval(interval);
   }, []);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setValue((prevValue) => {
+        let newValue;
+        if (direction === "forward") {
+          newValue = prevValue + 1;
+          if (newValue >= tabData.length) {
+            newValue = tabData.length - 1;
+            setDirection("backward");
+          }
+        } else {
+          newValue = prevValue - 1;
+          if (newValue < 0) {
+            newValue = 0;
+            setDirection("forward");
+          }
+        }
+        return newValue;
+      });
+    }, 8000);
+
+    return () => clearInterval(interval);
+  }, [direction]);
 
   const handleClick = () => {
     setState(true);
@@ -120,7 +159,8 @@ export default function TabComponentUi() {
           <div className="container">
             <div>
               <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9">
-                Our <span style={{ color: "#96BF48" }}>Shopify Mobile App</span> Building Service is For Everyone
+                Our <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>{" "}
+                Building Service is For Everyone
               </h2>
             </div>
             <div className="mmm pt-6">
@@ -155,16 +195,26 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:flex lg:gap-9 lg:items-center lg:pt-9 md:pt-9 md:pb-9">
                       <div className="all-list lg:w-[60%]">
                         <div className="image_product">
-                          <Image src={tab.images[imageIndex]} alt="" className="rounded-[20px]" />
+                          <Image
+                            src={tab.images[imageIndex]}
+                            alt=""
+                            className="rounded-[20px]"
+                          />
                         </div>
                       </div>
                       <div className="allproduct lg:w-[40%]">
                         <div className="appproductpara">
+                          <h2 className="gk-h2 lg:text-left text-center uppercase">
+                            {tab.title}
+                          </h2>
                           <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
                             {tab.descriptions[imageIndex]}
                           </p>
                           <div className="btn">
-                            <button className="gk-button lg:block hidden" onClick={handleClick}>
+                            <button
+                              className="gk-button lg:block "
+                              onClick={handleClick}
+                            >
                               Book Your Meeting Today
                             </button>
                           </div>
