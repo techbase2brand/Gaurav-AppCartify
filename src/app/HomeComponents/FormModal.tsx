@@ -13,6 +13,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClassNames } from "@emotion/react";
+import { FormControl, InputLabel } from "@mui/material";
 
 <CloseIcon />;
 const style = {
@@ -196,29 +197,25 @@ export const FormModal = () => {
                   onChange={handleChange}
                   error={errors.website}
                   helperText={errors.website && "Website is required"}
-                 
                 />
               </div>
-
-              <Select
-             
-                label="Select "
-                name="sector"
-                value={formData.sector ||"Ecommerce" }
-                onChange={handleChange}
-                error={errors.sector}
-                style={{ borderColor: errors.sector ? "red" : "inherit" }}
-                
-                
-              >
-                 
-                <MenuItem value="Ecommerce">Ecommerce</MenuItem>
-                <MenuItem value="food&Restaurant">Food & Restaurant</MenuItem>
-                <MenuItem value="beauty">Beauty</MenuItem>
-                <MenuItem value="sports">Sports</MenuItem>
-                <MenuItem value="automotives">Automotives</MenuItem>
-                <MenuItem value="electronics">Electronics</MenuItem>
-              </Select>
+              <FormControl fullWidth error={errors.sector}>
+                <InputLabel id="sector-label">Select</InputLabel>
+                <Select
+                  labelId="sector-label"
+                  label="Select"
+                  name="sector"
+                  value={formData.sector}
+                  onChange={handleChange}
+                >
+                  <MenuItem value="Ecommerce">Ecommerce</MenuItem>
+                  <MenuItem value="food&Restaurant">Food & Restaurant</MenuItem>
+                  <MenuItem value="beauty">Beauty</MenuItem>
+                  <MenuItem value="sports">Sports</MenuItem>
+                  <MenuItem value="automotives">Automotives</MenuItem>
+                  <MenuItem value="electronics">Electronics</MenuItem>
+                </Select>
+              </FormControl>
               {errors.sector && (
                 <span className="text-[red] relative top-[-14px] text-[13px] ml-3">
                   Industry is required
