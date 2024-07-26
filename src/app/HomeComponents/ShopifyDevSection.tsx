@@ -30,10 +30,10 @@ function Developer() {
                   <div className="image-c flex justify-center">
                     <Image className="lg:h-auto h-[87px]" src={reward} alt="reward" />
                   </div>
-                  <h3 className="text-[#96BF48] text-center lg w-[74%] mx-auto  pt-4">
-                    10,000+ Successful Shopify App Deployments
+                  <h3 className="text-[#96BF48] text-center lg w-[74%] mx-auto  pt-4 font-medium">
+                    100+ Successful Shopify App Deployments
                   </h3>
-                  <p className="manrope-gk-p text-center  pt-4">
+                  <p className="manrope-gk-p-list text-center  pt-4">
                     Developed apps for different industries, catering to unique
                     needs.
                   </p>
@@ -45,10 +45,10 @@ function Developer() {
                   <div className="image-c flex justify-center">
                     <Image className="lg:h-auto h-[87px]" src={meating} alt="reward" />
                   </div>
-                  <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4 " >
-                    Trusted across 50+ countries
+                  <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4 font-medium " >
+                    Trusted across 90+ countries
                   </h3>
-                  <p className="manrope-gk-p text-center  pt-4">
+                  <p className="manrope-gk-p-list text-center  pt-4">
                     We have global trust and reliability in our mobile app
                     development Service
                   </p>
@@ -59,10 +59,10 @@ function Developer() {
                   <div className="image-c flex justify-center">
                     <Image className="lg:h-auto h-[87px]" src={team} alt="reward" />
                   </div>
-                  <h3 className="text-[#96BF48] text-center   w-[54%] mx-auto  pt-4">
+                  <h3 className="text-[#96BF48] text-center   w-[54%] mx-auto  pt-4 font-medium" >
                     98% Client Satisfaction
                   </h3>
-                  <p className="manrope-gk-p text-center  pt-4">
+                  <p className="manrope-gk-p-list text-center  pt-4">
                     Our client satisfaction rate showcases our dedication to
                     exceptional service
                   </p>
