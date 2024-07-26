@@ -20,7 +20,9 @@ button{
   color: white;
 }
 
-
+li{
+  list-style: none;
+}
 
 h2.gk-h2{
   font-size: 42px;

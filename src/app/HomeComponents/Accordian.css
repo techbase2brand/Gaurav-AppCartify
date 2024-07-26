@@ -4,6 +4,7 @@
 @media only screen and (max-width: 640px) {
 .css-eqpfi5-MuiAccordionSummary-content {
     margin: 15px 0 20px !important;
+
     
 }
 .Accoinian .css-l0jafl {
@@ -17,11 +18,17 @@
 .Accoinian svg {
     color: white;
 }
-.Accoinian .css-1aj41gs::before{
-    background-color: rgb(80 80 80) !important;
+.Accoinian ::before{
+    background-color: rgba(255, 255, 255, 0.433) !important;
 }
 .Accoinian .MuiButtonBase-root {
     display: flex !important;
     align-items: baseline !important;
     gap: 15px;
+
+}
+.Accoinian .css-eqpfi5-MuiAccordionSummary-content {
+  
+
+    
 }

@@ -204,10 +204,10 @@ export default function TabComponentUi() {
                       </div>
                       <div className="allproduct lg:w-[40%]">
                         <div className="appproductpara">
-                          <h2 className="gk-h2 lg:text-left text-center uppercase">
+                          <h2 className="gk-h2 lg:text-left text-center uppercase lg:p-0 pt-4">
                             {tab.title}
                           </h2>
-                          <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px] ">
+                          <p className="manrope-gk-p lg:text-left text-center lg:pt-[15px] lg:pb-[15px] pt-[5px] pb-[15px] ">
                             {tab.descriptions[imageIndex]}
                           </p>
                           <div className="btn">
