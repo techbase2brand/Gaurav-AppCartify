@@ -1,14 +1,14 @@
-"use client"
+"use client";
 import React, { useContext } from "react";
 import { AppStateContext } from "../Context/AppStateContext";
 import Image from "next/image";
-import logoAppcartify from "../../../public/Images/logoAppcartify.svg"
+import logoAppcartify from "../../../public/Images/logoAppcartify.svg";
 
 const Header = () => {
   const { setState } = useContext(AppStateContext);
   const handleClick = () => {
     setState(true);
-    // setOpen((prevOpen:any) => !prevOpen); 
+    // setOpen((prevOpen:any) => !prevOpen);
   };
 
   return (
@@ -19,13 +19,17 @@ const Header = () => {
             <div>
               <div className="logo_icon">
                 {/* <h1 className="text-[26px] font-bold text-white">Appcartify</h1> */}
-                <Image src={logoAppcartify} alt="" className="lg:w-auto w-[60%]"/>
+                <Image
+                  src={logoAppcartify}
+                  alt=""
+                  className="lg:w-auto w-[60%]"
+                />
               </div>
             </div>
 
             <div>
               <button
-                className="Contact_btn md:p-[10px_25px] p-[9px_10px] font-medium md:font-semibold rounded-[10px] relative  bg-transparent cursor-pointer md:text-[22px]  text-[20px] "
+                className="Contact_btn md:p-[10px_25px] p-[9px_10px] font-medium md:font-semibold rounded-[10px] relative  bg-transparent cursor-pointer md:text-[22px]  text-[16px] "
                 style={{
                   position: "relative",
                   // // fontSize: '22px',

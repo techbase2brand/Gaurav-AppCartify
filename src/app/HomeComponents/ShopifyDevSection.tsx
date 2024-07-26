@@ -43,9 +43,9 @@ function Developer() {
               <div>
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
-                    <Image className="lg:h-auto h-[87px]" src={reward} alt="reward" />
+                    <Image className="lg:h-auto h-[87px]" src={meating} alt="reward" />
                   </div>
-                  <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4">
+                  <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4 " >
                     Trusted across 50+ countries
                   </h3>
                   <p className="manrope-gk-p text-center  pt-4">
@@ -57,7 +57,7 @@ function Developer() {
               <div>
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
-                    <Image className="lg:h-auto h-[87px]" src={reward} alt="reward" />
+                    <Image className="lg:h-auto h-[87px]" src={team} alt="reward" />
                   </div>
                   <h3 className="text-[#96BF48] text-center   w-[54%] mx-auto  pt-4">
                     98% Client Satisfaction

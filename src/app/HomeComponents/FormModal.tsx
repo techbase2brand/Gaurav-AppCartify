@@ -143,7 +143,7 @@ export const FormModal = () => {
               }}
             >x</Button> */}
             <CloseIcon
-              className="tlool absolute top-[-18px] right-[-15px]"
+              className="tlool absolute top-[-18px] right-[-15px] cursor-pointer"
               onClick={() => setState(false)}
             />
           </div>
@@ -196,26 +196,33 @@ export const FormModal = () => {
                   onChange={handleChange}
                   error={errors.website}
                   helperText={errors.website && "Website is required"}
+                 
                 />
               </div>
+
               <Select
-                label="Select"
+             
+                label="Select "
                 name="sector"
-                value={formData.sector}
+                value={formData.sector ||"Ecommerce" }
                 onChange={handleChange}
                 error={errors.sector}
                 style={{ borderColor: errors.sector ? "red" : "inherit" }}
+                
+                
               >
-                <MenuItem value="ecommerce">Ecommerce</MenuItem>
+                 
+                <MenuItem value="Ecommerce">Ecommerce</MenuItem>
                 <MenuItem value="food&Restaurant">Food & Restaurant</MenuItem>
                 <MenuItem value="beauty">Beauty</MenuItem>
                 <MenuItem value="sports">Sports</MenuItem>
                 <MenuItem value="automotives">Automotives</MenuItem>
                 <MenuItem value="electronics">Electronics</MenuItem>
-                
               </Select>
               {errors.sector && (
-                <span className="text-[red] relative top-[-14px] text-[13px] ml-3">Industry is required</span>
+                <span className="text-[red] relative top-[-14px] text-[13px] ml-3">
+                  Industry is required
+                </span>
               )}
               <Button
                 type="submit"

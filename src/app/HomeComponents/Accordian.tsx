@@ -31,14 +31,14 @@ export default function Accordian() {
                 key={index}
                 expanded={expanded === `panel${index}`}
                 onChange={handleChange(`panel${index}`)}
-                className="bg-transparent"
+                className="bg-transparent gk-line"
               >
                 <AccordionSummary
                   expandIcon={
                     expanded === `panel${index}` ? (
-                      <RemoveCircleIcon />
+                      <RemoveCircleIcon className="removeio" />
                     ) : (
-                      <AddCircleIcon className=" "/>
+                      <AddCircleIcon className=" addio"/>
                     )
                   }
                   aria-controls={`panel${index}-content`}

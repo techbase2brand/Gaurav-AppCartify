@@ -109,7 +109,7 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.name && (
-                    <span className="text-[red] lg:text-[22px] text-[16px]">Name is required</span>
+                    <span className="text-[red] text-[16px]">Name is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
@@ -125,7 +125,7 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.email && (
-                    <span className="text-[#ff2323]  lg:text-[22px] text-[16px]">Email is required</span>
+                    <span className="text-[red]  text-[16px]">Email is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
@@ -141,7 +141,7 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.phoneNo && (
-                    <span className="text-[red]  lg:text-[22px] text-[16px] ">PhoneNo is required</span>
+                    <span className="text-[red]   text-[16px] ">PhoneNo is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col gap-[5px]">
@@ -157,7 +157,7 @@ const QuestionForm = () => {
                     className="bg-transparent border-b-2 border-white focus:outline-none text-white"
                   />
                   {errors.website && (
-                    <span className="text-[red]  lg:text-[22px] text-[16px]">Website is required</span>
+                    <span className="text-[red]  text-[16px]">Website is required</span>
                   )}
                 </div>
                 <div className="flex  flex-col  gap-[5px]">
