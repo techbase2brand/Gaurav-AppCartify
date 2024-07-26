@@ -15,6 +15,8 @@ import Spots from "../../../public/Images/Spots.png";
 import SpotsSec from "../../../public/Images/Spots2.png";
 import Automotives from "../../../public/Images/Automotives.png";
 import Automotives221 from "../../../public/Images/Automotives 221.png";
+import Electronicshed from "../../../public/Images/Electronicshed.png"
+import Electronicshed221 from "../../../public/Images/Electronicshed221.png"
 
 import { AppStateContext } from "../Context/AppStateContext";
 
@@ -95,7 +97,7 @@ const tabData = [
   },
   {
     label: "Electronics",
-    images: [Automotives, Automotives221],
+    images: [Electronicshed, Electronicshed221],
     title: "Inventory and Sales Solutions",
     descriptions: [
       "Manage inventory, showcase products, process orders, handle returns, update specifications, provide tech tips, and analyze sales trends with our electronics store management tools.",
