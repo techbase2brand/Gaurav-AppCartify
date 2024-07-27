@@ -30,31 +30,31 @@ const CustomSlider: React.FC = () => {
   const slides = [
     {
       name: "Michael Davis",
-      date: "2 March, 2024",
+      date: "30 january, 2024",
       rating: "★★★★★",
       text: "Our sales soared with Shopify mobile app. Seamless integration and easy updates made managing products and promotions effortless for our team.",
     },
     {
       name: "Kevin Wilson",
-      date: "2 March, 2004",
+      date: "25 March, 2004",
       rating: "★★★★★",
       text: "AppCartify helped in making an exceptional Shopify app. Enhanced analytics helped refine our marketing strategies, increasing engagement and customer satisfaction beyond expectations.",
     },
     {
       name: "David Wilson",
-      date: "2 March, 2024",
+      date: "23 December, 2024",
       rating: "★★★★★",
       text: "Shopify mobile app created this company to drive traffic and sales. The user-friendly design and personalized recommendations feature significantly boosted average order values.",
     },
     {
       name: "Jennifer Brown",
-      date: "2 March, 2024",
+      date: "12 April, 2024",
       rating: "★★★★★",
       text: "Shopify app simplified Personalized notifications and managed seasonal events, enhancing customer satisfaction.",
     },
     {
       name: "Jennifer Brown",
-      date: "2 March, 2024",
+      date: "21 January, 2024",
       rating: "★★★★★",
       text: "Shopify mobile app created this company to drive traffic and sales. The user-friendly design and personalized recommendations feature significantly boosted average order values.",
     },
@@ -70,14 +70,14 @@ const CustomSlider: React.FC = () => {
           <div className="main-carousel">
             {slides.map((slide, index) => (
               <div key={index} className="carousel-cell slide-item">
-                <div className="slide-back lg:h-[365px] h-[380px]">
-                  <div className="slide-content xl:p-[45px] xl:h-[275px] p-[35px]">
+                <div className="slide-back lg:h-[365px] h-[380px] flex items-center">
+                  <div className="slide-content xl:p-[30px] xl:h-[275px] p-[35px]">
                     <div className="flex justify-between">
                       <p className="name text-[#82BC29] font-bold">{slide.name}</p>
-                      <p className="date text-[#16161686] font-semibold">{slide.date}</p>
+                      <p className="date text-[#16161686] text-[16px] font-semibold">{slide.date}</p>
                     </div>
                     <p className="rating text-[#FF7F00]">{slide.rating}</p>
-                    <p className="text">{slide.text}</p>
+                    <p className="text text-[18px] pt-[10px]">{slide.text}</p>
                   </div>
                 </div>
               </div>
