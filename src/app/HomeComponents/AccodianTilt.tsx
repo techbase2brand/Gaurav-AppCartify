@@ -8,6 +8,7 @@ import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
+import { relative } from "path";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -25,6 +26,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary expandIcon={props.expandIcon} {...props} />
 ))(({ theme }) => ({
   display: "flex",
+  gap:"10px",
   alignItems: "baseline",
   flexDirection: "row",
   "& .MuiAccordionSummary-content": {
@@ -98,9 +100,16 @@ function AccodianTilt() {
 
   const renderExpandIcon = (panel: string) => {
     return expanded === panel ? (
-      <RemoveCircleIcon sx={{ color: "white" }} />
+      <RemoveCircleIcon sx={{ color: "white",  
+        // position:"relative",
+        // top:"-8px",
+      }} />
     ) : (
-      <AddCircleIcon sx={{ color: "white" }} />
+      <AddCircleIcon sx={{ color: "white" ,
+        // position:"relative",
+        // top:"4px", .
+        
+      }} />
     );
   };
 
