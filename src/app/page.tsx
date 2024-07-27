@@ -13,6 +13,7 @@ import Accordian from "./HomeComponents/Accordian";
 import QuestionForm from "./HomeComponents/QuestionForm";
 // import CustomSlider from "./HomeComponents/Testmonial";
 import dynamic from "next/dynamic";
+import AccodianTilt from "./HomeComponents/AccodianTilt";
 
 const Testmonial = dynamic(() => import("@/app/HomeComponents/TabComponentUi"), { ssr: false });
 const CustomSlider = dynamic(() => import("./HomeComponents/Testmonial"), { ssr: false });
@@ -31,7 +32,8 @@ function Page() {
       <WhyChousus/>
       <ShopifyStore/>
       <ScanandExperienc/>
-      <Accordian/>
+      {/* <Accordian/> */}
+   <AccodianTilt/>
       <QuestionForm/>
       <CustomSlider/>
       {/* <Testing/> */}

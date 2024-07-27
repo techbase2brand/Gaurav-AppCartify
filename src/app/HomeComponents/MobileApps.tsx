@@ -4,6 +4,7 @@ import MobileApp from "../../../public/Images/Mobile Apps.png";
 import pointer from "../../../public/Images/point.svg";
 import "./MobileApp.css"
 import { AppStateContext } from "../Context/AppStateContext";
+import image221 from "../../../public/Images/mob221.png"
 
 const MobileApps = () => {
   const { setState } = useContext(AppStateContext);
@@ -23,12 +24,12 @@ const MobileApps = () => {
           <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4  items-center">
             <div>
               <div className="image-bar">
-                <Image className="" src={MobileApp} alt="" />
+                <Image className="" src={image221} alt="" />
               </div>
             </div>
             <div>
               <div className="mobile-app-txt-gk">
-                <h2 className="gk-h2   lg:block hidden  pb-5">
+                <h2 className="gk-h2  lg:block hidden  pb-5 uppercase">
                   Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span> Enhances Sales Potential
                 </h2>
                 <div className="pointer-main flex flex-col xl:gap-7 lg:gap-[0.75rem] gap-[10px]">
