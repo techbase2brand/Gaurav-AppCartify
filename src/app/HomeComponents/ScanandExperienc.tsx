@@ -3,7 +3,8 @@ import Image from "next/image";
 import ScanSrction from "../../../public/Images/scanner.png";
 import scannerplaystore from "../../../public/Images/Scannerplaystore (1).png";
 import appstore from "../../../public/Images/Scannerappstore.png";
-import scannall from "../../../public/Images/scanall.png";
+import scannall from "../../../public/Images/scanall.svg";
+import scannall221 from "../../../public/Images/scanall221.svg";
 import "./ScanandExperienc.css";
 
 const ScanandExperienc = () => {
@@ -12,8 +13,8 @@ const ScanandExperienc = () => {
       <section className="gk-bg-background lg:pb-[50px] lg:pt-[50px] pt-14 pb-14">
         <div className="container">
           <div className="main-center">
-            <div className="gk-ctrl  lg:pb-[50px] rounded-2xl bg-white ">
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase  xl:w-[70%] mx-auto">
+            <div className="gk-ctrl  lg:pb-[50px] rounded-2xl bg-[#FAFFF3] ">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase  xl:w-[70%] mx-auto p-[20px]">
                 <span
                   style={{
                     color: "#161616",
@@ -32,8 +33,15 @@ const ScanandExperienc = () => {
               <div className="lg:flex lg:justify-center lg:gap-5 ">
                 <div className="text-center ">
                   <Image
-                    className="lg:w-[60%] mx-auto"
+                    className="lg:w-[100%] mx-auto md:p-[30px] hidden md:block"
                     src={scannall}
+                    alt="ScanSrction"
+                    
+                  />
+                   <Image
+                    className="w-[100%] mx-auto md:hidden block pt-6 pb-6 object-cover pl-7 pr-7
+                    "
+                    src={scannall221}
                     alt="ScanSrction"
                   />
                 </div>
