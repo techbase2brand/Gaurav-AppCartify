@@ -29,34 +29,40 @@ const CustomSlider: React.FC = () => {
 
   const slides = [
     {
-      name: "Michael Davis",
+      name: "Jennifer Miller",
       date: "30 january, 2024",
+      rating: "★★★★★",
+      text: "Jennifer MillerShopify app created with AppCartify boosted sales and improved shopping convenience. Customers love the friendly design and fast checkout process, perfect for repeat purchases.",
+    },
+    {
+      name: "Michael Davis",
+      date: "25 March, 2004",
       rating: "★★★★★",
       text: "Our sales soared with Shopify mobile app. Seamless integration and easy updates made managing products and promotions effortless for our team.",
     },
     {
       name: "Kevin Wilson",
-      date: "25 March, 2004",
+      date: "26  january , 2024",
       rating: "★★★★★",
       text: "AppCartify helped in making an exceptional Shopify app. Enhanced analytics helped refine our marketing strategies, increasing engagement and customer satisfaction beyond expectations.",
     },
     {
       name: "David Wilson",
-      date: "23 December, 2024",
-      rating: "★★★★★",
-      text: "Shopify mobile app created this company to drive traffic and sales. The user-friendly design and personalized recommendations feature significantly boosted average order values.",
-    },
-    {
-      name: "Jennifer Brown",
       date: "12 April, 2024",
       rating: "★★★★★",
-      text: "Shopify app simplified Personalized notifications and managed seasonal events, enhancing customer satisfaction.",
+      text: "Shopify mobile app created by AppCartify drives traffic and sales. The user-friendly design and personalized recommendations feature significantly boosted average order values.",
     },
     {
       name: "Jennifer Brown",
-      date: "21 January, 2024",
+      date: "26 August , 2024",
       rating: "★★★★★",
-      text: "Shopify mobile app created this company to drive traffic and sales. The user-friendly design and personalized recommendations feature significantly boosted average order values.",
+      text: "Shopify app simplified mobile shopping. Personalized notifications effectively managed seasonal inventory, enhancing customer engagement and satisfaction.",
+    },
+    {
+      name: "Daniel Clark",
+      date: "21 June, 2024",
+      rating: "★★★★★",
+      text: "App created with AppCartify is scalable and increase revenue. Seamless payment integration reduced cart abandonment rates, offering a smooth shopping experience for customers.",
     },
   ];
 
@@ -87,7 +93,7 @@ const CustomSlider: React.FC = () => {
       </div>
       <style jsx>{`
         .carousel-cell {
-          width: calc(33.33% - 10px); // Default: Show 3 slides at a time
+          width: calc(25.33% - 10px); // Default: Show 3 slides at a time
           height: auto;
           margin-right: 10px;
         }

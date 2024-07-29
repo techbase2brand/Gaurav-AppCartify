@@ -21,7 +21,7 @@ const Header = () => {
                 {/* <h1 className="text-[26px] font-bold text-white">Appcartify</h1> */}
                 <Image
                   src={logoAppcartify}
-                  alt=""
+                  alt="appcartifylogo "
                   className="lg:w-auto w-[60%]"
                 />
               </div>

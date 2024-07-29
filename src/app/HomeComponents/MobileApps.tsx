@@ -24,7 +24,7 @@ const MobileApps = () => {
           <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4  items-center">
             <div>
               <div className="image-bar">
-                <Image className="" src={image221} alt="" />
+                <Image className="" src={image221} alt="Integration with Mobile Apps" />
               </div>
             </div>
             <div>
@@ -34,7 +34,7 @@ const MobileApps = () => {
                 </h2>
                 <div className="pointer-main flex flex-col xl:gap-7 lg:gap-[0.75rem] gap-[10px]">
                   <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem] gap-[10px] ">
-                    <Image className="relative  top-3" src={pointer} alt="" />
+                    <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
                       Shopify mobile app users experience up to 30% higher
@@ -42,7 +42,7 @@ const MobileApps = () => {
                     </p>
                   </div>
                   <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
-                    <Image className="relative  top-3" src={pointer} alt="" />
+                    <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
                     Mobile app users engage with promotions and offers 5 times more frequently than web users.
@@ -50,7 +50,7 @@ const MobileApps = () => {
                     </p>
                   </div>
                   <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
-                    <Image className="relative  top-3" src={pointer} alt="" />
+                    <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
                     Orders placed through Shopify mobile apps are on average 20% higher in value than web orders.

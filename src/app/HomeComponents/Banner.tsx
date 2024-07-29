@@ -10,7 +10,7 @@ const Banner = () => {
   const { setState } = useContext(AppStateContext);
   const handleClick = () => {
     setState(true);
-    // setOpen((prevOpen:any) => !prevOpen); 
+    // setOpen((prevOpen:any) => !prevOpen);
   };
 
   return (
@@ -28,7 +28,13 @@ const Banner = () => {
                 boost your sales
               </p>
               <div className="btn ">
-                <button className="gk-button lg:block hidden" onClick={() => handleClick()}> Book Your Meeting Today</button>
+                <button
+                  className="gk-button lg:block hidden"
+                  onClick={() => handleClick()}
+                >
+                  {" "}
+                  Book Your Meeting Today
+                </button>
               </div>
             </div>
             <div className="frame-class xl:w-[40%] lg:w-[40%] w-[100%] pt-[2.5rem]">
