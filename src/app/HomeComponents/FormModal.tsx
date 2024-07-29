@@ -51,6 +51,7 @@ export const FormModal = () => {
     website: false,
     sector: false,
   });
+  const [loading, setLoading] = React.useState(false);
   const handleChange = (e: any) => {
     const { name, value } = e.target;
 
@@ -97,6 +98,7 @@ export const FormModal = () => {
     if (Object.values(newErrors).some((error) => error)) {
       return;
     }
+    setLoading(true);
     try {
       const response = await fetch(
         "https://invoice-backend.base2brand.com/api/add-appcartify",
@@ -121,6 +123,8 @@ export const FormModal = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -227,8 +231,9 @@ export const FormModal = () => {
                 style={{
                   background: `linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%)`,
                 }}
+                disabled={loading}
               >
-                Submit
+                {loading ? "Submitting..." : "Submit"}
               </Button>
             </div>
           </form>
