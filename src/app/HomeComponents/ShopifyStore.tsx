@@ -23,8 +23,8 @@ const ShopifyStore = () => {
         </div>
         <div className="row lg:flex  lg:flex-row xl:gap-16 gap-[1rem] lg:pt-20 lg:pb-20  items-center md:flex md:flex-col lg:gap-1">
           <div className=" ">
-            <Image className=" lg:block hidden" src={store} alt="" />
-            <Image className="laptop   lg:hidden block" src={laptop} alt="" />
+            <Image className=" lg:block hidden" src={store} alt="appcartify store" />
+            <Image className="laptop   lg:hidden block" src={laptop} alt="appcartify store" />
           </div>
           <div className=" custom_text xl:pr-[30px] 2xl:pr-[260px] lg:pr-[2rem] p-[1rem]">
             <h2 className="gk-h2  lg:block hidden">

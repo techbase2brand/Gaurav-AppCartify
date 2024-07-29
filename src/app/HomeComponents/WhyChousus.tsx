@@ -23,7 +23,7 @@ const WhyChousus = () => {
                     <Image
                       className="lg:h-auto h-[87px]"
                       src={TailoredSolutions}
-                      alt="reward"
+                      alt="Tailored Solutions"
                     />
                   </div>
                   <h3 className="text-white text-center  mx-auto  pt-4">
@@ -42,7 +42,7 @@ const WhyChousus = () => {
                     <Image
                       className="lg:h-auto h-[87px]"
                       src={DriveEngagement}
-                      alt="reward"
+                      alt="Drive Engagement"
                     />
                   </div>
                   <h3 className="text-white text-center  mx-auto  pt-4">
@@ -60,7 +60,7 @@ const WhyChousus = () => {
                     <Image
                       className="lg:h-auto h-[87px]"
                       src={ShopifyMobile}
-                      alt="reward"
+                      alt="Shopify Mobile App Integrations"
                     />
                   </div>
                   <h3 className="text-white text-center   mx-auto  pt-4">

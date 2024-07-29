@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="heee flex justify-end">
             {/* <button className="gk-button ">Get App Now</button> */}
 
-            <Image className="lg:w-auto lg:h-auto  h-[100px] cursor-pointer" src={DowonlodApp} alt="" />
+            <Image className="lg:w-auto lg:h-auto  h-[100px] cursor-pointer" src={DowonlodApp} alt="appcartifylink" />
 
           </div>
         </div>
