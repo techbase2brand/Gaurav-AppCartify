@@ -135,7 +135,12 @@ function AccodianTilt() {
                   className="border-b-2 pt-[10px] pb-[10px] pl-0"
                   expandIcon={renderExpandIcon(item.panel)}
                 >
-                  <Typography className="text-[#96BF48] lg:text-[25px] font-medium text-[20px]">
+                  <Typography className="text-[#96BF48] lg:text-[25px] font-medium text-[20px]"
+                  style={{
+                    fontFamily: "Manrope",
+                    
+                  }}
+                  >
                     {item.question}
                   </Typography>
                 </AccordionSummary>
