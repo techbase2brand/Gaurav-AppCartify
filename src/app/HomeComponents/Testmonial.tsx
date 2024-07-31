@@ -54,7 +54,7 @@ const CustomSlider: React.FC = () => {
     },
     {
       name: "Jennifer Brown",
-      date: "26 August , 2024",
+      date: "26 April , 2024",
       rating: "★★★★★",
       text: "Shopify app simplified mobile shopping. Personalized notifications effectively managed seasonal inventory, enhancing customer engagement and satisfaction.",
     },
