@@ -29,11 +29,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
+      
       <body>
         <AppStateProvider>
           <Index>{children}</Index>
         </AppStateProvider>
        <SpeedInsights/>
+       
       </body>
     </html>
   );
