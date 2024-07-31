@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/app/Footer/Footer";
 import Index from "./index";
 import { AppStateProvider } from "./Context/AppStateContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <AppStateProvider>
           <Index>{children}</Index>
         </AppStateProvider>
+       <SpeedInsights/>
       </body>
     </html>
   );
