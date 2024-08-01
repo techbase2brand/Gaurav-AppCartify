@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import DowonlodApp from "../../../public/Images/Dowonlodapp.svg"
 import Copywrite from "./Copywrite";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,13 +16,15 @@ const Footer = () => {
           <p className="text-white  lg:text-[22px] lg:font-medium  font-normal text-[18px] lg:w-[60%]">
             Our Team is Ready To Turn Your Goals Into Implementation Ensuring
             Your Vision Turns Into Reality
-          </p>
-
+          </p> 
           <div className="heee flex justify-end">
-            {/* <button className="gk-button ">Get App Now</button> */}
-
-            <Image className="lg:w-auto lg:h-auto  h-[100px] cursor-pointer" src={DowonlodApp} alt="appcartifylink" />
-
+            <Link href="https://play.google.com/store/apps/details?id=com.AppCatify&pcampaignid=web_share" target="blank" passHref>
+              <Image
+                className="lg:w-auto lg:h-auto h-[100px] cursor-pointer"
+                src={DowonlodApp}
+                alt="appcartifylink"
+              />
+            </Link>
           </div>
         </div>
 

@@ -38,7 +38,11 @@ const ShopifyStore = () => {
               seamlessly across all platforms.
             </p>
             <div className="widd md:flex md:justify-center lg:justify-start flex justify-center">
-              <button className="gk-button " onClick={() => handleClick()}>Book Your Meeting Today</button>
+              <button className="gk-button " onClick={() => handleClick()}>
+              <span className="omega">
+                  Book Your Meeting Today
+                  </span>
+                </button>
             </div>
           </div>
 

@@ -55,7 +55,9 @@ const ShopifyApp = () => {
               </div>
               <button className="gk-button " onClick={() => handleClick()}>
                 {" "}
-                Book Your Meeting Today
+                <span className="omega">
+                  Book Your Meeting Today
+                  </span>
               </button>
             </div>
           </div>

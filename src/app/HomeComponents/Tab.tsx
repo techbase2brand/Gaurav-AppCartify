@@ -42,9 +42,8 @@ export default function TabComponentUi() {
   const { setState } = React.useContext(AppStateContext);
   const handleClick = () => {
     setState(true);
-    // setOpen((prevOpen:any) => !prevOpen); 
+    // setOpen((prevOpen:any) => !prevOpen);
   };
-
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -157,8 +156,13 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -178,11 +182,18 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                          Manage products, orders, payments, and customer
+                          interactions to optimize online shopping experiences
+                          and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -190,7 +201,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -208,8 +219,13 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -229,11 +245,18 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                          Manage products, orders, payments, and customer
+                          interactions to optimize online shopping experiences
+                          and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -241,7 +264,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -259,8 +282,13 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -280,11 +308,18 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                          Manage products, orders, payments, and customer
+                          interactions to optimize online shopping experiences
+                          and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -292,7 +327,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -310,8 +345,13 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -331,11 +371,18 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                          Manage products, orders, payments, and customer
+                          interactions to optimize online shopping experiences
+                          and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -343,7 +390,7 @@ export default function TabComponentUi() {
                   </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={4}>
-                <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
+                  <div className="allproduct lg:flex lg:flex-row lg:gap-9 lg:items-center  ">
                     <div className="all-list lg:w-[60%] ">
                       <div className="image_product">
                         <Image
@@ -361,8 +408,13 @@ export default function TabComponentUi() {
                           management.
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
@@ -382,11 +434,18 @@ export default function TabComponentUi() {
                     <div className="allproduct lg:w-[40%]">
                       <div className="appproductpara">
                         <p className="manrope-gk-p lg:text-left text-center pt-[15px] pb-[15px]">
-                        Manage products, orders, payments, and customer interactions to optimize online shopping experiences and drive sales with Shopify app
+                          Manage products, orders, payments, and customer
+                          interactions to optimize online shopping experiences
+                          and drive sales with Shopify app
                         </p>
                         <div className="btn ">
-                          <button className="gk-button lg:block hidden" onClick={() => handleClick()}>
-                            Book Your Meeting Today
+                          <button
+                            className="gk-button lg:block hidden"
+                            onClick={() => handleClick()}
+                          >
+                            <span className="omega">
+                              Book Your Meeting Today
+                            </span>
                           </button>
                         </div>
                       </div>
