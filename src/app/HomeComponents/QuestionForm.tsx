@@ -19,6 +19,7 @@ const QuestionForm = () => {
     website: false,
     sector: false,
   });
+  const [loading, setLoading] = React.useState(false);
   const handleChange = (e: any) => {
     const { name, value } = e.target;
 
@@ -59,6 +60,7 @@ const QuestionForm = () => {
     if (Object.values(newErrors).some((error) => error)) {
       return;
     }
+    setLoading(true);
     try {
       const response = await fetch(
         "https://invoice-backend.base2brand.com/api/add-appcartify",
@@ -82,6 +84,8 @@ const QuestionForm = () => {
       }
     } catch (error) {
       console.error("Error submitting form:", error);
+    }finally {
+      setLoading(false);
     }
   };
 
@@ -211,11 +215,7 @@ const QuestionForm = () => {
                 </div>
 
                 <div className="w-[30%]">
-                  <button className="gk-button ">
-                    <span className="omega">
-                    Submit
-                    </span>
-                    </button>
+                  <button className="gk-button " disabled={loading}>{loading ? "Submitting..." : "Submit"}</button>
                 </div>
               </div>
             </form>
