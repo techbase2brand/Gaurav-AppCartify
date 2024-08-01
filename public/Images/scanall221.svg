@@ -1,9 +1,9 @@
-<svg width="245" height="554" viewBox="0 0 245 554" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect x="1.03678" y="1.03678" width="242.732" height="551.926" rx="8.70926" fill="#FAFFF3" stroke="#82BC29" stroke-width="1.92644" stroke-dasharray="3.85 3.85"/>
-<rect x="52.6846" y="485.329" width="140.4" height="46.8001" fill="url(#pattern0_966_370)"/>
-<rect x="35.7129" y="291.721" width="174.343" height="174.343" fill="url(#pattern1_966_370)"/>
-<rect x="52.6846" y="215.835" width="140.29" height="43.9715" fill="url(#pattern2_966_370)"/>
-<rect x="35.7129" y="22.2275" width="174.343" height="174.343" fill="url(#pattern3_966_370)"/>
+<svg width="246" height="554" viewBox="0 0 246 554" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="1.63443" y="1.03678" width="242.732" height="551.926" rx="8.70926" fill="#FAFFF3" stroke="#82BC29" stroke-width="1.92644" stroke-dasharray="3.85 3.85"/>
+<rect x="53.2822" y="215.835" width="140.4" height="46.8001" fill="url(#pattern0_966_370)"/>
+<rect x="36.3105" y="22.2275" width="174.343" height="174.343" fill="url(#pattern1_966_370)"/>
+<rect x="53.2822" y="488.243" width="140.29" height="43.9715" fill="url(#pattern2_966_370)"/>
+<rect x="36.3105" y="294.635" width="174.343" height="174.343" fill="url(#pattern3_966_370)"/>
 <defs>
 <pattern id="pattern0_966_370" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_966_370" transform="scale(0.00124378 0.00373134)"/>

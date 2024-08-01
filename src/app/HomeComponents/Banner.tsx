@@ -29,11 +29,13 @@ const Banner = () => {
               </p>
               <div className="btn ">
                 <button
-                  className="gk-button lg:block hidden"
+                  className="gk-button lg:block hidden "
                   onClick={() => handleClick()}
                 >
-                  {" "}
+                {" "}
+                  <span className="omega">
                   Book Your Meeting Today
+                  </span>
                 </button>
               </div>
             </div>

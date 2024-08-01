@@ -211,7 +211,11 @@ const QuestionForm = () => {
                 </div>
 
                 <div className="w-[30%]">
-                  <button className="gk-button ">Submit</button>
+                  <button className="gk-button ">
+                    <span className="omega">
+                    Submit
+                    </span>
+                    </button>
                 </div>
               </div>
             </form>

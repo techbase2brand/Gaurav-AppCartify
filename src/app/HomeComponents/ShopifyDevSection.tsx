@@ -46,7 +46,7 @@ function Developer() {
                     <Image className="lg:h-auto h-[87px]" src={meating} alt="meating" />
                   </div>
                   <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4 font-medium " >
-                    Trusted across 90+ countries
+                    Trusted across 12+ countries
                   </h3>
                   <p className="manrope-gk-p-list text-center  pt-4">
                     We have global trust and reliability in our mobile app

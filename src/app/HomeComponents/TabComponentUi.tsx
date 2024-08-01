@@ -217,7 +217,9 @@ export default function TabComponentUi() {
                               className="gk-button lg:block "
                               onClick={handleClick}
                             >
-                              Book Your Meeting Today
+                                           <span className="omega">
+                  Book Your Meeting Today
+                  </span>
                             </button>
                           </div>
                         </div>
