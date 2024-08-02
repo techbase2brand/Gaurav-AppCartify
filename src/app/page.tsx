@@ -35,8 +35,8 @@ function Page() {
       <ShopifyStore/>
       <ScanandExperienc/>
       {/* <Accordian/> */}
-   {/* <AccodianTilt/> */}
    <AccodianTilt/>
+   {/* <AccodianTilt/> */}
       <QuestionForm/>
       <CustomSlider/>
       {/* <Testing/> */}

@@ -19,12 +19,12 @@ import Image from "next/image";
 // import Electronicshed from "../../../public/Images/Electronicshed.png";
 // import Electronicshed221 from "../../../public/Images/Electronicshed221.png";
 
-import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg";
-import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg";
-import Beauty from "../../../public/Images/tabsimages/Beauty.svg";
-import Spots from "../../../public/Images/tabsimages/Spots.svg";
-import Automotives from "../../../public/Images/tabsimages/Automotives.svg";
-import Electronics from "../../../public/Images/tabsimages/Electronics.svg";
+import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg"
+import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg"
+import Beauty from "../../../public/Images/tabsimages/Beauty.svg"
+import Spots from "../../../public/Images/tabsimages/Spots.svg"
+import Automotives from "../../../public/Images/tabsimages/Automotives.svg"
+import Electronics from "../../../public/Images/tabsimages/Electronics.svg"
 
 import { AppStateContext } from "../Context/AppStateContext";
 
