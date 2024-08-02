@@ -149,7 +149,7 @@ function AccodianTilt() {
                   id={`${item.panel}d-header`}
                   className="border-b-2 pt-[10px] pb-[10px] pl-0 gk-push "
                   style={{
-                    padding: window.innerWidth <= 640 ? "5px" : "10px",
+                    padding: window?.innerWidth <= 640 ? "5px" : "10px",
                   }}
                   expandIcon={renderExpandIcon(item.panel)}
                   
@@ -175,7 +175,7 @@ function AccodianTilt() {
                 <AccordionDetails className="lg:pt-4 lg:pl-2 lg:pb-4 pt-2 pb-2 ">
                   <Typography className="manrope-gk-p-list"
                   style={{
-                    fontSize: window.innerWidth <= 768 ? "16px" : "18px", // Adjust
+                    fontSize: window?.innerWidth <= 768 ? "16px" : "18px", // Adjust
                     fontFamily: "Manrope",
                   }}
                   >
