@@ -149,16 +149,16 @@ function AccodianTilt() {
                   id={`${item.panel}d-header`}
                   className="border-b-2 pt-[10px] pb-[10px] pl-0 gk-push "
                   style={{
-                    padding: window?.innerWidth <= 640 ? "5px" : "10px",
+                    padding: "10px",
                   }}
                   expandIcon={renderExpandIcon(item.panel)}
                   
                 >
                   <Typography
-                    className="text-[#96BF48] lg:text-[25px] font-medium text-[20px]"
+                    className="text-[#96BF48] lg:text-[24px] font-medium text-[20px]"
                     style={{
                       fontFamily: "Manrope",
-                      fontWeight:"600",
+                      // fontWeight:"600",
                       
                     }}
                     sx={{
@@ -174,10 +174,7 @@ function AccodianTilt() {
                 </AccordionSummary>
                 <AccordionDetails className="lg:pt-4 lg:pl-2 lg:pb-4 pt-2 pb-2 ">
                   <Typography className="manrope-gk-p-list"
-                  style={{
-                    fontSize: window?.innerWidth <= 768 ? "16px" : "18px", // Adjust
-                    fontFamily: "Manrope",
-                  }}
+                
                   >
                     {item.answer}
                   </Typography>

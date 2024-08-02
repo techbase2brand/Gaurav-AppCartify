@@ -124,18 +124,20 @@ export default function AppsAdd() {
                   >
                     {tabData.map((tab, index) => (
                       <Tab
+                      className="tab-custom"
                         key={index}
                         component="a" // Turn Tab into anchor link
                         href={`#section-${index}`} // Link to corresponding section
-                        style={{
-                          color: "white",
-                          fontSize: window?.innerWidth <= 768 ? "14px" : "16px", // Adjust font size for mobile devices
-                          position: "relative",
-                          zIndex: 33,
-                          border: "1px solid",
-                          borderRadius: "6px",
-                          width: window?.innerWidth <= 768 ? "48%" : "auto", // Adjust width for mobile devices
-                        }}
+                        // style={{
+                        //   color: "white",
+                        //   fontSize: window.innerWidth <= 768 ? "14px" : "16px", // Adjust font size for mobile devices
+                        //   position: "relative",
+                        //   zIndex: 33,
+                        //   border: "1px solid",
+                        //   borderRadius: "6px",
+                        //   width: window.innerWidth <= 768 ? "45%" : "auto", 
+                          
+                        // }}
                         label={tab.label}
                         onClick={(e) => {
                           e.preventDefault(); // Prevent default anchor behavior
