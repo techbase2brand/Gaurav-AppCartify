@@ -110,7 +110,7 @@ const QuestionForm = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="bg-transparent border-b-2 border-white focus:outline-none text-white"
+                    className="bg-transparent border-b-2 border-white focus:outline-none text-white  text-[17px]"
                   />
                   {errors.name && (
                     <span className="text-[red] text-[16px]">Name is required</span>
@@ -126,7 +126,7 @@ const QuestionForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="bg-transparent border-b-2 border-white focus:outline-none text-white"
+                    className="bg-transparent border-b-2 border-white focus:outline-none text-white text-[17px]"
                   />
                   {errors.email && (
                     <span className="text-[red]  text-[16px]">Email is required</span>
@@ -142,7 +142,7 @@ const QuestionForm = () => {
                     name="phoneNo"
                     value={formData.phoneNo}
                     onChange={handleChange}
-                    className="bg-transparent border-b-2 border-white focus:outline-none text-white"
+                    className="bg-transparent border-b-2 border-white focus:outline-none text-white  text-[17px]"
                   />
                   {errors.phoneNo && (
                     <span className="text-[red]   text-[16px] ">PhoneNo is required</span>
@@ -158,7 +158,7 @@ const QuestionForm = () => {
                     name="website"
                     value={formData.website}
                     onChange={handleChange}
-                    className="bg-transparent border-b-2 border-white focus:outline-none text-white"
+                    className="bg-transparent border-b-2 border-white focus:outline-none text-white  text-[17px]"
                   />
                   {errors.website && (
                     <span className="text-[red]  text-[16px]">Website is required</span>

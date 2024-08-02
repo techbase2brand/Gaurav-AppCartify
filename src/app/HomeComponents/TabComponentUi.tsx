@@ -5,18 +5,24 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import "./TabComponentsUi.css";
 import Image from "next/image";
-import Ecommerce from "../../../public/Images/Ecommerce.png";
-import EcommerceSec from "../../../public/Images/Ecommerce2.png";
-import Restaurant from "../../../public/Images/Restaurant.png";
-import RestaurantSec from "../../../public/Images/Restaurant2.png";
-import Beauty from "../../../public/Images/Beauty.png";
-import BeautySec from "../../../public/Images/Beauty2.png";
-import Spots from "../../../public/Images/Spots.png";
-import SpotsSec from "../../../public/Images/Spots2.png";
-import Automotives from "../../../public/Images/Automotives.png";
-import Automotives221 from "../../../public/Images/Automotives 221.png";
-import Electronicshed from "../../../public/Images/Electronicshed.png"
-import Electronicshed221 from "../../../public/Images/Electronicshed221.png"
+// import Ecommerce from "../../../public/Images/Ecommerce.png";
+// import EcommerceSec from "../../../public/Images/Ecommerce2.png";
+// import Restaurant from "../../../public/Images/Restaurant.png";
+// import RestaurantSec from "../../../public/Images/Restaurant2.png";
+// import Beauty from "../../../public/Images/Beauty.png";
+// import BeautySec from "../../../public/Images/Beauty2.png";
+// import Spots from "../../../public/Images/Spots.png";
+// import SpotsSec from "../../../public/Images/Spots2.png";
+// import Automotives from "../../../public/Images/Automotives.png";
+// import Automotives221 from "../../../public/Images/Automotives 221.png";
+// import Electronicshed from "../../../public/Images/Electronicshed.png"
+// import Electronicshed221 from "../../../public/Images/Electronicshed221.png"
+import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg"
+import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg"
+import Beauty from "../../../public/Images/tabsimages/Beauty.svg"
+import Spots from "../../../public/Images/tabsimages/Spots.svg"
+import Automotives from "../../../public/Images/tabsimages/Automotives.svg"
+import Electronics from "../../../public/Images/tabsimages/Electronics.svg"
 
 import { AppStateContext } from "../Context/AppStateContext";
 
@@ -52,7 +58,7 @@ function a11yProps(index: number) {
 const tabData = [
   {
     label: "Ecommerce",
-    images: [Ecommerce, EcommerceSec],
+    images: [Ecommerce, Ecommerce],
     title: "Order and Reservation Management",
     descriptions: [
       "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
@@ -61,7 +67,7 @@ const tabData = [
   },
   {
     label: "Food & Restaurant",
-    images: [Restaurant, RestaurantSec],
+    images: [Restaurant, Restaurant],
     title: "Menu and Delivery Solutions",
     descriptions: [
       "Display menu offerings, accept custom orders, manage deliveries, promote specials, and share baking tips for sweet success.",
@@ -70,7 +76,7 @@ const tabData = [
   },
   {
     label: "Beauty",
-    images: [Beauty, BeautySec],
+    images: [Beauty, Beauty],
     title: "Product and Style Management",
     descriptions: [
       "Streamline orders, reservations, and menu updates for a seamless dining experience and efficient kitchen management.",
@@ -79,7 +85,7 @@ const tabData = [
   },
   {
     label: "Sports",
-    images: [Spots, SpotsSec],
+    images: [Spots, Spots],
     title: "Inventory and Sales Tools",
     descriptions: [
       "Manage inventory, showcase products, process orders, handle returns, update sizing guides, provide expert tips, and analyze sales trends with our comprehensive sports store management tools.",
@@ -88,7 +94,7 @@ const tabData = [
   },
   {
     label: "Automotives",
-    images: [Automotives, Automotives221],
+    images: [Automotives, Automotives],
     title: "Inventory and Service Solutions",
     descriptions: [
       "Manage inventory, showcase vehicles, process service appointments, handle repairs, update vehicle specifications and provide maintenance tips, with our Shopify expertise.",
@@ -97,7 +103,7 @@ const tabData = [
   },
   {
     label: "Electronics",
-    images: [Electronicshed, Electronicshed221],
+    images: [Electronics, Electronics],
     title: "Inventory and Sales Solutions",
     descriptions: [
       "Manage inventory, showcase products, process orders, handle returns, update specifications, provide tech tips, and analyze sales trends with our electronics store management tools.",
@@ -156,7 +162,7 @@ export default function TabComponentUi() {
 
   return (
     <>
-      <section>
+    <section className="lg:block hidden">
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
@@ -168,29 +174,34 @@ export default function TabComponentUi() {
             <div className="mmm pt-6">
               <Box sx={{ width: "100%" }}>
                 <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                  <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    aria-label="basic tabs example"
-                    variant="scrollable"
-                    scrollButtons="auto"
-                  >
-                    {tabData.map((tab, index) => (
-                      <Tab
-                        key={index}
-                        style={{
-                          color: "white",
-                          fontSize: "16px",
-                          position: "relative",
-                          zIndex: "33",
-                          border: "1px solid",
-                          borderRadius: "6px",
-                        }}
-                        label={tab.label}
-                        {...a11yProps(index)}
-                      />
-                    ))}
-                  </Tabs>
+                <Tabs  className="desktop-tab"
+  value={value}
+  onChange={handleChange}
+  aria-label="basic tabs example"
+  variant="scrollable"
+  scrollButtons="auto"
+>
+  {tabData.map((tab, index) => (
+    <Tab
+   
+      key={index}
+      style={{
+        color: "white",
+       fontSize: window?.innerWidth <= 768 ? "14px" : "16px", // Adjust font size for mobile devices
+        position: "relative",
+        zIndex: 33,
+        border: "1px solid",
+        borderRadius: "6px",
+        width: window?.innerWidth <= 768 ? "170px" : "auto", // Adjust width for mobile devices
+       
+
+      }}
+      label={tab.label}
+      {...a11yProps(index)}
+    />
+  ))}
+</Tabs>
+
                 </Box>
                 {tabData.map((tab, index) => (
                   <CustomTabPanel value={value} index={index} key={index}>
@@ -212,7 +223,9 @@ export default function TabComponentUi() {
                           <p className="manrope-gk-p lg:text-left text-center lg:pt-[15px] lg:pb-[15px] pt-[5px] pb-[15px] ">
                             {tab.descriptions[imageIndex]}
                           </p>
-                          <div className="btn">
+                          <div className="btn "
+                         
+                          >
                             <button
                               className="gk-button lg:block "
                               onClick={handleClick}

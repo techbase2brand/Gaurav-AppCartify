@@ -1,0 +1,15 @@
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .mobile-tab div > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+}

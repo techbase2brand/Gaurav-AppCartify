@@ -230,6 +230,7 @@ export const FormModal = () => {
                 className="submit-button p-[15px] w-[35%] text-white"
                 style={{
                   background: `linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%)`,
+                  color:"white"
                 }}
                 disabled={loading}
               >

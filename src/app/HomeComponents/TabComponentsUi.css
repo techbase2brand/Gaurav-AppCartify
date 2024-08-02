@@ -1,7 +1,7 @@
 
-.mmm > div > div > div > div > div {
+.desktop-tab div> div {
     display: flex;
-    justify-content: center !important;
+    justify-content: center;
     gap: 30px;
 }
 .css-k008qs {
@@ -29,17 +29,17 @@
     background: linear-gradient(4deg, #4d8f2d 46%, #82bc29) !important;
     border-radius: 8px;
 }
-@media only screen and (max-width: 768px) {
-    .mmm > div > div > div > div > div {
+@media only screen and (max-width: 1024px) {
+    .desktop-tab div> div {
         display: flex;
-        justify-content: inherit !important;
-        gap: 10px;
+        justify-content:inherit;
+        gap: 30px;
     }
 }
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
     .mmm > div > div > div > div > div {
         display: flex;
   justify-content: inherit !important;
         gap: 10px;
     }
-}
+} */

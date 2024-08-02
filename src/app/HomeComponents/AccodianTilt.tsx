@@ -9,6 +9,8 @@ import Typography from "@mui/material/Typography";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import { relative } from "path";
+import "./AccodianTilt.css"
+
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -26,7 +28,7 @@ const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary expandIcon={props.expandIcon} {...props} />
 ))(({ theme }) => ({
   display: "flex",
-  gap:"10px",
+  gap: "10px",
   alignItems: "baseline",
   flexDirection: "row",
   "& .MuiAccordionSummary-content": {
@@ -42,7 +44,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 const faqItems = [
   {
     panel: "panel1",
-    question: "Can you integrate my existing Shopify store with the mobile app?",
+    question:
+      "Can you integrate my existing Shopify store with the mobile app?",
     answer:
       "Yes, we specialize in integrating your current Shopify store seamlessly into the mobile app, preserving your branding and ensuring a cohesive shopping experience across platforms.",
   },
@@ -54,13 +57,15 @@ const faqItems = [
   },
   {
     panel: "panel3",
-    question: "Will my Shopify mobile app be compatible with both iOS and Android devices?",
+    question:
+      "Will my Shopify mobile app be compatible with both iOS and Android devices?",
     answer:
       "Yes, we develop Shopify mobile apps that are compatible with both iOS (Apple devices) and Android devices, ensuring a broad reach among mobile users.",
   },
   {
     panel: "panel4",
-    question: "What support do you provide after the Shopify mobile app is launched?",
+    question:
+      "What support do you provide after the Shopify mobile app is launched?",
     answer:
       "We provide ongoing support and maintenance to ensure your Shopify mobile app operates smoothly. This includes updates, troubleshooting, and assistance with any new features or optimizations you may require.",
   },
@@ -78,13 +83,15 @@ const faqItems = [
   },
   {
     panel: "panel7",
-    question: "What features can be added to my Shopify app to enhance sales and customer engagement?",
+    question:
+      "What features can be added to my Shopify app to enhance sales and customer engagement?",
     answer:
       "AppCarify offers over 20 new features including enhanced UI/UX design, advanced analytics, and seamless integrations, aimed at driving business growth and competitiveness.",
   },
   {
     panel: "panel8",
-    question: "How can I get started with AppCarify for my Shopify app development?",
+    question:
+      "How can I get started with AppCartify for my Shopify app development?",
     answer:
       "Simply contact us to discuss your project requirements. We'll guide you through our process from initial consultation to deployment, ensuring a successful app launch and ongoing support.",
   },
@@ -100,22 +107,27 @@ function AccodianTilt() {
 
   const renderExpandIcon = (panel: string) => {
     return expanded === panel ? (
-      <RemoveCircleIcon sx={{ color: "white",  
-        // position:"relative",
-        // top:"-8px",
-      }} />
+      <RemoveCircleIcon
+        sx={{
+          color: "white",
+          // position:"relative",
+          // top:"-8px",
+        }}
+      />
     ) : (
-      <AddCircleIcon sx={{ color: "white" ,
-        // position:"relative",
-        // top:"4px", .
-        
-      }} />
+      <AddCircleIcon
+        sx={{
+          color: "white",
+          // position:"relative",
+          // top:"4px", .
+        }}
+      />
     );
   };
 
   return (
     <>
-      <section className="bg-[#0E1014] lg:pb-[50px] lg:pt-[50px]">
+      <section className="bg-[#0E1014] lg:pb-[50px] lg:pt-[50px] pb-10">
         <div className="container">
           <div>
             <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
@@ -126,26 +138,47 @@ function AccodianTilt() {
                 key={item.panel}
                 expanded={expanded === item.panel}
                 onChange={handleChange(item.panel)}
-                className="bg-transparent border-none border-b-2"
-                style={{ borderBottom: "1px solid #ffffff6b" }}
+                className=" border-none border-b-2  "
+                style={{
+                  borderBottom: "1px solid #ffffff6b",
+                  background: "#ff000000",
+                }}
               >
                 <AccordionSummary
                   aria-controls={`${item.panel}d-content`}
                   id={`${item.panel}d-header`}
-                  className="border-b-2 pt-[10px] pb-[10px] pl-0"
-                  expandIcon={renderExpandIcon(item.panel)}
-                >
-                  <Typography className="text-[#96BF48] lg:text-[25px] font-medium text-[20px]"
+                  className="border-b-2 pt-[10px] pb-[10px] pl-0 gk-push "
                   style={{
-                    fontFamily: "Manrope",
-                    
+                    padding: window?.innerWidth <= 640 ? "5px" : "10px",
                   }}
+                  expandIcon={renderExpandIcon(item.panel)}
+                  
+                >
+                  <Typography
+                    className="text-[#96BF48] lg:text-[25px] font-medium text-[20px]"
+                    style={{
+                      fontFamily: "Manrope",
+                      fontWeight:"600",
+                      
+                    }}
+                    sx={{
+                      fontSize: {
+                        xs: '18px', // for extra-small screens
+                        sm: '18px', // for small screens
+                        md: '22px', // for medium and up screens
+                      },
+                    }}
                   >
                     {item.question}
                   </Typography>
                 </AccordionSummary>
-                <AccordionDetails className="lg:pt-4 lg:pl-2 lg:pb-4 pt-2 pb-2">
-                  <Typography className="manrope-gk-p-list">
+                <AccordionDetails className="lg:pt-4 lg:pl-2 lg:pb-4 pt-2 pb-2 ">
+                  <Typography className="manrope-gk-p-list"
+                  style={{
+                    fontSize: window?.innerWidth <= 768 ? "16px" : "18px", // Adjust
+                    fontFamily: "Manrope",
+                  }}
+                  >
                     {item.answer}
                   </Typography>
                 </AccordionDetails>
