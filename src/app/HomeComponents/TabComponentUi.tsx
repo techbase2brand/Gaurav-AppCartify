@@ -187,12 +187,11 @@ export default function TabComponentUi() {
       key={index}
       style={{
         color: "white",
-       fontSize: window?.innerWidth <= 768 ? "14px" : "16px", // Adjust font size for mobile devices
-        position: "relative",
+      //  fontSize: window?.innerWidth <= 768 ? "14px" : "16px", 
         zIndex: 33,
         border: "1px solid",
         borderRadius: "6px",
-        width: window?.innerWidth <= 768 ? "170px" : "auto", // Adjust width for mobile devices
+        // width: window?.innerWidth <= 768 ? "170px" : "auto", 
        
 
       }}

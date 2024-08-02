@@ -13,3 +13,20 @@
     }
 
 }
+.tab-custom {
+  
+    font-size: 14px; 
+    position: relative;
+    z-index: 33;
+    border: 1px solid white !important;
+    border-radius: 6px !important;
+    width: 45%; 
+    color: white !important;
+  }
+  
+  @media (min-width: 768px) {
+    .tab-custom {
+      font-size: 16px; /* Adjust for larger screens */
+      width: auto; /* Adjust for larger screens */
+    }
+  }
