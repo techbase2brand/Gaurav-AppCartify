@@ -14,6 +14,7 @@ import QuestionForm from "./HomeComponents/QuestionForm";
 // import CustomSlider from "./HomeComponents/Testmonial";
 import dynamic from "next/dynamic";
 import AccodianTilt from "./HomeComponents/AccodianTilt";
+import AppsAdd from "./HomeComponents/AppsAdd";
 
 const Testmonial = dynamic(() => import("@/app/HomeComponents/TabComponentUi"), { ssr: false });
 const CustomSlider = dynamic(() => import("./HomeComponents/Testmonial"), { ssr: false });
@@ -26,6 +27,7 @@ function Page() {
       <Banner />
       <FormModal/>
       <Testmonial />
+      <AppsAdd/>
       <Developer/>
       <MobileApps/>
       <ShopifyApp/>
@@ -33,6 +35,7 @@ function Page() {
       <ShopifyStore/>
       <ScanandExperienc/>
       {/* <Accordian/> */}
+   {/* <AccodianTilt/> */}
    <AccodianTilt/>
       <QuestionForm/>
       <CustomSlider/>

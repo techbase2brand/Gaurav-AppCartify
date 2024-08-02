@@ -73,6 +73,12 @@ button.gk-button {
   margin-top: 20px;
   display: inline-block;
   position: relative;
+  transition: .6s;
+}
+button.gk-button:hover {
+
+    transform: translateY(-6px);
+
 }
 .manrope-gk-p {
   font-family: "Manrope", sans-serif;
@@ -102,7 +108,7 @@ button.gk-button {
     font-weight: 400;
 }
   label{
-    font-size: 16px;
+    font-size: 18px;
   }
   select{
     font-size: 16px;
@@ -135,6 +141,7 @@ button.gk-button {
   background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
   box-shadow: 11px 12px 3px #161616;
   margin-top: 20px;
+  
 }
 h4.gk-h4 {
   font-size: 21px;

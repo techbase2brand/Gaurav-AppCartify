@@ -1,0 +1,19 @@
+
+@media only screen and (max-width: 600px) {
+    .gk-push svg {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: 50%;
+        /* bottom: -19px; */
+    }
+}
+.manrope-gk-p-list {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 34px;
+    font-size: 20px;
+    color: white;
+  }
