@@ -23,14 +23,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          property="og:title"
+          content="Turn Your Shopify Store into a Mobile App | AppCartify"
+        />
+        <meta
+          property="og:description"
+          content="Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more."
+        />
+        <meta property="og:image" content="image_url_here" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
         />
- {/* Google Tag Manager */}
- <script
+        {/* Google Tag Manager */}
+        <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -43,8 +52,8 @@ export default function RootLayout({
       </head>
 
       <body>
-         {/* Google Tag Manager (noscript) */}
-         <noscript>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NJQBRR9M"
             height="0"
