@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import { AppStateContext } from "../Context/AppStateContext";
 import Image from "next/image";
+import Link from "next/link";
 import logoAppcartify from "../../../public/Images/logoAppcartify.svg";
 
 const Header = () => {
@@ -19,11 +20,13 @@ const Header = () => {
             <div>
               <div className="logo_icon">
                 {/* <h1 className="text-[26px] font-bold text-white">Appcartify</h1> */}
+              
                 <Image
                   src={logoAppcartify}
                   alt="appcartifylogo "
                   className="lg:w-auto w-[60%]"
                 />
+               
               </div>
             </div>
 

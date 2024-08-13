@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +28,8 @@ export default function RootLayout({
           property="og:title"
           content="Turn Your Shopify Store into a Mobile App | AppCartify"
         />
+        <link rel="canonical" href="https://www.appcartify.com/" />
+
         <meta
           property="og:description"
           content="Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more."
