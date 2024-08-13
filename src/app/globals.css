@@ -8,6 +8,7 @@ body{
   font-size: 22px;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
+  background-color: #0e1014;
 }
 
 
@@ -38,7 +39,7 @@ h3.gk-h3{
 }
 h4.gk-h4 {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
  
 }
 

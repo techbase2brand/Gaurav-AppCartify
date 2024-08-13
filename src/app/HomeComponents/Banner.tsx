@@ -52,7 +52,7 @@ const Banner = () => {
                 {/* <Image src={frame} alt="frame" className="frame relative" /> */}
                 <div className="relative">
                 <Image
-                className="w-[122px] lg:w-[158px] absolute right-[-9px] md:top-[-70px] top-[-65px] object-cover w-100 "
+                className="w-[122px] lg:w-[158px] absolute right-[-9px] md:top-[-70px] top-[-65px] object-cover w-100 z-30 "
                 src={Affordablepricing}
                 alt="Affordablepricing"
               />
