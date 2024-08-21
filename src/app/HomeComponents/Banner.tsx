@@ -13,6 +13,9 @@ const Banner = () => {
     setState(true);
     // setOpen((prevOpen:any) => !prevOpen);
   };
+  const preventFullScreen = (event: any) => {
+    event.preventDefault();
+  };
 
   return (
     <>
@@ -61,17 +64,18 @@ const Banner = () => {
                     loop
                     muted
                     className="w-full h-full object-cover rounded-[25px_0px_25px]"
+                    onClick={preventFullScreen}
                   />
                 </div>
                 <div className="md:hidden block">
-                  <video
-                    src="/Images/mainpagebanner/app.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover rounded-[25px_0px_25px]"
-                  />
-                </div>
+                <video
+                  src="/Images/mainpagebanner/app.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  className="w-full h-full object-cover rounded-[25px_0px_25px]"
+                />
+              </div>
 
                 {/* 
                 <Image
