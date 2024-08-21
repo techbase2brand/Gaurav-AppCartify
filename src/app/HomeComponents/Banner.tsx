@@ -69,7 +69,7 @@ const Banner = () => {
                 </div>
                 <div className="md:hidden block">
                 <video
-                  src="/Images/mainpagebanner/App.mp4"
+                  src="/Images/mainpagebanner/app.mp4"
                   autoPlay
                   loop
                   muted
