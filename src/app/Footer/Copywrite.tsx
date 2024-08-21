@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import calender from "../../../public/Images/calenderico.svg"
+import calender from "../../../public/Images/Calenderico.svg"
 import { AppStateContext } from "../Context/AppStateContext";
 
 
