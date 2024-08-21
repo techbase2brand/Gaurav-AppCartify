@@ -19,7 +19,7 @@ const Banner = () => {
 
   return (
     <>
-      <section className="hhh flex items-center xl:h-[850px]  md:pt-[100px] md:pb-[50px] pt-[9.5rem] pb-14  mt-[-93px]   ">
+      <section className="hhh flex items-center xl:h-[900px]  md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14  lg:mt-[0px]  md:mt-[0px]   ">
         <div className="container">
           <div className=" xl:flex  xl:justify-between  lg:flex  lg:justify-between items-center  lg:gap-7  ">
             <div className="xl:w-[30%]  lg:w-[30%] w-[100%]">
@@ -50,13 +50,13 @@ const Banner = () => {
             <div className="frame-class xl:w-[65%] lg:w-[65%] w-[100%] md:pt-[2.5rem] pt-[20%]">
               <div className="">
                 {/* <Image src={frame} alt="frame" className="frame relative" /> */}
-                <div className="relative">
+                {/* <div className="relative">
                   <Image
                     className="w-[122px] lg:w-[158px] absolute right-[-9px] md:top-[-70px] top-[-65px] object-cover w-100 z-30 "
                     src={Affordablepricing}
                     alt="Affordablepricing"
                   />
-                </div>
+                </div> */}
                 <div className="md:block hidden">
                   <video
                     src="/Images/mainpagebanner/AppCartifyVideo.mp4"

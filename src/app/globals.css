@@ -200,3 +200,46 @@ h4.gk-h4 {
 }
 
 }
+
+/* footer butto */
+.chin-popup {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+.footer-btn{
+  font-size: 16px;
+  padding: 10px 10px;
+  font-weight: 400;
+  border-style: none;
+  color: white;
+  background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
+  box-shadow: 11px 12px 3px #161616;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.header-to-hide {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed; /* Make sure the header stays fixed at the top */
+  z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.header-to-hide.scroll-down {
+  transform: translateY(0);
+  opacity: 1;
+  display: block;
+  background: #1f2523;
+}
+
+.header-to-hide.scroll-up {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction while hidden */
+}

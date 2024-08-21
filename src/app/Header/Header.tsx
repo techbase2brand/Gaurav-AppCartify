@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" relative z-10">
+      <header className=" relative z-10 sticky-header">
         <div className="container">
           <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center   pt-3  pb-3  ">
             <div>
