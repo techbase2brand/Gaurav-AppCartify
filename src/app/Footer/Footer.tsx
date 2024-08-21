@@ -3,6 +3,8 @@ import Image from "next/image";
 import DowonlodApp from "../../../public/Images/Dowonlodapp.svg"
 import Copywrite from "./Copywrite";
 import Link from "next/link";
+import facebook from "../../../public/Images/facebookfooter.svg"
+import instagram from "../../../public/Images/instagramfooter.svg"
 
 const Footer = () => {
   return (
@@ -15,8 +17,21 @@ const Footer = () => {
           </h2>
           <p className="text-white  lg:text-[22px] lg:font-medium  font-normal text-[18px] lg:w-[60%]">
             Our Team is Ready To Turn Your Goals Into Implementation Ensuring
-            Your Vision Turns Into Reality
+            Your Vision Turns Into Reality. 
           </p> 
+          <div className=" flex gap-3 pt-5">
+           <Link href="">
+            <span className="oooo">
+              <Image src={facebook} alt="Facebookicon" />
+            </span>
+            </Link>
+
+<Link href="">
+            <span>
+              <Image src={instagram} alt="instagramicon" />
+            </span>
+            </Link>
+          </div>
           <div className="heee flex justify-end">
             <Link href="https://play.google.com/store/apps/details?id=com.AppCatify&pcampaignid=web_share" target="blank" passHref>
               <Image

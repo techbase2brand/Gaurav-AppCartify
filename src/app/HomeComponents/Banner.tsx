@@ -13,7 +13,7 @@ const Banner = () => {
     setState(true);
     // setOpen((prevOpen:any) => !prevOpen);
   };
-  const preventFullScreen = (event:any) => {
+  const preventFullScreen = (event: any) => {
     event.preventDefault();
   };
 
@@ -48,25 +48,35 @@ const Banner = () => {
               </div>
             </div>
             <div className="frame-class xl:w-[65%] lg:w-[65%] w-[100%] md:pt-[2.5rem] pt-[20%]">
-              <div className="adbsframe relative lg:h-[400px] xl:h-[545px] h-[400px] w-[90%] mx-auto md:w-[100%]">
+              <div className="">
                 {/* <Image src={frame} alt="frame" className="frame relative" /> */}
                 <div className="relative">
-                <Image
-                className="w-[122px] lg:w-[158px] absolute right-[-9px] md:top-[-70px] top-[-65px] object-cover w-100 z-30 "
-                src={Affordablepricing}
-                alt="Affordablepricing"
-              />
-              </div>
-
+                  <Image
+                    className="w-[122px] lg:w-[158px] absolute right-[-9px] md:top-[-70px] top-[-65px] object-cover w-100 z-30 "
+                    src={Affordablepricing}
+                    alt="Affordablepricing"
+                  />
+                </div>
+                <div className="md:block hidden">
+                  <video
+                    src="/Images/mainpagebanner/AppCartifyVideo.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-full object-cover rounded-[25px_0px_25px]"
+                    onClick={preventFullScreen}
+                  />
+                </div>
+                <div className="md:hidden block">
                 <video
-                  src="/Images/mainpagebanner/AppCartifyVideo.mp4"
+                  src="/Images/mainpagebanner/App.mp4"
                   autoPlay
                   loop
                   muted
                   className="w-full h-full object-cover rounded-[25px_0px_25px]"
-                  onClick={preventFullScreen}
                 />
-               
+              </div>
+
                 {/* 
                 <Image
                   className="gifframe  absolute xl:w-[519px] xl:h-[523px] xl:object-cover xl:left-[-32px] xl:top-[-21px] xl:rounded-[40px_0px_45px] lg:left-[-33px] lg:h-[370px] lg:top-[-30px] lg:w-[100%]  h-[335px] w-[92%] left-[-15px] top-[-18px] md:w-[100%]  md:-left-[0px] md:-top-[0px] md:h-[408px]"
