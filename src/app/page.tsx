@@ -15,6 +15,7 @@ import QuestionForm from "./HomeComponents/QuestionForm";
 import dynamic from "next/dynamic";
 import AccodianTilt from "./HomeComponents/AccodianTilt";
 import AppsAdd from "./HomeComponents/AppsAdd";
+import Feature from "./HomeComponents/Feature";
 
 const Testmonial = dynamic(() => import("@/app/HomeComponents/TabComponentUi"), { ssr: false });
 const CustomSlider = dynamic(() => import("./HomeComponents/Testmonial"), { ssr: false });
@@ -25,6 +26,7 @@ function Page() {
   return (
     <>
       <Banner />
+      <Feature/>
       <FormModal/>
       <Testmonial />
       <AppsAdd/>

@@ -94,13 +94,15 @@ button.gk-button:hover {
 .manrope-gk-p-list {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 34px;
   font-size: 20px;
   color: white;
 }
 @media only screen and (max-width: 1024px) {
+
+  
   h1.gk-h1 {
     font-size: 42px;
     font-family: impact;
@@ -148,6 +150,10 @@ h4.gk-h4 {
   font-size: 21px;
   font-weight: 400;
  
+}
+/* in feature section span styling */
+.feature-span span {
+  font-size: 21px !important;
 }
 
 
