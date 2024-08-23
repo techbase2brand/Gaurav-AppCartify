@@ -59,7 +59,7 @@ const Banner = () => {
                   />
                 </div> */}
                 <div className="md:block hidden">
-                  <div className=" relative  xl:h-[597px] object-cover  lg:h-[500px] md:h-[417px]  ppp rounded-[50px] pt-3">
+                  <div className=" relative  xl:h-[597px] object-cover  lg:h-[500px] md:h-[417px]  ppp rounded-[50px] pt-3">   
                     <iframe
                       className=" w-[100%]"
                       src="https://player.vimeo.com/video/1001609897?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
@@ -83,7 +83,7 @@ const Banner = () => {
                 </div>
 
                 <div className="md:hidden block ">
-                  <div className=" relative h-[500px]">
+                  <div className=" relative h-[420px]">
                     <iframe
                       className=""
                       src="https://player.vimeo.com/video/1001641128?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"

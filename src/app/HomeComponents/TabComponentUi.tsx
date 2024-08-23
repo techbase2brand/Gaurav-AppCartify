@@ -17,12 +17,12 @@ import Image from "next/image";
 // import Automotives221 from "../../../public/Images/Automotives 221.png";
 // import Electronicshed from "../../../public/Images/Electronicshed.png"
 // import Electronicshed221 from "../../../public/Images/Electronicshed221.png"
-import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg"
-import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg"
-import Beauty from "../../../public/Images/tabsimages/Beauty.svg"
-import Spots from "../../../public/Images/tabsimages/Spots.svg"
-import Automotives from "../../../public/Images/tabsimages/Automotives.svg"
-import Electronics from "../../../public/Images/tabsimages/Electronics.svg"
+import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg";
+import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg";
+import Beauty from "../../../public/Images/tabsimages/Beauty.svg";
+import Spots from "../../../public/Images/tabsimages/Spots.svg";
+import Automotives from "../../../public/Images/tabsimages/Automotives.svg";
+import Electronics from "../../../public/Images/tabsimages/Electronics.svg";
 
 import { AppStateContext } from "../Context/AppStateContext";
 
@@ -123,7 +123,7 @@ export default function TabComponentUi() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex((prevIndex) => (prevIndex + 1) % 2);
-    }, 2000); // Change image and description every 2 seconds
+    },3000); // Change image and description every 2 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -162,7 +162,7 @@ export default function TabComponentUi() {
 
   return (
     <>
-    <section className="lg:block hidden">
+      <section className="lg:block hidden">
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
@@ -174,33 +174,30 @@ export default function TabComponentUi() {
             <div className="mmm pt-6">
               <Box sx={{ width: "100%" }}>
                 <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-                <Tabs  className="desktop-tab"
-  value={value}
-  onChange={handleChange}
-  aria-label="basic tabs example"
-  variant="scrollable"
-  scrollButtons="auto"
->
-  {tabData.map((tab, index) => (
-    <Tab
-   
-      key={index}
-      style={{
-        color: "white",
-      //  fontSize: window?.innerWidth <= 768 ? "14px" : "16px", 
-        zIndex: 33,
-        border: "1px solid",
-        borderRadius: "6px",
-        // width: window?.innerWidth <= 768 ? "170px" : "auto", 
-       
-
-      }}
-      label={tab.label}
-      {...a11yProps(index)}
-    />
-  ))}
-</Tabs>
-
+                  <Tabs
+                    className="desktop-tab"
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="basic tabs example"
+                    variant="scrollable"
+                    scrollButtons="auto"
+                  >
+                    {tabData.map((tab, index) => (
+                      <Tab
+                        key={index}
+                        style={{
+                          color: "white",
+                          //  fontSize: window?.innerWidth <= 768 ? "14px" : "16px",
+                          zIndex: 33,
+                          border: "1px solid",
+                          borderRadius: "6px",
+                          // width: window?.innerWidth <= 768 ? "170px" : "auto",
+                        }}
+                        label={tab.label}
+                        {...a11yProps(index)}
+                      />
+                    ))}
+                  </Tabs>
                 </Box>
                 {tabData.map((tab, index) => (
                   <CustomTabPanel value={value} index={index} key={index}>
@@ -222,16 +219,14 @@ export default function TabComponentUi() {
                           <p className="manrope-gk-p lg:text-left text-center lg:pt-[15px] lg:pb-[15px] pt-[5px] pb-[15px] ">
                             {tab.descriptions[imageIndex]}
                           </p>
-                          <div className="btn "
-                         
-                          >
+                          <div className="btn ">
                             <button
                               className="gk-button lg:block "
                               onClick={handleClick}
                             >
-                                           <span className="omega">
-                  Book Your Meeting Today
-                  </span>
+                              <span className="omega">
+                                Book Your Meeting Today
+                              </span>
                             </button>
                           </div>
                         </div>

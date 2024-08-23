@@ -24,8 +24,8 @@ const Copywrite = () => {
           </Link>
         </li>
       </div>
-      <div className="chin-popup md:hidden block">
-        <button className="footer-btn" onClick={handleClick}>
+      <div className="chin-popup md:hidden block overflow-hidden">
+        <button className="footer-btn blue " onClick={handleClick}>
           <div className="flex justify-center gap-3 items-center">
           <span className="omega">Book Your Meeting Today</span>
           <span className="">
