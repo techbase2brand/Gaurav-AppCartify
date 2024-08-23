@@ -5,6 +5,7 @@ import Copywrite from "./Copywrite";
 import Link from "next/link";
 import facebook from "../../../public/Images/facebookfooter.svg";
 import instagram from "../../../public/Images/instagramfooter.svg";
+import youtube from "../../../public/Images/youtubeicon.svg"
 
 const Footer = () => {
   return (
@@ -15,11 +16,11 @@ const Footer = () => {
             Get Ready to Create Your Success{" "}
             <span style={{ color: "#96BF48" }}> Roadmap</span> With Us
           </h2>
-          <p className="text-white  lg:text-[22px] lg:font-medium  font-normal text-[18px] lg:w-[60%]">
-            Our Team is Ready To Turn Your Goals Into Implementation Ensuring
+          <p className="text-white  lg:text-[22px] lg:font-medium  font-normal text-[18px] lg:w-[50%]">
+            Our Team is Ready To Turn Your Goals Into Implementation. Ensuring
             Your Vision Turns Into Reality.
           </p>
-          <div className=" flex gap-3 pt-5">
+          <div className=" flex gap-5 pt-5">
             <Link href=" https://www.facebook.com/profile.php?id=61562039261967" target="blank">
               <span className="oooo">
                 <Image src={facebook} alt="Facebookicon" />
@@ -29,6 +30,11 @@ const Footer = () => {
             <Link href=" https://www.instagram.com/appcartify/" target="blank">
               <span>
                 <Image src={instagram} alt="instagramicon" />
+              </span>
+            </Link>
+            <Link href=" https://www.youtube.com/@Appcartify " target="blank">
+              <span>
+                <Image src={youtube} alt="instagramicon" />
               </span>
             </Link>
           </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Industries from "../../../public/Images/Industries.svg";
 import carticon from "../../../public/Images/featuresection/carticon.svg"
@@ -9,8 +9,14 @@ import driverapp from "../../../public/Images/featuresection/driverapp.svg"
 import Analytics from "../../../public/Images/featuresection/Analytics.svg"
 // 
 import realtime from "../../../public/Images/featuresection/Analytics.svg"
+import { AppStateContext } from "../Context/AppStateContext";
 
 const Feature = () => {
+  const { setState } = useContext(AppStateContext);
+  const handleClick = () => {
+    setState(true);
+    // setOpen((prevOpen:any) => !prevOpen); 
+  }; 
   return (
     <>
       <div>
@@ -182,6 +188,13 @@ const Feature = () => {
                   </div>
                 </div>
               </div>
+             <div className="text-white flex justify-center lg:pt-5 lg:pb-2 pt-2 pb-3">
+             <button className="gk-button lg:block hidden mt-9" onClick={() => handleClick()}>
+              <span className="omega">
+                  Book Your Meeting Today
+                  </span>
+                 </button>
+             </div>
             </div>
           </div>
         </section>

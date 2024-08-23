@@ -6,6 +6,7 @@ import frame from "../../../public/Images/frame.svg";
 import gifvideo from "../../../public/Images/ggivvideo.gif";
 import { AppStateContext } from "../Context/AppStateContext";
 import Affordablepricing from "../../../public/Images/mainpagebanner/image-removebg-preview.png";
+import Script from "next/script";
 
 const Banner = () => {
   const { setState } = useContext(AppStateContext);
@@ -19,7 +20,7 @@ const Banner = () => {
 
   return (
     <>
-      <section className="hhh flex items-center xl:h-[900px]  md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14  lg:mt-[0px]  md:mt-[0px]   ">
+      <section className="hhh flex items-center xl:h-[800px]  md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14  lg:mt-[0px]  md:mt-[0px]   ">
         <div className="container">
           <div className=" xl:flex  xl:justify-between  lg:flex  lg:justify-between items-center  lg:gap-7  ">
             <div className="xl:w-[30%]  lg:w-[30%] w-[100%]">
@@ -47,7 +48,7 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-            <div className="frame-class xl:w-[65%] lg:w-[65%] w-[100%] md:pt-[2.5rem] pt-[20%]">
+            <div className="frame-class xl:w-[65%] lg:w-[65%] w-[100%] md:pt-[1rem] pt-[6%]">
               <div className="">
                 {/* <Image src={frame} alt="frame" className="frame relative" /> */}
                 {/* <div className="relative">
@@ -58,24 +59,52 @@ const Banner = () => {
                   />
                 </div> */}
                 <div className="md:block hidden">
-                  <video
-                    src="/Images/mainpagebanner/AppCartifyVideo.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover rounded-[25px_0px_25px]"
-                    onClick={preventFullScreen}
-                  />
+                  <div className=" relative  xl:h-[597px] object-cover  lg:h-[500px] md:h-[417px]  ppp rounded-[50px] pt-3">
+                    <iframe
+                      className=" w-[100%]"
+                      src="https://player.vimeo.com/video/1001609897?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
+                      title="App Cartify Video"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "98%",
+                        height: "91%",
+                        borderRadius: "35px 0",
+                      }}
+                    ></iframe>
+                    <Script
+                      src="https://player.vimeo.com/api/player.js"
+                      strategy="afterInteractive"
+                    />
+                  </div>
                 </div>
-                <div className="md:hidden block">
-                <video
-                  src="/Images/mainpagebanner/app.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  className="w-full h-full object-cover rounded-[25px_0px_25px]"
-                />
-              </div>
+
+                <div className="md:hidden block ">
+                  <div className=" relative h-[500px]">
+                    <iframe
+                      className=""
+                      src="https://player.vimeo.com/video/1001641128?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
+                      title="App Cartify Video"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "98%",
+                        height: "91%",
+                        borderRadius: "35px 0",
+                      }}
+                    ></iframe>
+                    <Script
+                      src="https://player.vimeo.com/api/player.js"
+                      strategy="afterInteractive"
+                    />
+                  </div>
+                </div>
 
                 {/* 
                 <Image
