@@ -2,7 +2,7 @@ import React from 'react';
 import './AppCartify.css';
 import Developer from '../HomeComponents/ShopifyDevSection';
 
-const page = ({ name }) => {
+const page = () =>{
     return (
         <>
             <div className="container-thank-you">
