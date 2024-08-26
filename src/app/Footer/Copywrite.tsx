@@ -4,10 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 import calender from "../../../public/Images/Calenderico.svg"
 import { AppStateContext } from "../Context/AppStateContext";
+import { usePathname } from "next/navigation";
 
 
 const Copywrite = () => {
   const { setState } = useContext(AppStateContext);
+  const pathname = usePathname();
   const handleClick = () => {
     setState(true);
   };
@@ -24,6 +26,7 @@ const Copywrite = () => {
           </Link>
         </li>
       </div>
+      {pathname !== "/thank-you" && 
       <div className="chin-popup md:hidden block overflow-hidden">
         <button className="footer-btn blue " onClick={handleClick}>
           <div className="flex justify-center gap-3 items-center">
@@ -35,6 +38,7 @@ const Copywrite = () => {
 
         </button>
       </div>
+}
     </>
   );
 };

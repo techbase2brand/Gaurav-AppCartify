@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -12,6 +13,7 @@ const initialFormData = {
 
 const QuestionForm = () => {
   const [formData, setFormData] = React.useState(initialFormData);
+  const router = useRouter();
   const [errors, setErrors] = React.useState({
     name: false,
     email: false,
@@ -79,6 +81,7 @@ const QuestionForm = () => {
         toast.success("Booking Confirm", {
           position: "top-center",
         });
+        router.push("/thank-you");
       } else {
         console.error("Form submission failed:", result);
       }
