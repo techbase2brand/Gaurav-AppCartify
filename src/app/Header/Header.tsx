@@ -4,7 +4,7 @@ import { AppStateContext } from "../Context/AppStateContext";
 import Image from "next/image";
 import Link from "next/link";
 import logoAppcartify from "../../../public/Images/logoAppcartify.svg";
-
+import ImgAppcartify from "../../../public/Images/appcartifyimg.png";
 const Header = () => {
   const { setState } = useContext(AppStateContext);
   const handleClick = () => {
@@ -26,7 +26,12 @@ const Header = () => {
                   alt="appcartifylogo "
                   className="lg:w-auto w-[60%]"
                 />
-               
+                <Image
+                  src={ImgAppcartify}
+                  alt="appcartifylogo "
+                  className="lg:w-auto w-[60%]"
+                  style={{display:"none"}}
+                />
               </div>
             </div>
 
