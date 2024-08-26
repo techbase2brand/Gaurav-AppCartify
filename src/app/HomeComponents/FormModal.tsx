@@ -14,6 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { ClassNames } from "@emotion/react";
 import { FormControl, InputLabel } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 <CloseIcon />;
 const style = {
@@ -43,6 +44,7 @@ const initialFormData = {
 
 export const FormModal = () => {
   const { state, setState } = React.useContext(AppStateContext);
+  const router = useRouter();
   const [formData, setFormData] = React.useState(initialFormData);
   const [errors, setErrors] = React.useState({
     name: false,
@@ -118,6 +120,7 @@ export const FormModal = () => {
         toast.success("Booking Confirm", {
           position: "top-center",
         });
+        router.push("/thank-you");
       } else {
         console.error("Form submission failed:", result);
       }
@@ -230,7 +233,7 @@ export const FormModal = () => {
                 className="submit-button p-[15px] w-[35%] text-white"
                 style={{
                   background: `linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%)`,
-                  color:"white"
+                  color: "white"
                 }}
                 disabled={loading}
               >

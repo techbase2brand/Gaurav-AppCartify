@@ -1,17 +1,20 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AppStateContext } from "../Context/AppStateContext";
 import Image from "next/image";
 import Link from "next/link";
 import logoAppcartify from "../../../public/Images/logoAppcartify.svg";
 import ImgAppcartify from "../../../public/Images/appcartifyimg.png";
+import { usePathname } from "next/navigation";
 const Header = () => {
   const { setState } = useContext(AppStateContext);
+  const pathname = usePathname();
   const handleClick = () => {
     setState(true);
     // setOpen((prevOpen:any) => !prevOpen);
   };
-
+useEffect(()=>{
+},[])
   return (
     <>
       <header className=" relative z-10 sticky-header">
@@ -34,7 +37,7 @@ const Header = () => {
                 />
               </div>
             </div>
-
+            {pathname !== "/thank-you" && 
             <div>
               <button
                 className="Contact_btn md:p-[10px_25px] p-[9px_10px] font-medium md:font-semibold rounded-[10px] relative  bg-transparent cursor-pointer md:text-[22px]  text-[16px] "
@@ -68,6 +71,7 @@ const Header = () => {
                 />
               </button>
             </div>
+}
           </div>
         </div>
       </header>
