@@ -51,7 +51,7 @@ export default function RootLayout({
           property="og:description"
           content="Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more."
         />
-        <meta property="og:image" content="image_url_here" />
+        <meta property="og:image" content="https://www.appcartify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRestaurant.21b601ac.webp&w=1920&q=75" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
