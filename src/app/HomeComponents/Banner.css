@@ -1,17 +1,5 @@
-/* .Banner_class{
-    background-image: url(../../../public//Images//banner.svg);
-    background-repeat: no-repeat;
-  
-    background-size: cover;
-    object-position: 50% 50%;
-
-} */
-
-
 .adbsframe{
     background-image: url(../../../public/Images/frame.svg);
-    /* width: 100%; */
-    /* height: 666px; */
     background-repeat: no-repeat;
     background-size: contain;
 }
