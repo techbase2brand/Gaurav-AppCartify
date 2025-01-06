@@ -154,7 +154,7 @@ export const FormModal = () => {
           </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <div>
-              <h3 className="gk-h3 text-center capitalize">
+              <h3 className="text-center capitalize text-black">
                 Got a <span style={{ color: "#96BF48" }}>question?</span> Ask
                 our expert
               </h3>

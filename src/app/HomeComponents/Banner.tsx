@@ -36,7 +36,9 @@ const Banner = () => {
 
   return (
     <>
-      <section className="banner-section flex items-center xl:h-[800px] md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14 Banner_class">
+<section
+  className="banner-section flex items-center xl:h-[800px] md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14 bg-[url('/Images/banner.webp')] bg-no-repeat bg-cover bg-center"
+>
         <div className="container">
           <div className="flex flex-col xl:flex-row lg:flex-row justify-between items-center gap-7">
             <div className="text-content xl:w-[30%] lg:w-[30%] w-[100%]">
