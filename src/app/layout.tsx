@@ -1,20 +1,37 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import "./globals.css";
-// import Header from "@/Components/Header/Header";
-import Footer from "@/app/Footer/Footer";
 import Index from "./index";
 import { AppStateProvider } from "./Context/AppStateContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Turn Your Shopify Store into a Mobile App | AppCartify",
   description:
     "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
-};
 
+  openGraph: {
+    title: "Turn Your Shopify Store into a Mobile App | AppCartify",
+    description:
+      "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
+    url: "https://www.appcartify.com/",
+    type: "website",
+    images: [
+      {
+        url: "/Ecommerce.png",
+        width: 1200,
+        height: 630,
+        alt: "Shopify Store into a Mobile App",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Turn Your Shopify Store into a Mobile App | AppCartify",
+    description:
+      "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
+    images: "/Ecommerce.png",
+  },
+};
 
 export default function RootLayout({
   children,

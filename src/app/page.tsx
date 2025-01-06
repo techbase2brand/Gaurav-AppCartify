@@ -33,15 +33,15 @@ function Page() {
       <Developer/>
       <MobileApps/>
       <ShopifyApp/>
-      {/* <WhyChousus/>    */}
+
       <ShopifyStore/>
       <ScanandExperienc/>
-      {/* <Accordian/> */}
+  
    <AccodianTilt/>
-   {/* <AccodianTilt/> */}
+  
       <QuestionForm/>
       <CustomSlider/>
-      {/* <Testing/> */}
+   
 
     </>
   );
