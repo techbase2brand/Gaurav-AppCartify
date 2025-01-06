@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   title: "Turn Your Shopify Store into a Mobile App | AppCartify",
   description:
     "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
-
   openGraph: {
     title: "Turn Your Shopify Store into a Mobile App | AppCartify",
     description:
@@ -31,6 +30,9 @@ export const metadata: Metadata = {
       "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
     images: "https://www.appcartify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRestaurant.21b601ac.webp&w=1920&q=75",
   },
+  alternates: {
+    canonical: "https://www.appcartify.com/",
+  },
 };
 
 export default function RootLayout({
@@ -41,17 +43,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          property="og:title"
-          content="Turn Your Shopify Store into a Mobile App | AppCartify"
-        />
-        <link rel="canonical" href="https://www.appcartify.com/" />
-
-        <meta
-          property="og:description"
-          content="Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more."
-        />
-        <meta property="og:image" content="https://www.appcartify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRestaurant.21b601ac.webp&w=1920&q=75" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -62,10 +53,10 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                      })(window,document,'script','dataLayer','GTM-NJQBRR9M');`,
+             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NJQBRR9M');`,
           }}
         />
         {/* End Google Tag Manager */}
