@@ -7,7 +7,7 @@ import thirdparty from "../../../public/Images/featuresection/3thirdpartycheckou
 import pushnotifaction from "../../../public/Images/featuresection/pustnotifaction.svg";
 import driverapp from "../../../public/Images/featuresection/driverapp.svg";
 import Analytics from "../../../public/Images/featuresection/Analytics.svg";
-//
+
 import realtime from "../../../public/Images/featuresection/Analytics.svg";
 import { AppStateContext } from "../Context/AppStateContext";
 import Script from "next/script";

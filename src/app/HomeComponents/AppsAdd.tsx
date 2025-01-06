@@ -6,25 +6,14 @@ import Box from "@mui/material/Box";
 import "./TabComponentsUi.css";
 import "./AppsAdd.css";
 import Image from "next/image";
-// import Ecommerce from "../../../public/Images/Ecommerce.png";
-// import EcommerceSec from "../../../public/Images/Ecommerce2.png";
-// import Restaurant from "../../../public/Images/Restaurant.png";
-// import RestaurantSec from "../../../public/Images/Restaurant2.png";
-// import Beauty from "../../../public/Images/Beauty.png";
-// import BeautySec from "../../../public/Images/Beauty2.png";
-// import Spots from "../../../public/Images/Spots.png";
-// import SpotsSec from "../../../public/Images/Spots2.png";
-// import Automotives from "../../../public/Images/Automotives.png";
-// import Automotives221 from "../../../public/Images/Automotives 221.png";
-// import Electronicshed from "../../../public/Images/Electronicshed.png";
-// import Electronicshed221 from "../../../public/Images/Electronicshed221.png";
 
-import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.svg"
-import Restaurant from "../../../public/Images/tabsimages/Restaurant.svg"
-import Beauty from "../../../public/Images/tabsimages/Beauty.svg"
-import Spots from "../../../public/Images/tabsimages/Spots.svg"
-import Automotives from "../../../public/Images/tabsimages/Automotives.svg"
-import Electronics from "../../../public/Images/tabsimages/Electronics.svg"
+
+import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.webp";
+import Restaurant from "../../../public/Images/tabsimages/Restaurant.webp";
+import Beauty from "../../../public/Images/tabsimages/Beauty.webp";
+import Spots from "../../../public/Images/tabsimages/Spots.webp";
+import Automotives from "../../../public/Images/tabsimages/Automotives.webp";
+import Electronics from "../../../public/Images/tabsimages/Electronics.webp";
 
 import { AppStateContext } from "../Context/AppStateContext";
 
