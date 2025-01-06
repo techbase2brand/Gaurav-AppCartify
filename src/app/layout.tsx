@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Ecommerce.png",
+        url: "https://www.appcartify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRestaurant.21b601ac.webp&w=1920&q=75",
         width: 1200,
         height: 630,
         alt: "Shopify Store into a Mobile App",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Turn Your Shopify Store into a Mobile App | AppCartify",
     description:
       "Transform your Shopify store into a mobile app with AppCartify. Boost sales and engagement with features like push notifications, secure checkout, and more.",
-    images: "/Ecommerce.png",
+    images: "https://www.appcartify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FRestaurant.21b601ac.webp&w=1920&q=75",
   },
 };
 
