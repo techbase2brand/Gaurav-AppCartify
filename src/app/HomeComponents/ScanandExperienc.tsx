@@ -1,10 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import ScanSrction from "../../../public/Images/scanner.png";
-import scannerplaystore from "../../../public/Images/Scannerplaystore (1).png";
-import appstore from "../../../public/Images/Scannerappstore.png";
-import scannall from "../../../public/Images/scanall.svg";
-import scannall221 from "../../../public/Images/scanall221.svg";
+import scannall from "../../../public/Images/scanall.webp";
+import scannall221 from "../../../public/Images/scanall221.webp";
 import "./ScanandExperienc.css";
 
 const ScanandExperienc = () => {
@@ -30,7 +27,7 @@ const ScanandExperienc = () => {
                   <span style={{ color: "#96BF48" }}> Mobile Device </span>
                 </span>
               </h2>
-              <div className="lg:flex lg:justify-center lg:gap-5 ">
+              <div className="lg:flex lg:justify-center lg:gap-5 w-[60%] m-auto">
                 <div className="text-center ">
                   <Image
                     className="lg:w-[100%] mx-auto md:p-[30px] hidden md:block"
