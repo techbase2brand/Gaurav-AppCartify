@@ -1,20 +1,12 @@
-// import React from 'react'
 
-// const ShopifyDevSection = () => {
-//   return (
-//     <div>ShopifyDevSection</div>
-//   )
-// }
-
-// export default ShopifyDevSection
 import './ShopifyDevSection.css'
 import React from "react";
 import Image from "next/image";
-import reward from "../../../public/Images/reward.svg";
-import meating from "../../../public/Images/meating.svg";
-import team from "../../../public/Images/team.svg";
+import reward from "../../../public/Images/reward.webp";
+import meating from "../../../public/Images/meating.webp";
+import team from "../../../public/Images/team.webp";
 function Developer() {
-  // Corrected function declaration (lowercase 'f')
+  
   return (
     <>
       <section className="Deceloper-section lg:pt-10 lg:pb-10  pt-10 pb-10">
@@ -28,7 +20,7 @@ function Developer() {
               <div>
                 <div className="col-itom text">
                   <div className="image-c flex justify-center">
-                    <Image className="lg:h-auto h-[87px]" src={reward} alt="reward" />
+                    <Image className="lg:h-[140px] h-[87px] object-contain" src={reward} alt="reward" />
                   </div>
                   <h3 className="text-[#96BF48] text-center lg w-[74%] mx-auto  pt-4 font-medium">
                     100+ Successful Shopify App Deployments
@@ -43,7 +35,7 @@ function Developer() {
               <div>
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
-                    <Image className="lg:h-auto h-[87px]" src={meating} alt="meating" />
+                  <Image className="lg:h-[140px] h-[87px] object-contain"src={meating} alt="meating" />
                   </div>
                   <h3 className="text-[#96BF48] text-center  w-[67%] mx-auto  pt-4 font-medium " >
                     Trusted across 12+ countries
@@ -57,7 +49,7 @@ function Developer() {
               <div>
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
-                    <Image className="lg:h-auto h-[87px]" src={team} alt="team" />
+                  <Image className="lg:h-[140px] h-[87px] object-contain" src={team} alt="team" />
                   </div>
                   <h3 className="text-[#96BF48] text-center   w-[54%] mx-auto  pt-4 font-medium" >
                     98% Client Satisfaction

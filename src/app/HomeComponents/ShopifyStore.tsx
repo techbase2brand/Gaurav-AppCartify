@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import store from "../../../public/Images/Shopify store.png";
+import store from "../../../public/Images/Shopify store.webp";
 import "./ShopifyStore.css";
-import laptop from "../../../public/Images/laptopimage.png";
+import laptop from "../../../public/Images/laptopimage.webp";
 import { AppStateContext } from "../Context/AppStateContext";
 
 const ShopifyStore = () => {

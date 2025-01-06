@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import MobileApp from "../../../public/Images/Mobile Apps.png";
+
 import pointer from "../../../public/Images/point.svg";
 import "./MobileApp.css"
 import { AppStateContext } from "../Context/AppStateContext";
-import image221 from "../../../public/Images/mob221.png"
+import image221 from "../../../public/Images/mob221.webp";
 
 const MobileApps = () => {
   const { setState } = useContext(AppStateContext);
