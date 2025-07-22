@@ -16,34 +16,36 @@ import dynamic from "next/dynamic";
 import AccodianTilt from "./HomeComponents/AccodianTilt";
 import AppsAdd from "./HomeComponents/AppsAdd";
 import Feature from "./HomeComponents/Feature";
+import Maplocation from "./HomeComponents/Maplocation";
+import Aboutus from "./HomeComponents/Aboutus";
 
-const Testmonial = dynamic(() => import("@/app/HomeComponents/TabComponentUi"), { ssr: false });
-const CustomSlider = dynamic(() => import("./HomeComponents/Testmonial"), { ssr: false });
-
+const Testmonial = dynamic(
+  () => import("@/app/HomeComponents/TabComponentUi"),
+  { ssr: false }
+);
+const CustomSlider = dynamic(() => import("./HomeComponents/Testmonial"), {
+  ssr: false
+});
 
 function Page() {
-
   return (
-    <>
+    <div>
       <Banner />
-      <Feature/>
-      <FormModal/>
+      <Feature />
+      <FormModal />
       <Testmonial />
-      <AppsAdd/>
-      <Developer/>
-      <MobileApps/>
-      <ShopifyApp/>
-
-      <ShopifyStore/>
-      <ScanandExperienc/>
-  
-   <AccodianTilt/>
-  
-      <QuestionForm/>
-      <CustomSlider/>
-   
-
-    </>
+      <AppsAdd />
+      <Developer />
+      <MobileApps />
+      <ShopifyApp />
+      <ShopifyStore />
+      <ScanandExperienc />
+      <AccodianTilt />
+      <QuestionForm />
+      <Aboutus />
+      <CustomSlider />
+      <Maplocation />
+    </div>
   );
 }
 
