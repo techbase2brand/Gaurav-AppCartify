@@ -38,9 +38,9 @@ const Banner = () => {
       <section
         className="banner-section flex items-center xl:h-[800px] md:pt-[100px] md:pb-[50px] pt-[5rem] pb-14 bg-[url('/Images/banner.webp')] bg-no-repeat bg-cover bg-center"
       >
-        <div className="container">
+        <div className="container lg:max-w-[1280px] xl:max-w-[1440px] px-2">
           <div className="flex flex-col xl:flex-row lg:flex-row justify-between items-center gap-7">
-            <div className="text-content xl:w-[30%] lg:w-[30%] w-[100%]">
+            <div className="text-content xl:w-[30%] lg:w-[44%] w-[100%]">
               <h1 className="banner-title uppercase md:text-left text-center">
                 Sell 3X Times More With{" "}
                 <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>
@@ -49,7 +49,7 @@ const Banner = () => {
                 Convert your Shopify store into an app in just seven days and
                 boost your sales
               </p>
-              <div className="button-container">
+              <div className="button-container flex justify-center lg:justify-start">
                 <button
                   className="gk-button lg:block hidden"
                   onClick={handleClick}

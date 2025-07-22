@@ -3,6 +3,7 @@ import "./globals.css";
 import Index from "./index";
 import { AppStateProvider } from "./Context/AppStateContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import DownloadBrochure from "./HomeComponents/DownloadBrochure";
 
 
 export const metadata: Metadata = {
@@ -76,6 +77,9 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
         <AppStateProvider>
           <Index>{children}</Index>
+          <div className="fixed right-4 bottom-16 lg:bottom-6 cursor-pointer">
+                <DownloadBrochure/>
+          </div>
         </AppStateProvider>
         <SpeedInsights />
       </body>

@@ -9,7 +9,6 @@ const ShopifyStore = () => {
   const { setState } = useContext(AppStateContext);
   const handleClick = () => {
     setState(true);
-    // setOpen((prevOpen:any) => !prevOpen); 
   };
 
   return (
