@@ -49,7 +49,6 @@ export default function Aboutus() {
           <div className="grid lg:grid-cols-2 py-12">
             <div>
               <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[80%] m-auto rounded-lg object-cover"/>
-               
             </div>
             <div className="text-end m-auto">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
