@@ -5,6 +5,7 @@ import Image from "next/image";
 import logoAppcartify from "../../../public/Images/logoAppcartify.svg";
 import ImgAppcartify from "../../../public/Images/appcartifyimg.png";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 const Header = () => {
   const { setState } = useContext(AppStateContext);
   const pathname = usePathname();
@@ -18,6 +19,7 @@ const Header = () => {
         <div className="container">
           <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center   pt-3  pb-3  ">
             <div>
+              <Link href='/'>
               <div className="logo_icon">
                 <Image
                   src={logoAppcartify}
@@ -31,6 +33,7 @@ const Header = () => {
                   style={{ display: "none" }}
                 />
               </div>
+              </Link>
             </div>
             {pathname !== "/thank-you" && (
               <div>

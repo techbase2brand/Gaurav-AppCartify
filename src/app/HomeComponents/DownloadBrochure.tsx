@@ -6,7 +6,7 @@ const DownloadBrochure = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/Images/brochure/Appcartify Dubai.pdf"; 
-    link.download = "Appcartify Dubai.pdf";
+    link.download = "Appcartify.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

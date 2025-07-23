@@ -18,6 +18,7 @@ import AppsAdd from "./HomeComponents/AppsAdd";
 import Feature from "./HomeComponents/Feature";
 import Maplocation from "./HomeComponents/Maplocation";
 import Aboutus from "./HomeComponents/Aboutus";
+import Casestudy from "./HomeComponents/Casestudy";
 
 const Testmonial = dynamic(
   () => import("@/app/HomeComponents/TabComponentUi"),
@@ -44,6 +45,7 @@ function Page() {
       <QuestionForm />
       <Aboutus />
       <CustomSlider />
+      <Casestudy/>
       <Maplocation />
     </div>
   );
