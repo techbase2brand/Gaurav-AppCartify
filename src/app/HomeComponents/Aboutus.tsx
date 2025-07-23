@@ -13,10 +13,10 @@ export default function Aboutus() {
     <div>
       <div className="container py-12">
         <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
-          About Us
+          Know About Us – How We Turn Shopify Stores into Powerful Mobile Apps That Drive 3X Sales
         </h2>
         <div>
-          <div>
+          <div className="text-center">
             <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
               Empowering Shopify Stores with the Power of Mobile Apps
             </h4>
@@ -43,15 +43,15 @@ export default function Aboutus() {
               </p>
             </div>
             <div>
-              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[300px] w-[80%] m-auto rounded-lg"/>
+              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[400px] w-[80%] m-auto rounded-lg object-cover"/>
             </div>
           </div>
           <div className="grid lg:grid-cols-2 py-12">
             <div>
-              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[300px] w-[80%] m-auto rounded-lg"/>
+              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[80%] m-auto rounded-lg object-cover"/>
                
             </div>
-            <div className="text-end">
+            <div className="text-end m-auto">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                 Who We Are?
               </h4>
