@@ -4,7 +4,7 @@
 
 
 
-body{
+body {
   font-size: 22px;
   font-family: "Manrope", sans-serif;
   font-weight: 500;
@@ -17,15 +17,16 @@ h1 {
   font-family: impact;
   color: white;
 }
-button{
+
+button {
   color: white;
 }
 
-li{
+li {
   list-style: none;
 }
 
-h2{
+h2 {
   font-size: 42px;
   font-family: impact;
   font-weight: 400;
@@ -33,25 +34,30 @@ h2{
   line-height: 52px;
 
 }
-h3{
+
+h3 {
   font-size: 26px;
   font-family: impact;
 }
-h4{
+
+h4 {
   font-size: 25px;
   font-weight: 500;
- 
+
 }
 
-label{
+label {
   font-size: 18px;
 }
-select{
+
+select {
   font-size: 18px;
 }
-.gk-button:hover span::after{
+
+.gk-button:hover span::after {
   opacity: 2;
 }
+
 span.omega::after {
   content: ">";
   position: absolute;
@@ -59,6 +65,7 @@ span.omega::after {
   transition: 500ms;
   opacity: 0;
 }
+
 button.gk-button {
   font-size: 22px;
   padding: 10.5px 29px;
@@ -73,11 +80,13 @@ button.gk-button {
   position: relative;
   transition: .6s;
 }
+
 button.gk-button:hover {
 
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 
 }
+
 .manrope-gk-p {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -97,22 +106,49 @@ button.gk-button:hover {
   font-size: 20px;
   color: white;
 }
+
+.case_study_list li {
+  list-style: inside;
+}
+
+.dnamic_row_data h2,
+.dnamic_row_data h3,
+.dnamic_row_data h4,
+.dynamic_row_data_h5,
+.dnamic_row_data strong {
+  color: #96BF48 !important;
+}
+
+.dnamic_row_data p , .dnamic_row_data li {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
 
-  
-  h1{
+
+  h1 {
     font-size: 36px;
     font-family: impact;
     color: white;
-    
+
     font-weight: 400;
-}
-  label{
+  }
+
+  label {
     font-size: 18px;
   }
-  select{
+
+  select {
     font-size: 16px;
   }
+
   .manrope-gk-p {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -121,40 +157,45 @@ button.gk-button:hover {
     line-height: 34px;
     font-size: 18px;
     color: white;
-}
-.manrope-gk-p-list {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 34px;
-  font-size: 16px;
-  color: white;
-}
-button.gk-button {
-  font-size: 18px;
-  padding: 10.5px 29px;
-  font-weight: 400;
-  border-style: none;
-  border-radius: 3px;
-  color: white;
-  background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
-  box-shadow: 11px 12px 3px #161616;
-  margin-top: 20px;
-  
-}
-h4 {
-  font-size: 21px;
-  font-weight: 400;
- 
-}
-/* in feature section span styling */
-.feature-span span {
-  font-size: 21px !important;
-}
+  }
+
+  .manrope-gk-p-list {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 34px;
+    font-size: 16px;
+    color: white;
+  }
+
+  button.gk-button {
+    font-size: 18px;
+    padding: 10.5px 29px;
+    font-weight: 400;
+    border-style: none;
+    border-radius: 3px;
+    color: white;
+    background: linear-gradient(4deg, rgba(77, 143, 45, 1) 46%, rgba(130, 188, 41, 1) 100%);
+    box-shadow: 11px 12px 3px #161616;
+    margin-top: 20px;
+
+  }
+
+  h4 {
+    font-size: 21px;
+    font-weight: 400;
+
+  }
+
+  /* in feature section span styling */
+  .feature-span span {
+    font-size: 21px !important;
+  }
 
 
 }
+
 @media only screen and (max-width: 640px) {
   h1.gk-h1 {
     font-size: 42px;
@@ -163,9 +204,9 @@ h4 {
     text-align: center;
     font-weight: 400;
     line-height: 52px;
-}
-  
-  
+  }
+
+
   .manrope-gk-p {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -176,6 +217,7 @@ h4 {
     color: white;
     text-align: center;
   }
+
   button.gk-button {
     font-size: 16px;
     padding: 10.5px 29px;
@@ -188,13 +230,14 @@ h4 {
     margin-top: 20px;
     text-align: center;
   }
+
   h2 {
     font-size: 36px;
     font-family: impact;
     font-weight: 400;
     color: white;
     line-height: 42px;
-}
+  }
 
 }
 
@@ -206,7 +249,8 @@ h4 {
   display: block;
   z-index: 1000;
 }
-.footer-btn{
+
+.footer-btn {
   font-size: 16px;
   padding: 10px 10px;
   font-weight: 400;
@@ -225,9 +269,12 @@ h4 {
   0% {
     transform: scale(1, 1);
   }
+
   50% {
-    transform: scale(1.1, 1.1); /* Reduced scale for a smaller zoom */
+    transform: scale(1.1, 1.1);
+    /* Reduced scale for a smaller zoom */
   }
+
   100% {
     transform: scale(1, 1);
   }
@@ -240,8 +287,10 @@ h4 {
   width: 100%;
   top: 0;
   left: 0;
-  position: fixed; /* Make sure the header stays fixed at the top */
-  z-index: 1000; /* Ensure the header is above other elements */
+  position: fixed;
+  /* Make sure the header stays fixed at the top */
+  z-index: 1000;
+  /* Ensure the header is above other elements */
 }
 
 .header-to-hide.scroll-down {
@@ -254,9 +303,6 @@ h4 {
 .header-to-hide.scroll-up {
   transform: translateY(-100%);
   opacity: 0;
-  pointer-events: none; /* Prevent interaction while hidden */
+  pointer-events: none;
+  /* Prevent interaction while hidden */
 }
-
-
-
-

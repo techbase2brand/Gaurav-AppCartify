@@ -6,6 +6,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'text-[#96BF48]',
+    'gk-h4',
+    'lg:pb-[5px]',
+    'pt-3',
+    'pb-2',
+    'manrope-gk-p-list',
+    'case_study_list',
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -20,14 +29,14 @@ const config: Config = {
           sm: '2rem',
           lg: '2rem',
           xl: '0rem',
-          '2xl': '30px', // Define padding for 1440px breakpoint
+          '2xl': '30px',
         },
         screens: {
           sm: '100%',
           md: '100%',
           lg: '1024px',
           xl: '1280px',
-          '2xl': '1440px', // Add the custom container width here
+          '2xl': '1440px',
         },
       },
     },
