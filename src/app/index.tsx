@@ -62,7 +62,8 @@ export default function Index({
 
   return (
     <div>
-      <div ref={headerRef} className="header-to-hide scroll-down">
+      {/* header-to-hide  */}
+      <div ref={headerRef} className="sticky top-0 scroll-down bg-black z-[999]">
         <Header />
       </div>
       {children}

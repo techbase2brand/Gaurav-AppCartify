@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import Image from "next/image";
 import Ecommerce from "../../../public/Images/tabsimages/Ecommerce.webp";
 import { AppStateContext } from "../Context/AppStateContext";
-import ourmission from "../../../public/Images/ourmission.webp"
-import howareyou from "../../../public/Images/howareyou.webp"
+import ourmission from "../../../public/Images/ourmission.jpg"
+import howareyou from "../../../public/Images/howareyou.jpg"
 export default function Aboutus() {
   const { setState } = useContext(AppStateContext);
   const handleClick = () => {
@@ -16,7 +16,7 @@ export default function Aboutus() {
           Know About Us – How We Turn Shopify Stores into Powerful Mobile Apps That Drive 3X Sales
         </h2>
         <div>
-          <div className="text-center">
+          <div className="text-start lg:text-center">
             <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
               Empowering Shopify Stores with the Power of Mobile Apps
             </h4>
@@ -29,7 +29,7 @@ export default function Aboutus() {
               apps — in just 7 days.
             </p>
           </div>
-          <div className="grid lg:grid-cols-2 py-12">
+          <div className="grid lg:grid-cols-2 py-0 lg:py-12">
             <div className="m-auto">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                 Our Mission
@@ -43,14 +43,14 @@ export default function Aboutus() {
               </p>
             </div>
             <div>
-              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[400px] w-[80%] m-auto rounded-lg object-cover"/>
+              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover"/>
             </div>
           </div>
-          <div className="grid lg:grid-cols-2 py-12">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 py-0 lg:py-12">
             <div>
-              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[80%] m-auto rounded-lg object-cover"/>
+              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover"/>
             </div>
-            <div className="text-end m-auto">
+            <div className="text-start md:text-end m-auto">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                 Who We Are?
               </h4>
@@ -63,7 +63,7 @@ export default function Aboutus() {
               </p>
             </div>
           </div>
-          <p className="manrope-gk-p-list pb-4 text-center">
+          <p className="manrope-gk-p-list pb-4 text-s md:text-center">
             Our mobile apps are more than just functional — they are intuitive,
             responsive, fast, and tailored to your brand. From push
             notifications and cart upsells to real-time inventory sync and
@@ -233,7 +233,7 @@ export default function Aboutus() {
         </div>
         <div className="pt-12 flex justify-center">
           <button className="gk-button " onClick={() => handleClick()}>
-            <span className="omega">Book Your Meeting Today</span>
+            <span className="omega">Get In Touch</span>
           </button>
         </div>
       </div>

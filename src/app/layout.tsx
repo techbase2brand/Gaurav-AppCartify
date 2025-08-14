@@ -4,8 +4,9 @@ import Index from "./index";
 import { AppStateProvider } from "./Context/AppStateContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import DownloadBrochure from "./HomeComponents/DownloadBrochure";
-
-
+import { FormModal } from "./HomeComponents/FormModal";
+import WHATSAPP from "../../public/Images/WHATSAPP BUTTON.gif"
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Turn Your Shopify Store into a Mobile App | AppCartify",
   description:
@@ -51,7 +52,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
         />
-        {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -61,11 +61,9 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-NJQBRR9M');`,
           }}
         />
-        {/* End Google Tag Manager */}
       </head>
 
       <body>
-        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NJQBRR9M"
@@ -74,12 +72,23 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
         <AppStateProvider>
           <Index>{children}</Index>
           <div className="fixed right-4 bottom-16 lg:bottom-6 cursor-pointer">
-                <DownloadBrochure/>
+            <DownloadBrochure/>
           </div>
+          <div className="fixed bottom-6 left-6 z-[999]">
+          <a  href="https://wa.me/+917889101844" target="_blank">
+            <Image
+            src={WHATSAPP}
+            alt=""
+            width={1000}
+            height={500}
+            className="w-[70px] h-[70px] cursor-pointer"
+            />
+          </a>
+          </div>
+           <FormModal/>
         </AppStateProvider>
         <SpeedInsights />
       </body>

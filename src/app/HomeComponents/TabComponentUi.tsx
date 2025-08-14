@@ -211,7 +211,7 @@ export default function TabComponentUi() {
                               onClick={handleClick}
                             >
                               <span className="omega">
-                                Book Your Meeting Today
+                                Get In Touch
                               </span>
                             </button>
                           </div>

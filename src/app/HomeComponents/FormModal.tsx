@@ -102,7 +102,7 @@ export const FormModal = () => {
     }
     setLoading(true);
     try {
-      const response = await fetch("https://invoice-backend.base2brand.com/api/add-appcartify",
+      const response = await fetch("https://invoicebackend.base2brand.com/api/add-appcartify",
         {
           method: "POST",
           headers: {

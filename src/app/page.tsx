@@ -2,7 +2,7 @@
 import Banner from "@/app/HomeComponents/Banner";
 // import TabComponentUi from "@/app/HomeComponents/TabComponentUi";
 import React from "react";
-import { FormModal } from "./HomeComponents/FormModal";
+
 import Developer from "./HomeComponents/ShopifyDevSection";
 import MobileApps from "./HomeComponents/MobileApps";
 import ShopifyApp from "./HomeComponents/ShopifyApp";
@@ -33,7 +33,7 @@ function Page() {
     <div>
       <Banner />
       <Feature />
-      <FormModal />
+      {/* <FormModal /> */}
       <Testmonial />
       <AppsAdd />
       <Developer />

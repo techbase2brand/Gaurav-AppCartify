@@ -45,7 +45,7 @@ const Banner = () => {
                 Sell 3X Times More With{" "}
                 <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>
               </h1>
-              <p className="text-white text-lg lg:text-xl">
+              <p className="text-white text-center md:text-start text-lg lg:text-xl">
                 Convert your Shopify store into an app in just seven days and
                 boost your sales
               </p>
@@ -54,7 +54,7 @@ const Banner = () => {
                   className="gk-button lg:block hidden"
                   onClick={handleClick}
                 >
-                  <span className="button-text">Book Your Meeting Today</span>
+                  <span className="button-text">Get In Touch</span>
                 </button>
               </div>
             </div>
