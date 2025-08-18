@@ -167,7 +167,7 @@ export default function AppsAdd() {
                             onClick={handleClick}
                           >
                             <span className="omega">
-                              Book Your Meeting Today
+                              Get In Touch
                             </span>
                           </button>
                         </div>

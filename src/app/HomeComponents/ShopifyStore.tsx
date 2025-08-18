@@ -30,7 +30,7 @@ const ShopifyStore = () => {
               Turn Your <span style={{ color: "#96BF48" }}>Shopify store</span>{" "}
               into a Sales Friendly App
             </h2>
-            <p className="manrope-gk-p lg:mt-3 lg:text-left md:text-center">
+            <p className="manrope-gk-p lg:mt-3 !text-start  lg:text-left md:text-center">
               Transform your Shopify store into a sales-friendly app with our
               expertise. Enhance user experience, boost sales, and enhance
               functionalities to maximize engagement and customer satisfaction
@@ -39,7 +39,7 @@ const ShopifyStore = () => {
             <div className="widd md:flex md:justify-center lg:justify-start flex justify-center">
               <button className="gk-button " onClick={() => handleClick()}>
               <span className="omega">
-                  Book Your Meeting Today
+                  Get In Touch
                   </span>
                 </button>
             </div>

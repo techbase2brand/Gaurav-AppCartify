@@ -311,3 +311,17 @@ button.gk-button:hover {
   pointer-events: none;
   /* Prevent interaction while hidden */
 }
+
+.brochure 
+{
+ animation: rotater 8s linear infinite;
+}
+
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

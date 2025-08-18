@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import scannall from "../../../public/Images/scanall.webp";
-import scannall221 from "../../../public/Images/scanall221.webp";
+import scannall221 from "../../../public/Images/scanall221.png";
 import "./ScanandExperienc.css";
 
 const ScanandExperienc = () => {
@@ -27,7 +27,7 @@ const ScanandExperienc = () => {
                   <span style={{ color: "#96BF48" }}> Mobile Device </span>
                 </span>
               </h2>
-              <div className="lg:flex lg:justify-center lg:gap-5 w-[60%] m-auto">
+              <div className="lg:flex lg:justify-center lg:gap-5 md:w-[60%] m-auto">
                 <div className="text-center ">
                   <Image
                     className="lg:w-[100%] mx-auto md:p-[30px] hidden md:block"
@@ -36,8 +36,7 @@ const ScanandExperienc = () => {
                     
                   />
                    <Image
-                    className="w-[100%] mx-auto md:hidden block pt-6 pb-6 object-cover pl-7 pr-7
-                    "
+                    className="w-[100%] mx-auto md:hidden block pt-6 pb-6 object-cover pl-7 pr-7"
                     src={scannall221}
                     alt="ScanSrction"
                   />

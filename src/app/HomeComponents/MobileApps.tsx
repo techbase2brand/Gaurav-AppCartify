@@ -61,7 +61,7 @@ const MobileApps = () => {
               </div>
               <button className="gk-button lg:block hidden mt-9" onClick={() => handleClick()}>
               <span className="omega">
-                  Book Your Meeting Today
+                  Get In Touch
                   </span>
                  </button>
             </div>

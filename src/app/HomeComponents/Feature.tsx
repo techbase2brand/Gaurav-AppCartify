@@ -140,7 +140,7 @@ const Feature = () => {
                   </div>
                 </div> */}
                 <div className="video-set lg:w-[35%] xl:w-[30%] md:w-[60%] w-full m-0">
-                  <div className="relative h-[600px] md:h-[500px] lg:h-[650px] w-full block">
+                  <div className="relative h-[400px] md:h-[500px] lg:h-[650px] w-full block">
                     <iframe
                       className="w-full h-full"
                       src="https://player.vimeo.com/video/1001881551?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
@@ -163,13 +163,13 @@ const Feature = () => {
                 </div>
 
                 <div className=" flex md:flex-col lg:gap-5 md:gap-5 xl:gap-12 flex-col gap-8  lg:w-[33%] w-[100%]">
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row flex-row-reverse  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={pushnotifaction}
                       alt=""
                     />
-                    <p className="manrope-gk-p-list lg:text-left text-right   ">
+                    <p className="manrope-gk-p-list text-left">
                       <span
                         style={{
                           color: "#96BF48",
@@ -183,13 +183,13 @@ const Feature = () => {
                       available
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row  flex-row-reverse ">
+                  <div className="flex md:gap-4  gap-3  items-center  lex-row  ">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={driverapp}
                       alt=""
                     />
-                    <p className="manrope-gk-p-list lg:text-left text-right   ">
+                    <p className="manrope-gk-p-list text-left ">
                       <span
                         style={{
                           color: "#96BF48",
@@ -204,13 +204,13 @@ const Feature = () => {
                       for driver delivery and assigning )
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row flex-row-reverse  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={Analytics}
                       alt=""
                     />
-                    <p className="manrope-gk-p-list lg:text-left text-right   ">
+                    <p className="manrope-gk-p-list text-left ">
                       <span
                         style={{
                           color: "#96BF48",
@@ -225,13 +225,13 @@ const Feature = () => {
                       which page)
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row flex-row-reverse  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={realtime}
                       alt=""
                     />
-                    <p className="manrope-gk-p-list lg:text-left text-right   ">
+                    <p className="manrope-gk-p-list text-left  ">
                       <span
                         style={{
                           color: "#96BF48",
@@ -253,7 +253,7 @@ const Feature = () => {
                   className="gk-button lg:block hidden mt-9"
                   onClick={() => handleClick()}
                 >
-                  <span className="omega">Book Your Meeting Today</span>
+                  <span className="omega">Get In Touch</span>
                 </button>
               </div>
             </div>

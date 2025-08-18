@@ -1,12 +1,22 @@
+"use client"
 import React from 'react';
 import './AppCartify.css';
 import Developer from '../HomeComponents/ShopifyDevSection';
-
-const page = () =>{
+const Thankyou = () => {
+    const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Images/brochure/Appcartify Dubai.pdf"; 
+    link.download = "Appcartify Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
     return (
-        <>
+        <div>
             <div className="container-thank-you">
-                {/* Logo Section */}
+           <h2 className='gk-h2 xl:pt-10 xl:pb-10 text-center text-[#96bf48] uppercase pt-9'>
+              Thank You
+            </h2>
                 <div className="logo-thank-you">
                     <a href="https://www.appcartify.com/" target="_blank" rel="noopener noreferrer">
                         <img
@@ -16,14 +26,13 @@ const page = () =>{
                     </a>
                 </div>
 
-                {/* Header Section */}
                 <div className="header-thank-you">
-                    <h1>Thank you for contacting us. Our team will get back to you in the next 24 Hours.</h1>
+                    <h2>Thank you for contacting us. Our team will get back to you in the next 24 Hours.</h2>
                 </div>
 
-                {/* Body Text Section */}
+
                 <div className="body-text-thank-you">
-                    <p>Team AppCartify.</p>
+                    <p  className='text-xl'>Team AppCartify.</p>
                     <div className="flex-container-thank-you">
                         <a href="https://www.appcartify.com/" target="_blank" rel="noopener noreferrer">
                             <img
@@ -41,10 +50,19 @@ const page = () =>{
                         </div>
                     </div>
                 </div>
+                <div className='flex justify-end mt-6'>
+                  <div className='text-[#96bf48] flex items-center gap-2 cursor-pointer' onClick={handleDownload}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	                  <rect width="24" height="24" fill="none" />
+	                  <path fill="#96bf48" d="M12 2a1 1 0 0 1 1 1v10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V3a1 1 0 0 1 1-1M5 17a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1" />
+                    </svg>
+                    Download Brochure
+                  </div>   
+                </div>
             </div>
             <Developer />
-        </>
+        </div>
     );
 };
 
-export default page;
+export default Thankyou;
