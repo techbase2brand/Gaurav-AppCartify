@@ -54,8 +54,8 @@ const ClientOverview = ({ subtitle , clientWants,title}) => {
                   {title}
               </p>
               {
-               clientWants && clientWants.map((data)=>(
-                <li className="mt-1">
+               clientWants && clientWants.map((data,index)=>(
+                <li className="mt-1" key={index}>
                   <p className="text-slate-300 d text-lg">{data}</p>
                 </li>
                 ))
