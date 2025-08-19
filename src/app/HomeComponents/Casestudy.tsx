@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
 export default function Casestudy() {
   const router = useRouter();
   const handleClick = (slug: string) => {
@@ -38,20 +39,18 @@ export default function Casestudy() {
             }}
           >
             {casestudyData.map((item, index) =>
-              <SwiperSlide key={index}>
-                <div className="p-4 m-4 border-2 border-white hover:border-[#96BF48] cursor-pointer rounded-md h-full rounded-tl-[60px] duration-500">
+              <SwiperSlide key={index} >
+                <div className="p-4 m-4 border-2 border-white hover:border-[#96BF48] cursor-pointer rounded-md h-full rounded-tl-[60px] duration-500"   onClick={() => handleClick(item.slug)}>
+                    <Image
+                     src={item.bannerImage}
+                     alt={item.title}
+                     width={1000}
+                     height={500}
+                     className="rounded-tl-[50px]"
+                     />
                   <h4 className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3">
                     {item.title}
                   </h4>
-                  <p className="text-base mt-3 2xl:text-lg text-white line-clamp-5">
-                    {item.subtitle}
-                  </p>
-                  <p
-                    className="text-[#96BF48] text-end cursor-pointer"
-                    onClick={() => handleClick(item.slug)}
-                  >
-                    Read More...
-                  </p>
                 </div>
               </SwiperSlide>
             )}

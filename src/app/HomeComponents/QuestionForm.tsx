@@ -97,13 +97,13 @@ const QuestionForm = () => {
       <section className="bg-[#151820] lg:pt-[60px] lg:pb-[60px] pt-14 pb-14 border-[#8d8d8d7a] border-b-2 ">
         <div className="container">
           <div className="queastionform border-2 border-white rounded-xl">
-            <h2 className="gk-h2  text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6 ">
+            <h2 className="gk-h2  text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6 " data-aos="fade-up"  data-aos-duration="800">
               GOT A <span style={{ color: "#96BF48" }}>QUESTION? ASK</span> OUR
               EXPERT
             </h2>
             <form onSubmit={handleSubmit}>
               <div className="display-form flex flex-col gap-5 lg:pb-12 lg:pr-14 lg:pl-14 pl-4 pr-4 pb-[24px]">
-                <div className="flex  flex-col  gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]"  data-aos="fade-right"  data-aos-duration="800">
                   <label htmlFor="name" className="text-white ">
                     Your Name *
                   </label>
@@ -119,7 +119,7 @@ const QuestionForm = () => {
                     <span className="text-[red] text-[16px]">Name is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col  gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]"  data-aos="fade-left"  data-aos-duration="900">
                   <label htmlFor="email" className="text-white">
                     Email ID *
                   </label>
@@ -135,7 +135,7 @@ const QuestionForm = () => {
                     <span className="text-[red]  text-[16px]">Email is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col  gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]"  data-aos="fade-right"  data-aos-duration="1000">
                   <label htmlFor="phoneNo" className="text-white">
                     Phone Number *
                   </label>
@@ -151,7 +151,7 @@ const QuestionForm = () => {
                     <span className="text-[red]   text-[16px] ">PhoneNo is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col gap-[5px]">
+                <div className="flex  flex-col gap-[5px]"  data-aos="fade-left"  data-aos-duration="1100">
                   <label htmlFor="website" className="text-white">
                     Enter Your Website *
                   </label>
@@ -167,7 +167,7 @@ const QuestionForm = () => {
                     <span className="text-[red]  text-[16px]">Website is required</span>
                   )}
                 </div>
-                <div className="flex  flex-col  gap-[5px]">
+                <div className="flex  flex-col  gap-[5px]"  data-aos="fade-right"  data-aos-duration="1200">
                   <label htmlFor="sector" className="text-white"></label>
                   <select
                     id="sector"
@@ -218,7 +218,7 @@ const QuestionForm = () => {
                 </div>
 
                 <div className="w-[30%]">
-                  <button className="gk-button " disabled={loading}>{loading ? "Submitting..." : "Submit"}</button>
+                  <button className="gk-button" disabled={loading}  data-aos="fade-left"  data-aos-duration="1300">{loading ? "Submitting..." : "Submit"}</button>
                 </div>
               </div>
             </form>

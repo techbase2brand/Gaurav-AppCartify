@@ -1,7 +1,11 @@
+import banne1 from "../../public/casestudy/intigrationbanner1.jpg";
+import banne2 from "../../public/casestudy/intigrationbanner2.jpg";
+
 export const casestudyData = [
   {
     id: 1,
     slug: "warley-food-service-driving",
+    bannerImage:banne1,
     title: "Driving Customer Loyalty with the Warley Food Service Mobile App – A Shopify Integration Success Story",
     subtitle: "Warley Food Service, a fast-growing brand in the online food and grocery sector, operates its business on Shopify. While the desktop and mobile web experience attracted initial traffic, customer retention remained a challenge. They recognized that in a competitive landscape, building a loyal customer base required a mobile-first strategy that could offer convenience, personalization, and real-time interaction.",
     clientWants: {
@@ -94,6 +98,7 @@ export const casestudyData = [
   {
     id: 2,
     slug: "warley-food-service-boosting",
+     bannerImage:banne2,
     title: "Boosting Customer Retention with Warley Superstore Mobile App – A Shopify Integration Success Story",
     subtitle: "Warley Superstore, a thriving Shopify-based e-commerce brand, wanted to improve customer retention and deepen engagement in a competitive market. While its web store was performing well, the lack of a mobile-first experience limited its ability to stay connected with customers and encourage repeat purchases.",
     clientWants: {
@@ -186,6 +191,7 @@ export const casestudyData = [
   {
     id: 3,
     slug: "warley-food-service-driving",
+     bannerImage:banne1,
     title: "Driving Customer Loyalty with the Warley Food Service Mobile App – A Shopify Integration Success Story",
     subtitle: "Warley Food Service, a fast-growing brand in the online food and grocery sector, operates its business on Shopify. While the desktop and mobile web experience attracted initial traffic, customer retention remained a challenge. They recognized that in a competitive landscape, building a loyal customer base required a mobile-first strategy that could offer convenience, personalization, and real-time interaction.",
     clientWants: {
@@ -278,6 +284,7 @@ export const casestudyData = [
   {
     id: 4,
     slug: "warley-food-service-boosting",
+     bannerImage:banne2,
     title: "Boosting Customer Retention with Warley Superstore Mobile App – A Shopify Integration Success Story",
     subtitle: "Warley Superstore, a thriving Shopify-based e-commerce brand, wanted to improve customer retention and deepen engagement in a competitive market. While its web store was performing well, the lack of a mobile-first experience limited its ability to stay connected with customers and encourage repeat purchases.",
     clientWants: {

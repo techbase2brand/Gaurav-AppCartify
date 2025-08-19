@@ -24,14 +24,14 @@ const Feature = () => {
         <section className="bg-[#000] lg:pt-11 lg:pb-11 pt-5 pb-5 feature-section">
           <div className="container">
             <div className=" ">
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9" data-aos="fade-up" data-aos-duration="2000">
                 amazing aPPCARTIFY
                 <span style={{ color: "#96BF48" }}> features </span>
               </h2>
 
               <div className=" flex md:gap-5 items-center lg:flex-row flex-col gap-6 justify-center feature-span  lg:pt-0 lg:pb-0 pt-5 pb-5 ">
                 <div className=" flex md:flex-col lg:gap-5  md:gap-5  xl:gap-12 flex-col gap-8 lg:w-[33%] w-[100%]">
-                  <div className="flex md:gap-4 gap-3  items-center lg:flex-row justify-end flex-row-reverse ">
+                  <div className="flex md:gap-4 gap-3  items-center lg:flex-row justify-end flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
                     <p className="manrope-gk-p-list lg:text-right text-left   ">
                       Ready to
                       <span
@@ -52,7 +52,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse ">
+                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
                     <p className="manrope-gk-p-list lg:text-right text-left   ">
                       Built in
                       <span
@@ -73,7 +73,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse   ">
+                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
                     <p className="manrope-gk-p-list lg:text-right text-left   ">
                       Direct{" "}
                       <span
@@ -94,7 +94,7 @@ const Feature = () => {
                       alt=""
                     />
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse ">
+                  <div className="flex md:gap-4  gap-3  items-center lg:flex-row justify-end flex-row-reverse" data-aos="fade-right" data-aos-duration="1500">
                     <p className="manrope-gk-p-list lg:text-right text-left   ">
                       <span
                         style={{
@@ -115,31 +115,7 @@ const Feature = () => {
                     />
                   </div>
                 </div>
-
-                {/* <div className="video-set lg:w-[35%] xl:w-[30%] md:w-[60%] m-0">
-                <div className=" relative h-[650px] w-[100%] block">
-                    <iframe
-                      className=""
-                      src="https://player.vimeo.com/video/1001881551?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;loop=1"
-                      title="App Cartify Video"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "98%",
-                        height: "100%",
-                        
-                      }}
-                    ></iframe>
-                    <Script
-                      src="https://player.vimeo.com/api/player.js"
-                      strategy="afterInteractive"
-                    />
-                  </div>
-                </div> */}
-                <div className="video-set lg:w-[35%] xl:w-[30%] md:w-[60%] w-full m-0">
+                <div className="video-set lg:w-[35%] xl:w-[30%] md:w-[60%] w-full m-0" data-aos="zoom-in" data-aos-duration="1500">
                   <div className="relative h-[400px] md:h-[500px] lg:h-[650px] w-full block">
                     <iframe
                       className="w-full h-full"
@@ -163,7 +139,7 @@ const Feature = () => {
                 </div>
 
                 <div className=" flex md:flex-col lg:gap-5 md:gap-5 xl:gap-12 flex-col gap-8  lg:w-[33%] w-[100%]">
-                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row" data-aos="fade-left" data-aos-duration="1500">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={pushnotifaction}
@@ -183,7 +159,7 @@ const Feature = () => {
                       available
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center  lex-row  ">
+                  <div className="flex md:gap-4  gap-3  items-center  lex-row" data-aos="fade-left" data-aos-duration="1500">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={driverapp}
@@ -204,7 +180,7 @@ const Feature = () => {
                       for driver delivery and assigning )
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row" data-aos="fade-left" data-aos-duration="1500">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={Analytics}
@@ -225,7 +201,7 @@ const Feature = () => {
                       which page)
                     </p>
                   </div>
-                  <div className="flex md:gap-4  gap-3  items-center flex-row  ">
+                  <div className="flex md:gap-4  gap-3  items-center flex-row" data-aos="fade-left" data-aos-duration="1500">
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
                       src={realtime}

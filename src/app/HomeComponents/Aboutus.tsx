@@ -12,15 +12,15 @@ export default function Aboutus() {
   return (
     <div>
       <div className="container py-12">
-        <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
+        <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6"  data-aos="fade-up"  data-aos-duration="1100">
           Know About Us – How We Turn Shopify Stores into Powerful Mobile Apps That Drive 3X Sales
         </h2>
         <div>
           <div className="text-start lg:text-center">
-            <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
+            <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4" data-aos="fade-up"  data-aos-duration="1200">
               Empowering Shopify Stores with the Power of Mobile Apps
             </h4>
-            <p className="manrope-gk-p-list pb-4">
+            <p className="manrope-gk-p-list pb-4" data-aos="fade-up"  data-aos-duration="1300">
               At AppCartify, we believe that your online store deserves more
               than just a web presence — it deserves a seamless mobile
               experience that drives engagement, conversions, and growth. Our
@@ -30,7 +30,7 @@ export default function Aboutus() {
             </p>
           </div>
           <div className="grid lg:grid-cols-2 py-0 lg:py-12">
-            <div className="m-auto">
+            <div className="m-auto" data-aos="zoom-in"  data-aos-duration="1600">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                 Our Mission
               </h4>
@@ -43,14 +43,14 @@ export default function Aboutus() {
               </p>
             </div>
             <div>
-              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover"/>
+              <Image src={ourmission} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover"  data-aos="zoom-in"  data-aos-duration="1600"/>
             </div>
           </div>
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 py-0 lg:py-12">
             <div>
-              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover"/>
+              <Image src={howareyou} alt="" width={1000} height={500} className="max-h-[400px] w-[100%] md:w-[80%] m-auto rounded-lg object-cover" data-aos="zoom-in"  data-aos-duration="1600"/>
             </div>
-            <div className="text-start md:text-end m-auto">
+            <div className="text-start md:text-end m-auto"  data-aos="zoom-in"  data-aos-duration="1600">
               <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                 Who We Are?
               </h4>
@@ -63,7 +63,7 @@ export default function Aboutus() {
               </p>
             </div>
           </div>
-          <p className="manrope-gk-p-list pb-4 text-s md:text-center">
+          <p className="manrope-gk-p-list pb-4 text-s md:text-center"  data-aos="fade-up"  data-aos-duration="1100">
             Our mobile apps are more than just functional — they are intuitive,
             responsive, fast, and tailored to your brand. From push
             notifications and cart upsells to real-time inventory sync and
@@ -73,11 +73,12 @@ export default function Aboutus() {
         </div>
         <div className="pt-12 ">
           <div className="pt-4 lg:pt-0">
-            <h2 className="gk-h2 text-center uppercase py-2">
+            <h2 className="gk-h2 text-center uppercase py-2" data-aos="fade-up">
               Why Choose AppCartify?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3">
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     1
@@ -89,7 +90,8 @@ export default function Aboutus() {
                   you launch quickly without sacrificing design.
                 </p>
               </div>
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in" data-aos-duration="1100">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     2
@@ -102,7 +104,8 @@ export default function Aboutus() {
                   conversions.
                 </p>
               </div>
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in" data-aos-duration="1300">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     3
@@ -114,7 +117,8 @@ export default function Aboutus() {
                   driver app and assignment system.
                 </p>
               </div>
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in" data-aos-duration="1500">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     4
@@ -126,8 +130,8 @@ export default function Aboutus() {
                   with our built-in custom analytics tool.
                 </p>
               </div>
-
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in" data-aos-duration="1700">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     5
@@ -139,7 +143,8 @@ export default function Aboutus() {
                   no customer complaints.
                 </p>
               </div>
-              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer">
+              <div className="group p-4 border-[1px] border-[#96BF48] m-2 rounded-2xl hover:bg-[#96BF48] duration-500 cursor-pointer"
+               data-aos="zoom-in" data-aos-duration="1900">
                 <div className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 flex items-center gap-2 group-hover:text-black font-semibold">
                   <span className="p-4 bg-[#96BF48] group-hover:bg-black group-hover:text-white rounded-[50%] w-[50px] h-[50px] flex justify-center items-center text-black">
                     6
@@ -157,11 +162,11 @@ export default function Aboutus() {
         </div>
         <div className="grid lg:grid-cols-2 pt-12">
           <div>
-            <h2 className="gk-h2 text-center lg:text-start uppercase">
+            <h2 className="gk-h2 text-center lg:text-start uppercase" data-aos="fade-up" data-aos-duration="1500">
               Our Values
             </h2>
             <div>
-              <div className="mt-4">
+              <div className="mt-4" data-aos="fade-up" data-aos-duration="1500">
                 <p className="manrope-gk-p-list lg:text-left">
                   <span
                     style={{
@@ -176,7 +181,7 @@ export default function Aboutus() {
                   compromising quality.
                 </p>
               </div>
-              <div className="mt-4">
+              <div className="mt-4" data-aos="fade-up" data-aos-duration="1500">
                 <p className="manrope-gk-p-list lg:text-left">
                   <span
                     style={{
@@ -191,7 +196,7 @@ export default function Aboutus() {
                   always our priority.
                 </p>
               </div>
-              <div className="mt-4">
+              <div className="mt-4" data-aos="fade-up" data-aos-duration="1500">
                 <p className="manrope-gk-p-list lg:text-left">
                   <span
                     style={{
@@ -206,7 +211,7 @@ export default function Aboutus() {
                   needs of online commerce.
                 </p>
               </div>
-              <div className="mt-4">
+              <div className="mt-4" data-aos="fade-up" data-aos-duration="1500">
                 <p className="manrope-gk-p-list lg:text-left">
                   <span
                     style={{
@@ -228,11 +233,12 @@ export default function Aboutus() {
               className="w-full lg:w-[90%] rounded-2xl"
               src={Ecommerce}
               alt="about us default banner"
+              data-aos="zoom-in" data-aos-duration="1600"
             />
           </div>
         </div>
         <div className="pt-12 flex justify-center">
-          <button className="gk-button " onClick={() => handleClick()}>
+          <button className="gk-button " onClick={() => handleClick()} data-aos="fade-up" data-aos-duration="1500">
             <span className="omega">Get In Touch</span>
           </button>
         </div>

@@ -16,7 +16,7 @@ const Header = () => {
   useEffect(() => {}, []);
   return (
     <>
-      <header className=" relative z-10 sticky-header">
+      <header className="z-[999] fixed w-full bg-black top-0">
         <div className="container">
           <div className="grid grid-rows-1 grid-flow-col gap-4 place-content-between items-center   pt-3  pb-3  ">
             <div>

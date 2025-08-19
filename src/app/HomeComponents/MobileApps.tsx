@@ -24,16 +24,16 @@ const MobileApps = () => {
           <div className="grid lg:grid-cols-2 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4  items-center">
             <div>
               <div className="image-bar">
-                <Image className="" src={image221} alt="Integration with Mobile Apps" />
+                <Image className="" src={image221} alt="Integration with Mobile Apps"  data-aos='zoom-in'  data-aos-duration="1500"/>
               </div>
             </div>
             <div>
               <div className="mobile-app-txt-gk">
-                <h2 className="gk-h2  lg:block hidden  pb-5 uppercase">
-                  Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span> Enhances Sales Potential
+                <h2 className="gk-h2  lg:block hidden  pb-5 uppercase" data-aos='fade-left'  data-aos-duration="1500">
+                  Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span> Enhances Sales Potential 
                 </h2>
                 <div className="pointer-main flex flex-col xl:gap-7 lg:gap-[0.75rem] gap-[10px]">
-                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem] gap-[10px] ">
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem] gap-[10px]" data-aos='fade-left'  data-aos-duration="1500">
                     <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
@@ -41,7 +41,7 @@ const MobileApps = () => {
                       conversion rates compared to desktop users.
                     </p>
                   </div>
-                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]" data-aos='fade-left'  data-aos-duration="1500">
                     <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
@@ -49,7 +49,7 @@ const MobileApps = () => {
 
                     </p>
                   </div>
-                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]">
+                  <div className="point flex items-baseline relative lg:gap-7  md:gap-[0.75rem]  gap-[10px]" data-aos='fade-left'  data-aos-duration="1500">
                     <Image className="relative  top-3" src={pointer} alt="pointer" />
 
                     <p className="manrope-gk-p-list">
@@ -59,7 +59,7 @@ const MobileApps = () => {
                   </div>
                 </div>
               </div>
-              <button className="gk-button lg:block hidden mt-9" onClick={() => handleClick()}>
+              <button className="gk-button lg:block hidden mt-9" onClick={() => handleClick()} data-aos='fade-left'  data-aos-duration="1500">
               <span className="omega">
                   Get In Touch
                   </span>
