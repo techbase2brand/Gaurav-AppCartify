@@ -52,7 +52,7 @@ function Smoothscroll() {
           document.body.style.height = `${height}px`;
         }, 100);
       }
-    };
+    };   
 
     calculateHeight();
     window.addEventListener('resize', calculateHeight);  
