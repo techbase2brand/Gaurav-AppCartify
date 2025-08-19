@@ -11,7 +11,7 @@ const ScanandExperienc = () => {
         <div className="container">
           <div className="main-center">
             <div className="gk-ctrl  lg:pb-[50px] rounded-2xl bg-[#FAFFF3] ">
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase  xl:w-[70%] mx-auto p-[20px]">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase  xl:w-[70%] mx-auto p-[20px]"  data-aos="fade-up"  data-aos-duration="800">
                 <span
                   style={{
                     color: "#161616",
@@ -33,12 +33,13 @@ const ScanandExperienc = () => {
                     className="lg:w-[100%] mx-auto md:p-[30px] hidden md:block"
                     src={scannall}
                     alt="ScanSrction"
-                    
+                     data-aos="zoom-in"  data-aos-duration="1200"
                   />
                    <Image
                     className="w-[100%] mx-auto md:hidden block pt-6 pb-6 object-cover pl-7 pr-7"
                     src={scannall221}
                     alt="ScanSrction"
+                     data-aos="zoom-in"  data-aos-duration="800"
                   />
                 </div>
               </div>

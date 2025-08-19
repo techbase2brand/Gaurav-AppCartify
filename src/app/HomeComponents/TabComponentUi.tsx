@@ -154,7 +154,7 @@ export default function TabComponentUi() {
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9">
+              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9" data-aos-duration="1500" data-aos="fade-up">
                 Our <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>{" "}
                 Building Service is For Everyone
               </h2>
@@ -189,7 +189,7 @@ export default function TabComponentUi() {
                   <CustomTabPanel value={value} index={index} key={index}>
                     <div className="allproduct lg:flex lg:gap-9 lg:items-center lg:pt-9 md:pt-9 md:pb-9">
                       <div className="all-list lg:w-[60%]">
-                        <div className="image_product">
+                        <div className="image_product" data-aos="zoom-in" data-aos-duration="1500">
                           <Image
                             src={tab.images[imageIndex]}
                             alt=""
@@ -197,7 +197,7 @@ export default function TabComponentUi() {
                           />
                         </div>
                       </div>
-                      <div className="allproduct lg:w-[40%]">
+                      <div className="allproduct lg:w-[40%]" data-aos="zoom-in" data-aos-duration="1500">
                         <div className="appproductpara">
                           <h2 className="gk-h2 lg:text-left text-center uppercase lg:p-0 pt-4">
                             {tab.title}

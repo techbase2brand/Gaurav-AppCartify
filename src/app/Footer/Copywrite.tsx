@@ -22,7 +22,7 @@ const Copywrite = () => {
         >
           © {new Date().getFullYear()} All rights reserved | Designed By
           <Link href="https://www.base2brand.com/" passHref target="_blank">
-            Base2Brand
+            {' '}Base2Brand
           </Link>
         </li>
       </div>

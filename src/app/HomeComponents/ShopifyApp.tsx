@@ -9,17 +9,19 @@ const ShopifyApp = () => {
   };
 
   return (
-    <>
-      <section className="bg-[#0E1014] lg:pt-6 lg:pb-12 pb-8  pt-8">
-        <div className="Shopifyapp">
-          <div className="container">
-            <div className="manue-app">
-              <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase ">
-                How Does <span style={{ color: "#96BF48" }}>Shopify App</span>{" "}
-                Development Work?
-              </h2>
+    <section className="bg-[#0E1014] lg:pt-6 lg:pb-12 pb-8  pt-8">
+      <div className="Shopifyapp">
+        <div className="container">
+          <div className="manue-app">
+            <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase" data-aos="fade-up"  data-aos-duration="800">
+              How Does <span style={{ color: "#96BF48" }}>
+                Shopify App
+              </span>{" "}
+              Development Work?
+            </h2>
 
-              <div className="text-itom">
+            <div className="text-itom">
+              <div data-aos="fade-up"  data-aos-duration="1200">
                 <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                   1 .Understanding Client Needs
                 </h4>
@@ -28,6 +30,8 @@ const ShopifyApp = () => {
                   analyze market dynamics, and define scope to align with your
                   business goals.
                 </p>
+              </div>
+              <div data-aos="fade-up"  data-aos-duration="1200">
                 <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                   2. Implementing and Building they App
                 </h4>
@@ -36,6 +40,8 @@ const ShopifyApp = () => {
                   functionalities, and customize designs to ensure a seamless
                   Shopify app tailored to your brand.
                 </p>
+              </div>
+              <div data-aos="fade-up"  data-aos-duration="1200">
                 <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                   3. Testing to Ensure Quality and Functionality
                 </h4>
@@ -44,6 +50,8 @@ const ShopifyApp = () => {
                   tests, and performance evaluations to guarantee your Shopify
                   app performs flawlessly across all scenarios.
                 </p>
+              </div>
+              <div data-aos="fade-up"  data-aos-duration="1200">
                 <h4 className="gk-h4 text-[#96BF48] lg:pt-5 lg:pb-[5px] pt-4">
                   4. Launching and Deploying
                 </h4>
@@ -53,17 +61,14 @@ const ShopifyApp = () => {
                   ensure its success and longevity.
                 </p>
               </div>
-              <button className="gk-button " onClick={() => handleClick()}>
-                {" "}
-                <span className="omega">
-                  Get In Touch
-                  </span>
-              </button>
             </div>
+            <button className="gk-button " onClick={() => handleClick()} data-aos="fade-up"  data-aos-duration="1200">
+              {" "}<span className="omega">Get In Touch</span>
+            </button>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

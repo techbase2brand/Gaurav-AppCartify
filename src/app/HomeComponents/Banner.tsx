@@ -40,7 +40,7 @@ const Banner = () => {
       >
         <div className="container lg:max-w-[1280px] xl:max-w-[1440px] px-2">
           <div className="flex flex-col xl:flex-row lg:flex-row justify-between items-center gap-7">
-            <div className="text-content xl:w-[30%] lg:w-[44%] w-[100%]">
+            <div className="text-content xl:w-[30%] lg:w-[44%] w-[100%]" data-aos="zoom-in" data-aos-duration="2000">
               <h1 className="banner-title uppercase md:text-left text-center">
                 Sell 3X Times More With{" "}
                 <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>
@@ -58,7 +58,7 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-            <div className="video-container xl:w-[65%] w-[100%] md:pt-[1rem] pt-[6%] relative">
+            <div className="video-container xl:w-[65%] w-[100%] md:pt-[1rem] pt-[6%] relative" data-aos="zoom-in" data-aos-duration="2000">
               {/* Video Player for Desktop */}
               <div className="video-wrapper md:block hidden">
                 <div className="relative xl:h-[550px] md:h-[417px]">

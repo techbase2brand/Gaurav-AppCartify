@@ -5,8 +5,8 @@ import downloadgif from "../../../public/Images/featuresection/downloadanimation
 const DownloadBrochure = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Images/brochure/Appcartify Dubai.pdf";
-    link.download = "Appcartify Brochure.pdf";
+    link.href = "/Images/brochure/Appcartify.pdf";
+    link.download = "Appcartify.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

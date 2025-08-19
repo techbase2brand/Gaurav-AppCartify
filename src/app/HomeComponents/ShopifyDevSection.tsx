@@ -12,12 +12,12 @@ function Developer() {
       <section className="Deceloper-section lg:pt-10 lg:pb-10  pt-10 pb-10">
         <div className="gk-section-context">
           <div className="container">
-            <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center  uppercase">
+            <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center  uppercase" data-aos="fade-up" data-aos-duration="1500">
               Our Proven Excellence in
               <span style={{ color: "#96BF48" }}> Shopify App Development</span>
             </h2>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-1 lg:gap-[6rem] gap-[3rem] p-4 ">
-              <div>
+              <div  data-aos="fade-up" data-aos-duration="700">
                 <div className="col-itom text">
                   <div className="image-c flex justify-center">
                     <Image className="lg:h-[140px] h-[87px] object-contain" src={reward} alt="reward" />
@@ -31,8 +31,7 @@ function Developer() {
                   </p>
                 </div>
               </div>
-
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000" >
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
                   <Image className="lg:h-[140px] h-[87px] object-contain"src={meating} alt="meating" />
@@ -46,7 +45,7 @@ function Developer() {
                   </p>
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1300">
                 <div className="col-itom">
                   <div className="image-c flex justify-center">
                   <Image className="lg:h-[140px] h-[87px] object-contain" src={team} alt="team" />

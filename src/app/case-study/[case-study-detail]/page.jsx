@@ -1,10 +1,11 @@
-import React from 'react'
-import Casestudydetail from './Casestudydetail'
+import React from 'react';
+import Smoothscrollcasestudy from './Smoothscrollcasestudy';
 
 export default function page() {
   return (
     <div>
-      <Casestudydetail/>
+     <Smoothscrollcasestudy/>
+    
     </div>
   )
 }

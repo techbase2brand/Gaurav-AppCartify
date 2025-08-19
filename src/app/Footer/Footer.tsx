@@ -26,8 +26,8 @@ const handleAppDownload = () => {
 
 const Footer = () => {
   return (
-    <>
-      <section className="bg-[#0e1014] lg:pt-9 lg:pb-12 pb-12 pt-6">
+    <div>
+      <div className="bg-[#0e1014] lg:pt-9 lg:pb-12 pb-12 pt-6 ckjvnkdf">
         <div className="container lg:flex">
         <div className="lg:w-[85%]">
           <h2 className="gk-h2 uppercase lg:pt-[40px] lg:pb-[10px] pb-5 pt-6">
@@ -40,13 +40,102 @@ const Footer = () => {
           </p>
           <div className="pt-5">
             <h4 className="text-2xl text-white pb-2 font-semibold">Contact Us</h4>
-            <p className="text-white lg:text-[22px] lg:font-medium font-normal text-[18px]">
+            <p className="text-white lg:text-[22px] lg:font-medium font-normal text-[18px] flex items-center gap-3">
+                <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+  >
+    <rect width="24" height="24" fill="none" />
+    <g
+      fill="none"
+      stroke="#96BF48"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1"
+    >
+      <path
+        strokeDasharray="64"
+        strokeDashoffset="64"
+        d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z"
+      >
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          dur="1.2s"
+          values="64;0"
+        />
+        <animateTransform
+          id="SVG3Jm2WHSS"
+          fill="freeze"
+          attributeName="transform"
+          begin="1.2s;SVG3Jm2WHSS.begin+5.4s"
+          dur="1s"
+          type="rotate"
+          values="0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12"
+        />
+      </path>
+      <path
+        strokeDasharray="4"
+        strokeDashoffset="4"
+        d="M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72"
+      >
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="SVG3Jm2WHSS.begin+0s"
+          dur="5.4s"
+          keyTimes="0;0.111;0.259;0.37;1"
+          values="4;0;0;4;4"
+        />
+      </path>
+      <path
+        strokeDasharray="6"
+        strokeDashoffset="6"
+        d="M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65"
+      >
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="SVG3Jm2WHSS.begin+0.4s"
+          dur="5.4s"
+          keyTimes="0;0.074;0.185;0.333;0.444;1"
+          values="6;6;0;0;6;6"
+        />
+      </path>
+    </g>
+               </svg>
               <a href="tel:+917889101844">
                 +91-7889101844
               </a>
             </p>
-            <p className="text-white lg:text-[22px] lg:font-medium font-normal text-[18px]">
-            <a href="mailto:hello@appcartify.com">hello@appcartify.com</a>
+            <p className="text-white lg:text-[22px] lg:font-medium font-normal text-[18px] flex items-center gap-3">
+               <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 48 48"
+  >
+    <rect width="48" height="48" fill="none" />
+    <path
+      fill="none"
+      stroke="#96BF48"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="M13.39 12.145v26.39H7.06a2.56 2.56 0 0 1-2.56-2.54v-19.18m30.11-4.67v26.39h6.33a2.56 2.56 0 0 0 2.56-2.54v-19.18"
+    />
+    <path
+      fill="none"
+      stroke="#96BF48"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      d="m24 31.445l19.5-14.45v-3.6a3.94 3.94 0 0 0-6.28-3.16L24 20.055l-13.22-9.82a3.94 3.94 0 0 0-6.28 3.16v3.6z"
+    />
+               </svg>
+              <a href="mailto:hello@appcartify.com">hello@appcartify.com</a>
             </p>
           </div>
           <div className="flex gap-5 pt-7">
@@ -78,9 +167,9 @@ const Footer = () => {
             </span>
           </div>
         </div>
-      </section>
+      </div>  
       <Copywrite />
-    </>
+    </div>
   );
 };
 

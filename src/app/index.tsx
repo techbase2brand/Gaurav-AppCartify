@@ -1,7 +1,6 @@
 "use client";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import { useEffect, useRef, useState } from "react";
 
@@ -63,12 +62,11 @@ export default function Index({
   return (
     <div>
       {/* header-to-hide  */}
-      <div ref={headerRef} className="sticky top-0 scroll-down bg-black z-[999]">
+      <div>
         <Header />
       </div>
       {children}
-      <ToastContainer />
-      <Footer />
+       <ToastContainer />
     </div>
   );
 }
