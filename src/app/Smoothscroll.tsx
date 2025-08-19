@@ -9,8 +9,8 @@ function Smoothscroll() {
   const requestRef = useRef<number | null>(null);
   const currentY = useRef(0);
   const targetY = useRef(0);
-  const speed = 0.06;
-
+  const speed = 0.07;
+    
   useEffect(() => {
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
