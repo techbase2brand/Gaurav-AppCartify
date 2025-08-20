@@ -24,9 +24,9 @@ const DownloadBrochure = () => {
                    a 37,37 0 1,1 74,0
                    a 37,37 0 1,1 -74,0"/>
              </defs>
-          <text font-size="12">
+          <text font-size="10" className="uppercase">
             <textPath xlinkHref="#circle">
-              Download Brochure - Download Brochure -
+             - Download Brochure - Download Brochure -
             </textPath>
           </text>
         </svg>
