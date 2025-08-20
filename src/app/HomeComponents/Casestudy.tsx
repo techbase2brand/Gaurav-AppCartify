@@ -48,7 +48,7 @@ export default function Casestudy() {
                      height={500}
                      className="rounded-tl-[50px]"
                      />
-                  <h4 className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3">
+                  <h4 className="gk-h4 text-[#96BF48] lg:pb-[5px] pt-3 line-clamp-2">
                     {item.title}
                   </h4>
                 </div>

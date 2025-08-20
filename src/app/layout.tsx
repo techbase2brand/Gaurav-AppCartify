@@ -74,7 +74,7 @@ export default function RootLayout({
         </noscript>
         <AppStateProvider>
           <Index>{children}</Index>
-          <div className="fixed right-4 bottom-16 lg:bottom-6 cursor-pointer">
+          <div className="fixed right-4 bottom-8 md:bottom-16 lg:bottom-6 cursor-pointer">
             <DownloadBrochure/>
           </div>
           <div className="fixed bottom-6 left-6 z-[999]">

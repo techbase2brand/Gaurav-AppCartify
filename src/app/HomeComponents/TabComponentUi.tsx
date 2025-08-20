@@ -150,20 +150,20 @@ export default function TabComponentUi() {
 
   return (
     <>
-      <section className="lg:block hidden">
+      <section className="block">
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>
               <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center uppercase pt-9" data-aos-duration="1500" data-aos="fade-up">
                 Our <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>{" "}
-                Building Service is For Everyone
+                Building Service is For Everyone 
               </h2>
             </div>
             <div className="mmm pt-6">
               <Box sx={{ width: "100%" }}>
                 <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
                   <Tabs
-                    className="desktop-tab"
+                    className="desktop-tab flex-wrap"
                     value={value}
                     onChange={handleChange}
                     aria-label="basic tabs example"

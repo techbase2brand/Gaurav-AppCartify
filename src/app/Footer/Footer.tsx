@@ -27,8 +27,8 @@ const handleAppDownload = () => {
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#0e1014] lg:pt-9 lg:pb-12 pb-12 pt-6 ckjvnkdf">
-        <div className="container lg:flex">
+      <div className="bg-[#0e1014] lg:pt-9 lg:pb-12 pb-12 pt-14 ckjvnkdf md:pt-6 ">
+        <div className="container lg:flex relative">
         <div className="lg:w-[85%]">
           <h2 className="gk-h2 uppercase lg:pt-[40px] lg:pb-[10px] pb-5 pt-6">
             Get Ready to Create Your Success{" "}
@@ -157,7 +157,7 @@ const Footer = () => {
           </div>
       
         </div>
-          <div className="heee flex  items-end pt-6">
+          <div className="heee flex  items-end pt-6 absolute bottom-[100px] right-0">
             <span onClick={handleAppDownload} className="cursor-pointer">
               <Image
                 className="lg:w-auto lg:h-auto h-[100px]"

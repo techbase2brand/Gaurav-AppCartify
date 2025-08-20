@@ -92,7 +92,7 @@ export default function AppsAdd() {
 
   return (
     <>
-      <section className="lg:hidden block">
+      <section className="hidden">
         <div className="Tab_class bg-[#0E1014]">
           <div className="container">
             <div>

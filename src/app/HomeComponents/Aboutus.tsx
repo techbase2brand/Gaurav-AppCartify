@@ -63,7 +63,7 @@ export default function Aboutus() {
               </p>
             </div>
           </div>
-          <p className="manrope-gk-p-list pb-4 text-s md:text-center"  data-aos="fade-up"  data-aos-duration="1100">
+          <p className="manrope-gk-p-list pb-4 text-s text-center"  data-aos="fade-up"  data-aos-duration="1100">
             Our mobile apps are more than just functional — they are intuitive,
             responsive, fast, and tailored to your brand. From push
             notifications and cart upsells to real-time inventory sync and

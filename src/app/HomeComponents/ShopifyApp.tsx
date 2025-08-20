@@ -62,9 +62,9 @@ const ShopifyApp = () => {
                 </p>
               </div>
             </div>
-            <button className="gk-button " onClick={() => handleClick()} data-aos="fade-up"  data-aos-duration="1200">
+            {/* <button className="gk-button " onClick={() => handleClick()} data-aos="fade-up"  data-aos-duration="1200">
               {" "}<span className="omega">Get In Touch</span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
