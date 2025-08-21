@@ -9,54 +9,58 @@ function Smoothscroll() {
   const requestRef = useRef<number | null>(null);
   const currentY = useRef(0);
   const targetY = useRef(0);
-  const [speed, setSpeed] = useState(0.07);
+  const [speed, setSpeed] = useState(0.08);
   const [innerwidth, setinnerwidth] = useState<number>(0); // Initialize with 0
 
   useEffect(() => {
     // Set initial width after component mounts (client-side only)
     setinnerwidth(window.innerWidth);
-    
+
     const updateSpeed = () => {
-      setSpeed(window.innerWidth < 768 ? 1 : 0.07);
+      setSpeed(window.innerWidth < 768 ? 1 : 0.08);
       setinnerwidth(window.innerWidth);
     };
-    
+
     updateSpeed();
     window.addEventListener("resize", updateSpeed);
-    
+
     return () => window.removeEventListener("resize", updateSpeed);
   }, []);
 
-  useEffect(() => {
-    // Only run smooth scroll on desktop
-    if (innerwidth < 768) return;
-    
-    const wrapper = wrapperRef.current;
-    if (!wrapper) return;
-    
-    const smoothScroll = () => {
-      targetY.current = window.pageYOffset;
-      currentY.current += (targetY.current - currentY.current) * speed;
-      wrapper.style.transform = `translate3d(0, -${currentY.current}px, 0)`;
+  useEffect(
+    () => {
+      // Only run smooth scroll on desktop
+      if (innerwidth < 768) return;
+
+      const wrapper = wrapperRef.current;
+      if (!wrapper) return;
+
+      const smoothScroll = () => {
+        targetY.current = window.pageYOffset;
+        currentY.current += (targetY.current - currentY.current) * speed;
+        wrapper.style.transform = `translate3d(0, -${currentY.current}px, 0)`;
+        requestRef.current = requestAnimationFrame(smoothScroll);
+      };
+
       requestRef.current = requestAnimationFrame(smoothScroll);
-    };
 
-    requestRef.current = requestAnimationFrame(smoothScroll);
+      return () => {
+        if (requestRef.current) {
+          cancelAnimationFrame(requestRef.current);
+        }
+        wrapper.style.transform = "";
+      };
+    },
+    [speed, innerwidth]
+  ); // Add dependencies
 
-    return () => {
-      if (requestRef.current) {
-        cancelAnimationFrame(requestRef.current);
-      }
-      wrapper.style.transform = "";
-    };
-  }, [speed, innerwidth]); // Add dependencies
+  useEffect(
+    () => {
+      // Only run these effects on desktop
+      if (innerwidth < 768) return;
 
-  useEffect(() => {
-    // Only run these effects on desktop
-    if (innerwidth < 768) return;
-    
-    const style = document.createElement("style");
-    style.textContent = `
+      const style = document.createElement("style");
+      style.textContent = `
       .page-wrapper {
         position: fixed;
         top: 0;
@@ -65,29 +69,33 @@ function Smoothscroll() {
         will-change: transform;
       }
     `;
-    document.head.appendChild(style);
-    
-    const calculateHeight = () => {
-      const wrapper = wrapperRef.current;
-      if (wrapper) {
-        const height = wrapper.scrollHeight;
-        document.body.style.height = `${height}px`;
-      }
-    };
+      document.head.appendChild(style);
 
-    // Use requestAnimationFrame to ensure DOM is ready
-    requestAnimationFrame(calculateHeight);
-    
-    window.addEventListener("resize", calculateHeight);
-    window.addEventListener("load", calculateHeight);
+      const calculateHeight = () => {
+        const wrapper = wrapperRef.current;
+        if (wrapper) {
+          const height = wrapper.scrollHeight;
+          console.log("asdfjg",height);
+          
+          document.body.style.height = `${height}px`;
+        }
+      };
 
-    return () => {
-      document.head.removeChild(style);
-      window.removeEventListener("resize", calculateHeight);
-      window.removeEventListener("load", calculateHeight);
-      document.body.style.height = "";
-    };
-  }, [innerwidth]); // Add innerwidth as dependency
+      // Use requestAnimationFrame to ensure DOM is ready
+      requestAnimationFrame(calculateHeight);
+
+      window.addEventListener("resize", calculateHeight);
+      window.addEventListener("load", calculateHeight);
+
+      return () => {
+        document.head.removeChild(style);
+        window.removeEventListener("resize", calculateHeight);
+        window.removeEventListener("load", calculateHeight);
+        document.body.style.height = "";
+      };
+    },
+    [innerwidth]
+  ); // Add innerwidth as dependency
 
   useEffect(() => {
     AOS.init({
@@ -101,8 +109,10 @@ function Smoothscroll() {
         ? <div className="overflow-hidden" style={{ scrollBehavior: "smooth" }}>
             <Maincomponent />
           </div>
-        : <div className="page-wrapper" ref={wrapperRef}>
-            <Maincomponent />
+        : <div>
+            {/* <div className="page-wrapper" ref={wrapperRef}> */}
+              <Maincomponent />
+            {/* </div> */}
           </div>}
     </div>
   );
