@@ -9,7 +9,7 @@ function Smoothscroll() {
   const currentY = useRef(0);
   const targetY = useRef(0);
   const [speed, setSpeed] = useState(0.07);
-  const [innerwidth, setinnerwidth] = useState<number>(window.innerWidth);
+  const [innerwidth, setinnerwidth] = useState<number>(0);
   console.log("speed", speed);
 
   useEffect(() => {
