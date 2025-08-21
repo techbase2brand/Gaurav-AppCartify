@@ -1,7 +1,6 @@
-
-"use client"
-import React, { useEffect, useRef } from 'react';
-import Maincomponent from './Maincomponent';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import Maincomponent from "./Maincomponent";
 import AOS from "aos";
 import "aos/dist/aos.css";
 function Smoothscroll() {
@@ -9,8 +8,15 @@ function Smoothscroll() {
   const requestRef = useRef<number | null>(null);
   const currentY = useRef(0);
   const targetY = useRef(0);
-  const speed = 0.07;
-    
+  const [speed, setSpeed] = useState(0.07);
+  useEffect(() => {
+    const updateSpeed = () => {
+      setSpeed(window.innerWidth < 768 ? 0.1 : 0.07);
+    };
+    updateSpeed();
+    window.addEventListener("resize", updateSpeed);
+    return () => window.removeEventListener("resize", updateSpeed);
+  }, []);
   useEffect(() => {
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
@@ -18,7 +24,7 @@ function Smoothscroll() {
       targetY.current = window.pageYOffset;
       currentY.current += (targetY.current - currentY.current) * speed;
       wrapper.style.transform = `translate3d(0, -${currentY.current}px, 0)`;
-      
+
       requestRef.current = requestAnimationFrame(smoothScroll);
     };
 
@@ -28,12 +34,12 @@ function Smoothscroll() {
       if (requestRef.current) {
         cancelAnimationFrame(requestRef.current);
       }
-      wrapper.style.transform = '';
+      wrapper.style.transform = "";
     };
   }, []);
 
   useEffect(() => {
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.textContent = `
       .page-wrapper {
         position: fixed;
@@ -52,28 +58,31 @@ function Smoothscroll() {
           document.body.style.height = `${height}px`;
         }, 100);
       }
-    };   
+    };
 
     calculateHeight();
-    window.addEventListener('resize', calculateHeight);  
-    window.addEventListener('load', calculateHeight);
+    window.addEventListener("resize", calculateHeight);
+    window.addEventListener("load", calculateHeight);
 
     return () => {
       document.head.removeChild(style);
-      window.removeEventListener('resize', calculateHeight);
-      window.removeEventListener('load', calculateHeight);
-      document.body.style.height = '';
+      window.removeEventListener("resize", calculateHeight);
+      window.removeEventListener("load", calculateHeight);
+      document.body.style.height = "";
     };
   }, []);
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 1200
     });
   });
+
   return (
-    <div className="page-wrapper" ref={wrapperRef}>
-      <Maincomponent />
-     </div>
+    <div>
+      <div className="page-wrapper" ref={wrapperRef}>
+        <Maincomponent />
+      </div>
+    </div>
   );
 }
 
