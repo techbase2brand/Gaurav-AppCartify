@@ -15,7 +15,7 @@ const ShopifyStore = () => {
     <>
       <section className="Mobile-bann-set ">
         <div className="container">
-          <h2 className="gk-h2  text-center  lg:hidden block pt-6 pb-12">
+          <h2 className="gk-h2  text-center  lg:hidden block pt-6 pb-12" data-aos="fade-up">
             Turn Your <span style={{ color: "#96BF48" }}>Shopify store</span> into
             a Sales Friendly App
           </h2>
@@ -23,7 +23,7 @@ const ShopifyStore = () => {
         <div className="row lg:flex  lg:flex-row xl:gap-16 gap-[1rem] lg:pt-20 lg:pb-20  items-center md:flex md:flex-col lg:gap-1">
           <div className=" ">
             <Image className=" lg:block hidden" src={store} alt="appcartify store"  data-aos="fade-right"  data-aos-duration="800"/>
-            <Image className="laptop   lg:hidden block" src={laptop} alt="appcartify store" />
+            <Image className="laptop   lg:hidden block" src={laptop} alt="appcartify store" data-aos="fade-up" />
           </div>
           <div className=" custom_text xl:pr-[30px] 2xl:pr-[260px] lg:pr-[2rem] p-[1rem]">
             <h2 className="gk-h2  lg:block hidden"  data-aos="fade-left"  data-aos-duration="800">
