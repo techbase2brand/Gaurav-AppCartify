@@ -16,7 +16,7 @@ const HeroSection = ({ title, banner }) => {
       />
       <div className="absolute top-0 h-full w-[90%] m-auto flex justify-center items-center ">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(150,191,72,0.1),transparent_70%)]]" />
-        <div className="max-w-screen-2xl mx-auto relative z-10">
+        <div className="max-w-screen-2xl mx-auto relative z-10 pt-36 md:pt-3">
           <div className="text-center mb-16">
             <h1
               className="text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight"
