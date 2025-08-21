@@ -19,7 +19,7 @@ const Thankyou = () => {
   return (
     <div>
       <div className="container-thank-you">
-        <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center text-[#96bf48] uppercase pt-9">
+        <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center text-[#96bf48] uppercase pt-9 mb-4">
           Thank You for Reaching Out!
         </h2>
         <div className="logo-thank-you">
