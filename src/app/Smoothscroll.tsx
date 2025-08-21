@@ -13,7 +13,7 @@ function Smoothscroll() {
   
   useEffect(() => {
     const updateSpeed = () => {
-      setSpeed(window.innerWidth < 768 ? 0.1 : 0.07);
+      setSpeed(window.innerWidth < 768 ? 0.5 : 0.07);
     };
     updateSpeed();
     window.addEventListener("resize", updateSpeed);
