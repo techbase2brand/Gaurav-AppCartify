@@ -1,6 +1,5 @@
-
-"use client"
-import React, { useEffect, useRef } from 'react';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Casestudydetail from './Casestudydetail'
@@ -10,16 +9,35 @@ function Smoothscrollcasestudy() {
   const requestRef = useRef<number | null>(null);
   const currentY = useRef(0);
   const targetY = useRef(0);
-  const speed = 0.06;
+  const [speed, setSpeed] = useState(0.07);
+  const [innerwidth, setinnerwidth] = useState<number>(0); // Initialize with 0
 
   useEffect(() => {
+    // Set initial width after component mounts (client-side only)
+    setinnerwidth(window.innerWidth);
+    
+    const updateSpeed = () => {
+      setSpeed(window.innerWidth < 768 ? 1 : 0.07);
+      setinnerwidth(window.innerWidth);
+    };
+    
+    updateSpeed();
+    window.addEventListener("resize", updateSpeed);
+    
+    return () => window.removeEventListener("resize", updateSpeed);
+  }, []);
+
+  useEffect(() => {
+    // Only run smooth scroll on desktop
+    if (innerwidth < 768) return;
+    
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
+    
     const smoothScroll = () => {
       targetY.current = window.pageYOffset;
       currentY.current += (targetY.current - currentY.current) * speed;
       wrapper.style.transform = `translate3d(0, -${currentY.current}px, 0)`;
-      
       requestRef.current = requestAnimationFrame(smoothScroll);
     };
 
@@ -29,12 +47,15 @@ function Smoothscrollcasestudy() {
       if (requestRef.current) {
         cancelAnimationFrame(requestRef.current);
       }
-      wrapper.style.transform = '';
+      wrapper.style.transform = "";
     };
-  }, []);
+  }, [speed, innerwidth]); // Add dependencies
 
   useEffect(() => {
-    const style = document.createElement('style');
+    // Only run these effects on desktop
+    if (innerwidth < 768) return;
+    
+    const style = document.createElement("style");
     style.textContent = `
       .page-wrapper {
         position: fixed;
@@ -42,41 +63,50 @@ function Smoothscrollcasestudy() {
         left: 0;
         width: 100%;
         will-change: transform;
-        height:100vh;
       }
     `;
     document.head.appendChild(style);
+    
     const calculateHeight = () => {
       const wrapper = wrapperRef.current;
       if (wrapper) {
-        setTimeout(() => {
-          const height = wrapper.scrollHeight;
-          document.body.style.height = `${height}px`;
-        }, 100);
+        const height = wrapper.scrollHeight;
+        document.body.style.height = `${height}px`;
       }
     };
 
-    calculateHeight();
-    window.addEventListener('resize', calculateHeight);  
-    window.addEventListener('load', calculateHeight);
+    // Use requestAnimationFrame to ensure DOM is ready
+    requestAnimationFrame(calculateHeight);
+    
+    window.addEventListener("resize", calculateHeight);
+    window.addEventListener("load", calculateHeight);
 
     return () => {
       document.head.removeChild(style);
-      window.removeEventListener('resize', calculateHeight);
-      window.removeEventListener('load', calculateHeight);
-      document.body.style.height = '';
+      window.removeEventListener("resize", calculateHeight);
+      window.removeEventListener("load", calculateHeight);
+      document.body.style.height = "";
     };
-  }, []);
-   useEffect(() => {
+  }, [innerwidth]); // Add innerwidth as dependency
+
+  useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 1200
     });
-  });
+  }, []);
+
   return (
-    <div className="page-wrapper" ref={wrapperRef}>
-       <Casestudydetail/>
+    <div>
+      {innerwidth < 768
+        ? <div className="overflow-hidden" style={{ scrollBehavior: "smooth" }}>
+            <Casestudydetail/>
         <Footerwrap/>
-     </div>
+          </div>
+        : <div className="page-wrapper" ref={wrapperRef}>
+           <Casestudydetail/>
+        <Footerwrap/>
+          </div>}
+    </div>
   );
 }
 
