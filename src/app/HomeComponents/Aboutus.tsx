@@ -22,11 +22,11 @@ export default function Aboutus() {
             </h4>
             <p className="manrope-gk-p-list pb-4" data-aos="fade-up"  data-aos-duration="1300">
               At AppCartify, we believe that your online store deserves more
-              than just a web presence — it deserves a seamless mobile
+              than just a web presence   it deserves a seamless mobile
               experience that drives engagement, conversions, and growth. Our
               mission is simple yet powerful: to help Shopify merchants 3X their
               sales by transforming their stores into high-performing mobile
-              apps — in just 7 days.
+              apps   in just 7 days.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 py-0 lg:py-12">
@@ -63,10 +63,10 @@ export default function Aboutus() {
               </p>
             </div>
           </div>
-          <p className="manrope-gk-p-list pb-4 text-s text-center"  data-aos="fade-up"  data-aos-duration="1100">
-            Our mobile apps are more than just functional — they are intuitive,
+          <p className="manrope-gk-p-list pb-4 text-s text-center pt-6"  data-aos="fade-up"  data-aos-duration="1100">
+            Our mobile apps are more than just functional they are intuitive,
             responsive, fast, and tailored to your brand. From push
-            notifications and cart upsells to real-time inventory sync and
+            notifications and cart upsells to real time inventory sync and
             integrated analytics, we offer everything you need to drive mobile
             sales like never before.
           </p>
@@ -139,7 +139,7 @@ export default function Aboutus() {
                   Real-Time Inventory Sync
                 </div>
                 <p className="manrope-gk-p-list pb-2 ">
-                  Ensure your stock levels are always accurate — no overselling,
+                  Ensure your stock levels are always accurate   no overselling,
                   no customer complaints.
                 </p>
               </div>
@@ -177,7 +177,7 @@ export default function Aboutus() {
                   >
                     {" "}Speed & Quality:{" "}
                   </span>
-                  We deliver full-featured Shopify apps within a week — without
+                  We deliver full-featured Shopify apps within a week  without
                   compromising quality.
                 </p>
               </div>
@@ -223,7 +223,7 @@ export default function Aboutus() {
                     {" "}Transparency:{" "}
                   </span>
                   No hidden charges, honest timelines, and continuous
-                  communication — from idea to app store.
+                  communication   from idea to app store.
                 </p>
               </div>
             </div>

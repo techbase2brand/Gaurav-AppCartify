@@ -106,7 +106,7 @@ const Feature = () => {
                         {" "}
                         3rd party checkout{" "}
                       </span>
-                      integration also available (Terms and Conditions apply)
+                      integration also available ( Terms and Conditions apply )
                     </p>
                     <Image
                       className="xl:w-auto lg:w-[28%] md:w-[15%] w-[18%] "
@@ -197,8 +197,8 @@ const Feature = () => {
                         {" "}
                         Custom analytics{" "}
                       </span>
-                      tracking (How much time is being spent by customers on
-                      which page)
+                      tracking ( How much time is being spent by customers on
+                      which page )
                     </p>
                   </div>
                   <div className="flex md:gap-4  gap-3  items-center flex-row" data-aos="fade-left" data-aos-duration="1500">
