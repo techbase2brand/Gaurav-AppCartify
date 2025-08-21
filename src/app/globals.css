@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 
+/* globals.css */
+@font-face {
+  font-family: 'Impact Regular';
+  src: url('/impact-webfont/impact.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Impact Regular';
+  src: url('/impact-webfont/unicode.impact.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Impacted Regular';
+  src: url('/impact-webfont/Impacted.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
 
 body {
   font-size: 22px;
@@ -14,7 +35,7 @@ body {
 
 h1 {
   font-size: 50px;
-  font-family: impact;
+    font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
   color: white;
 }
 
@@ -28,7 +49,7 @@ li {
 
 h2 {
   font-size: 42px;
-  font-family: impact;
+    font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
   font-weight: 400;
   color: white;
   line-height: 52px;
@@ -37,7 +58,7 @@ h2 {
 
 h3 {
   font-size: 26px;
-  font-family: impact;
+    font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
 }
 
 h4 {
@@ -140,7 +161,7 @@ button.gk-button:hover {
 
   h1 {
     font-size: 36px;
-    font-family: impact;
+     font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
     color: white;
 
     font-weight: 400;
@@ -204,7 +225,7 @@ button.gk-button:hover {
 @media only screen and (max-width: 640px) {
   h1.gk-h1 {
     font-size: 42px;
-    font-family: impact;
+     font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
     color: white;
     text-align: center;
     font-weight: 400;
@@ -238,7 +259,7 @@ button.gk-button:hover {
 
   h2 {
     font-size: 32px;
-    font-family: impact;
+     font-family: 'Impact Regular', 'Impacted Regular', sans-serif;
     font-weight: 400;
     color: white;
     line-height: 42px;
