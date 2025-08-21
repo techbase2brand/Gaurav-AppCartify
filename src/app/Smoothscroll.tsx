@@ -9,7 +9,7 @@ function Smoothscroll() {
   const currentY = useRef(0);
   const targetY = useRef(0);
   const [speed, setSpeed] = useState(0.07);
-  const [innerwidth, setinnerwidth] = useState(Number);
+  const [innerwidth, setinnerwidth] = useState<number>(window.innerWidth);
   console.log("speed", speed);
 
   useEffect(() => {
@@ -87,11 +87,9 @@ function Smoothscroll() {
   return (
     <div>
       {innerwidth < 768
-        ? 
-        <div className="overflow-hidden" style={{scrollBehavior:"smooth"}}>
-          <Maincomponent />
-        </div>
-
+        ? <div className="overflow-hidden" style={{ scrollBehavior: "smooth" }}>
+            <Maincomponent />
+          </div>
         : <div className="page-wrapper" ref={wrapperRef}>
             <Maincomponent />
           </div>}
