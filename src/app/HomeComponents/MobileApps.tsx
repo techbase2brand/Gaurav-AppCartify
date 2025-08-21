@@ -17,7 +17,7 @@ const MobileApps = () => {
     <>
       <section className=" bg-[url('/Images/mobil-set.webp')] bg-no-repeat bg-cover bg-center lg:pt-20 lg:pb-20 pt-5 pb-5">
         <div className="container">
-          <h2 className="gk-h2  text-center  lg:hidden block pt-6 uppercase ">
+          <h2 className="gk-h2  text-center  lg:hidden block pt-6 uppercase " data-aos="fade-up">
             Integration with <span style={{color:'#96BF48'}}>Mobile Apps</span>  Enhances Sales Potential
           </h2>
 

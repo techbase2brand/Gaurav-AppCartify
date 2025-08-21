@@ -13,7 +13,7 @@ export default function Casestudy() {
   return (
     <div className="py-12">
       <div className="container px-0 ">
-        <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
+        <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6" data-aos="fade-up">
           Case Study
         </h2>
         <div className="gap-6">

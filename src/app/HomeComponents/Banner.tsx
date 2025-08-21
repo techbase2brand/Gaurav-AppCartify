@@ -40,7 +40,7 @@ const Banner = () => {
       >
         <div className="container pt-12 md:pt-0 lg:max-w-[1280px] xl:max-w-[1440px] px-2">
           <div className="flex flex-col xl:flex-row lg:flex-row justify-between items-center gap-7">
-            <div className="text-content xl:w-[30%] lg:w-[44%] w-[100%]" data-aos="zoom-in" data-aos-duration="2000">
+            <div className="text-content xl:w-[30%] lg:w-[44%] w-[100%]" data-aos="zoom-in" data-aos-duration="600">
               <h1 className="banner-title uppercase md:text-left text-center font-bold">
                 Sell 3X Times More With{" "}
                 <span style={{ color: "#96BF48" }}>Shopify Mobile App</span>

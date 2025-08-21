@@ -20,7 +20,7 @@ const Thankyou = () => {
     <div>
       <div className="container-thank-you">
         <h2 className="gk-h2 xl:pt-10 xl:pb-10 text-center text-[#96bf48] uppercase pt-9">
-          Thank You
+          Thank You for Reaching Out!
         </h2>
         <div className="logo-thank-you">
           <a
@@ -37,8 +37,7 @@ const Thankyou = () => {
 
         <div className="header-thank-you">
           <p>
-            Thank you for contacting us. Our team will get back to you in the
-            next 24 Hours.
+            We’ve received your inquiry, and our team will get back to you shortly. Your interest in AppCartify is truly appreciated.
           </p>
         </div>
 

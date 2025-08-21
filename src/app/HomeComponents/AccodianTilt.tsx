@@ -128,7 +128,7 @@ function AccodianTilt() {
     <section className="bg-[#0E1014] lg:pb-[50px] lg:pt-[50px] pb-10">
       <div className="container">
         <div>
-          <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6">
+          <h2 className="gk-h2 text-center uppercase lg:pt-[40px] lg:pb-[40px] pb-6 pt-6" data-aos="fade-up">
             Frequently Asked Questions
           </h2>
           <div data-aos="fade-up" data-aos-duration={`1200`}>
