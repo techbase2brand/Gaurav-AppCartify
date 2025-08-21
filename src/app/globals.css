@@ -273,7 +273,7 @@ button.gk-button:hover {
   bottom: 0;
   width: 100%;
   display: block;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .footer-btn {
