@@ -30,13 +30,13 @@ const ScanandExperienc = () => {
               <div className="lg:flex lg:justify-center lg:gap-5 md:w-[60%] m-auto">
                 <div className="text-center ">
                   <Image
-                    className="lg:w-[100%] mx-auto md:p-[30px] hidden md:block"
+                    className="lg:w-[100%] mx-auto md:p-[30px] block"
                     src={scannall}
                     alt="ScanSrction"
                      data-aos="zoom-in"  data-aos-duration="1200"
                   />
                    <Image
-                    className="w-[100%] mx-auto md:hidden block pt-6 pb-6 object-cover pl-7 pr-7"
+                    className="w-[100%] mx-auto hidden  pt-6 pb-6 object-cover pl-7 pr-7"
                     src={scannall221}
                     alt="ScanSrction"
                      data-aos="zoom-in"  data-aos-duration="800"

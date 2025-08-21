@@ -9,16 +9,21 @@ function Smoothscroll() {
   const currentY = useRef(0);
   const targetY = useRef(0);
   const [speed, setSpeed] = useState(0.07);
-  console.log("speed",speed);
-  
+  const [innerwidth, setinnerwidth] = useState(Number);
+  console.log("speed", speed);
+
   useEffect(() => {
     const updateSpeed = () => {
-      setSpeed(window.innerWidth < 768 ? 0.5 : 0.07);
+      setSpeed(window.innerWidth < 768 ? 1 : 0.07);
+      setinnerwidth(window.innerWidth);
     };
     updateSpeed();
+
     window.addEventListener("resize", updateSpeed);
     return () => window.removeEventListener("resize", updateSpeed);
   }, []);
+  console.log(innerwidth);
+
   useEffect(() => {
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
@@ -81,9 +86,15 @@ function Smoothscroll() {
 
   return (
     <div>
-      <div className="page-wrapper" ref={wrapperRef}>
-        <Maincomponent />
-      </div>
+      {innerwidth < 768
+        ? 
+        <div className="overflow-hidden" style={{scrollBehavior:"smooth"}}>
+          <Maincomponent />
+        </div>
+
+        : <div className="page-wrapper" ref={wrapperRef}>
+            <Maincomponent />
+          </div>}
     </div>
   );
 }
