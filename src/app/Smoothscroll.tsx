@@ -3,35 +3,41 @@ import React, { useEffect, useRef, useState } from "react";
 import Maincomponent from "./Maincomponent";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 function Smoothscroll() {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const requestRef = useRef<number | null>(null);
   const currentY = useRef(0);
   const targetY = useRef(0);
   const [speed, setSpeed] = useState(0.07);
-  const [innerwidth, setinnerwidth] = useState<number>(0);
-  console.log("speed", speed);
+  const [innerwidth, setinnerwidth] = useState<number>(0); // Initialize with 0
 
   useEffect(() => {
+    // Set initial width after component mounts (client-side only)
+    setinnerwidth(window.innerWidth);
+    
     const updateSpeed = () => {
       setSpeed(window.innerWidth < 768 ? 1 : 0.07);
       setinnerwidth(window.innerWidth);
     };
+    
     updateSpeed();
-
     window.addEventListener("resize", updateSpeed);
+    
     return () => window.removeEventListener("resize", updateSpeed);
   }, []);
-  console.log(innerwidth);
 
   useEffect(() => {
+    // Only run smooth scroll on desktop
+    if (innerwidth < 768) return;
+    
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
+    
     const smoothScroll = () => {
       targetY.current = window.pageYOffset;
       currentY.current += (targetY.current - currentY.current) * speed;
       wrapper.style.transform = `translate3d(0, -${currentY.current}px, 0)`;
-
       requestRef.current = requestAnimationFrame(smoothScroll);
     };
 
@@ -43,9 +49,12 @@ function Smoothscroll() {
       }
       wrapper.style.transform = "";
     };
-  }, []);
+  }, [speed, innerwidth]); // Add dependencies
 
   useEffect(() => {
+    // Only run these effects on desktop
+    if (innerwidth < 768) return;
+    
     const style = document.createElement("style");
     style.textContent = `
       .page-wrapper {
@@ -57,17 +66,18 @@ function Smoothscroll() {
       }
     `;
     document.head.appendChild(style);
+    
     const calculateHeight = () => {
       const wrapper = wrapperRef.current;
       if (wrapper) {
-        setTimeout(() => {
-          const height = wrapper.scrollHeight;
-          document.body.style.height = `${height}px`;
-        }, 100);
+        const height = wrapper.scrollHeight;
+        document.body.style.height = `${height}px`;
       }
     };
 
-    calculateHeight();
+    // Use requestAnimationFrame to ensure DOM is ready
+    requestAnimationFrame(calculateHeight);
+    
     window.addEventListener("resize", calculateHeight);
     window.addEventListener("load", calculateHeight);
 
@@ -77,12 +87,13 @@ function Smoothscroll() {
       window.removeEventListener("load", calculateHeight);
       document.body.style.height = "";
     };
-  }, []);
+  }, [innerwidth]); // Add innerwidth as dependency
+
   useEffect(() => {
     AOS.init({
       duration: 1200
     });
-  });
+  }, []);
 
   return (
     <div>
